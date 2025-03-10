@@ -32,15 +32,6 @@ export function Level({ title, type = 'EASY', isChecked = false, ...rest }: Prop
 
   const COLOR = TYPE_COLORS[type];
 
-  const animatedContainerStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-    backgroundColor: interpolateColor(
-      checked.value,
-      [0, 1],
-      ['transparent', COLOR],
-    )
-  }));
-
   const animatedTextStyle = useAnimatedStyle(() => ({
     color: interpolateColor(
       checked.value,
@@ -65,7 +56,7 @@ export function Level({ title, type = 'EASY', isChecked = false, ...rest }: Prop
     <PressableAnimated
       onPressIn={onPressIn}
       onPressOut={onPressOut}
-      style={[styles.container, { borderColor: COLOR }, animatedContainerStyle]}
+      style={[styles.container, { borderColor: COLOR }]}
       {...rest}
     >
       <Animated.Text style={[styles.title, animatedTextStyle]}>

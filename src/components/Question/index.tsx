@@ -1,5 +1,5 @@
-import { Text, Dimensions } from 'react-native';
-import Animated, { Keyframe, runOnJS } from 'react-native-reanimated';
+import { Text } from 'react-native';
+import Animated from 'react-native-reanimated';
 
 import { Option } from '../Option';
 import { styles } from './styles';
