@@ -1,4 +1,4 @@
-import { Text, Image } from 'react-native';
+import { Text, Image, ImageSourcePropType } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { Option } from '../Option';
@@ -7,17 +7,17 @@ import { HistoryProps } from '../HistoryCard';
 
 type QuestionProps = {
   title: string;
-  image?: string;
+  image?: ImageSourcePropType;
   alternatives: string[];
 }
 
 type Props = {
   question: QuestionProps;
   alternativeSelected?: number | null;
-  setAlternativeSelected?: (value: number) => void;
   currentQuestionIndex: number;
-  onUnmount: () => void;
   history: HistoryProps[];
+  setAlternativeSelected?: (value: number) => void;
+  onUnmount: () => void;
 }
 
 export function Question({
