@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Alert, BackHandler, Text, View } from 'react-native';
+import { Alert, BackHandler, Text, View, TouchableOpacity } from 'react-native';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -11,7 +11,6 @@ import Animated, {
 } from 'react-native-reanimated';
 import { GestureDetector, Gesture } from 'react-native-gesture-handler';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { Audio } from 'expo-av';
 
 import { styles } from './styles';
 import { THEME } from '../../styles/theme';
@@ -25,6 +24,7 @@ import { QuizHeader } from '../../components/QuizHeader';
 import { ConfirmButton } from '../../components/ConfirmButton';
 import { OutlineButton } from '../../components/OutlineButton';
 import { ProgressBar } from '../../components/ProgressBar';
+import { HistoryProps } from '../../components/HistoryCard';
 
 interface Params {
   id: string;
@@ -42,31 +42,20 @@ export function Quiz() {
   const [quiz, setQuiz] = useState<QuizProps>({} as QuizProps);
   const [alternativeSelected, setAlternativeSelected] = useState<null | number>(null);
   const [statusReply, setStatusReply] = useState(0);
+  const [quizHistory, setQuizHistory] = useState<HistoryProps[]>([]);
 
   const scrollY = useSharedValue(0);
   const cardPosition = useSharedValue(0);
 
   const { navigate } = useNavigation();
 
+  const currentQuestionHistory = quizHistory.find((item) => item.questionIndex === currentQuestion);
+
   const route = useRoute();
   const { id } = route.params as Params;
 
-  async function playSound(isCorrect: boolean) {
-    const file = isCorrect
-      ? require('../../assets/correct.mp3')
-      : require('../../assets/wrong.mp3');
-
-    const { sound } = await Audio.Sound.createAsync(file, { shouldPlay: true });
-
-    await sound.setPositionAsync(0);
-    await sound.playAsync();
-  }
-
   function handleSkipConfirm() {
-    Alert.alert('Pular', 'Deseja realmente pular a questão?', [
-      { text: 'Sim', onPress: () => handleNextQuestion(points) },
-      { text: 'Não', onPress: () => { } }
-    ]);
+    Alert.alert('Për të kaluar', 'Nuk keni zgjedhur asnjë përgjigje.');
   }
 
   async function handleFinished(updatedPoints: number) {
@@ -82,18 +71,45 @@ export function Quiz() {
       points: String(updatedPoints),
       total: String(quiz.questions.length),
     });
-
   }
-
 
   function handleNextQuestion(updatedPoints: number) {
     if (currentQuestion < quiz.questions.length - 1) {
       setCurrentQuestion(prevState => prevState + 1);
+  
+      setQuizHistory(prevState => {
+        const existingHistoryIndex = prevState.findIndex(history => history.questionIndex === currentQuestion);
+  
+        if (existingHistoryIndex !== -1) {
+          // Update existing history
+          const updatedHistory = [...prevState];
+          updatedHistory[existingHistoryIndex] = {
+            ...updatedHistory[existingHistoryIndex],
+            points: updatedPoints,
+            alternativeSelected: alternativeSelected || 0,
+          };
+          return updatedHistory;
+        } else {
+          // Add new history entry
+          return [
+            ...prevState,
+            {
+              id: new Date().getTime().toString(),
+              title: quiz.title,
+              points: updatedPoints,
+              level: quiz.level,
+              questions: quiz.questions.length,
+              questionIndex: currentQuestion,
+              alternativeSelected: alternativeSelected || 0,
+            }
+          ];
+        }
+      });
     } else {
       handleFinished(updatedPoints);
     }
   }
-  
+
   function handlePreviousQuestion() {
     if (currentQuestion > 0) {
       setCurrentQuestion(prevState => prevState - 1);
@@ -103,8 +119,11 @@ export function Quiz() {
     }
   }
 
+  console.log("ALT", alternativeSelected);
+
+
   async function handleConfirm() {
-    if (alternativeSelected === null) {
+    if (alternativeSelected === null && currentQuestionHistory?.alternativeSelected === undefined) {
       return handleSkipConfirm();
     }
 
@@ -138,6 +157,10 @@ export function Quiz() {
       handlePreviousQuestion();
     }
     return true;
+  }
+
+  function handleGoToStep(index: number) {
+    setCurrentQuestion(index);
   }
 
   const scrollHandler = useAnimatedScrollHandler({
@@ -252,6 +275,8 @@ export function Quiz() {
               question={quiz.questions[currentQuestion]}
               alternativeSelected={alternativeSelected}
               setAlternativeSelected={setAlternativeSelected}
+              currentQuestionIndex={currentQuestion}
+              history={quizHistory}
               onUnmount={() => setStatusReply(0)}
             />
           </Animated.View>
@@ -261,7 +286,20 @@ export function Quiz() {
           <OutlineButton title="Kthehu" onPress={handleStop} />
           <ConfirmButton onPress={handleConfirm} />
         </View>
+        {quizHistory.length > 0 && (
+        <View>
+          {quizHistory.map((history, index) => (
+            <TouchableOpacity key={history.id} onPress={() => handleGoToStep(history.questionIndex || 0)}>
+              <Text style={{ color: 'white' }}>
+                {`${index + 1}`}
+              </Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      )}
       </Animated.ScrollView>
+
+
     </View >
   );
 }

@@ -17,8 +17,6 @@ export function Finish() {
 
   const { navigate } = useNavigation();
 
-  console.log(points, total);
-
   return (
     <View style={styles.container}>
       <Stars />

@@ -1,74 +1,9 @@
+import { MJEKESIA_LIGJORE_1 } from "./mjekesia-ligjore-1";
+import { PYETJE_TE_PERGJITHSHME_1 } from "./pyetje-te-pergjithshme";
+
 export const QUIZ = [
-  {
-    id: '1',
-    title: 'Quiz 2',
-    level: 1,
-    questions: [
-      {
-        title: 'A eshte kjo?',
-        alternatives: [
-          'Po',
-          'Jo'
-        ],
-        correct: 0
-      },
-      {
-        title: 'Pytja e dyte',
-        alternatives: [
-          'Po',
-          'Jo'
-        ],
-        correct: 0
-      },
-      {
-        title: 'Pytja e trete',
-        alternatives: [
-          'Po',
-          'Po me dy o-ja',
-          'Jo',
-          'Sdi'
-        ],
-        correct: 0  
-      },
-    ]
-  },
-  {
-    id: '2',
-    title: 'Pyetje të Përgjithshme',
-    level: 1,
-    questions: [
-      {
-        title: 'Cili është kryeqyteti i Shqipërisë?',
-        alternatives: [
-          'Tirana',
-          'Durrësi',
-          'Shkodra',
-          'Vlora'
-        ],
-        correct: 0
-      },
-      {
-        title: 'Sa është popullsia e Shqipërisë?',
-        alternatives: [
-          '2 milionë',
-          '3 milionë',
-          '4 milionë',
-          '5 milionë'
-        ],
-        correct: 1
-      },
-      {
-        title: 'Cila është gjuha zyrtare e Shqipërisë?',
-        alternatives: [
-          'Anglisht',
-          'Frëngjisht',
-          'Shqip',
-          'Italisht'
-        ],
-        correct: 2
-      },
-    ]
-  },
+  MJEKESIA_LIGJORE_1,
+  PYETJE_TE_PERGJITHSHME_1,
   {
     id: '3',
     title: 'Histori',

@@ -38,4 +38,11 @@ export const styles = StyleSheet.create({
     color: THEME.COLORS.GREY_100,
     marginTop: 24
   },
+  description: {
+    flex: 1,
+    fontSize: 12,
+    fontFamily: THEME.FONTS.REGULAR,
+    color: THEME.COLORS.GREY_100,
+    marginTop: 12
+  }
 });

@@ -7,6 +7,8 @@ export type HistoryProps = {
   title: string;
   points: number;
   questions: number;
+  questionIndex?: number;
+  alternativeSelected?: number;
   level: number;
 }
 
