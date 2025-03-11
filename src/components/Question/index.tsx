@@ -33,6 +33,7 @@ export function Question({
       {question?.image && <Image style={{
         width: 400,
         height: 200,
+        marginBottom: 24,
       }} source={question.image} />}
       <Text style={styles.title}>
         {question.title}

@@ -1,30 +1,30 @@
-import { useEffect, useState } from 'react';
-import { Alert, BackHandler, Text, View, TouchableOpacity } from 'react-native';
+import { useEffect, useState } from "react";
+import { Alert, BackHandler, Text, TouchableOpacity, View } from "react-native";
 import Animated, {
+  Extrapolate,
+  interpolate,
+  runOnJS,
+  useAnimatedScrollHandler,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
-  interpolate,
-  useAnimatedScrollHandler,
-  Extrapolate,
-  runOnJS,
-} from 'react-native-reanimated';
-import { GestureDetector, Gesture } from 'react-native-gesture-handler';
-import { useNavigation, useRoute } from '@react-navigation/native';
+} from "react-native-reanimated";
+import { Gesture, GestureDetector } from "react-native-gesture-handler";
+import { useNavigation, useRoute } from "@react-navigation/native";
 
-import { styles } from './styles';
-import { THEME } from '../../styles/theme';
+import { styles } from "./styles";
+import { THEME } from "../../styles/theme";
 
-import { QUIZ } from '../../data/quiz';
-import { historyAdd } from '../../storage/quizHistoryStorage';
+import { QUIZ } from "../../data/quiz";
+import { historyAdd } from "../../storage/quizHistoryStorage";
 
-import { Loading } from '../../components/Loading';
-import { Question } from '../../components/Question';
-import { QuizHeader } from '../../components/QuizHeader';
-import { ConfirmButton } from '../../components/ConfirmButton';
-import { OutlineButton } from '../../components/OutlineButton';
-import { ProgressBar } from '../../components/ProgressBar';
-import { HistoryProps } from '../../components/HistoryCard';
+import { Loading } from "../../components/Loading";
+import { Question } from "../../components/Question";
+import { QuizHeader } from "../../components/QuizHeader";
+import { ConfirmButton } from "../../components/ConfirmButton";
+import { OutlineButton } from "../../components/OutlineButton";
+import { ProgressBar } from "../../components/ProgressBar";
+import { HistoryProps } from "../../components/HistoryCard";
 
 interface Params {
   id: string;
@@ -40,7 +40,9 @@ export function Quiz() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [quiz, setQuiz] = useState<QuizProps>({} as QuizProps);
-  const [alternativeSelected, setAlternativeSelected] = useState<null | number>(null);
+  const [alternativeSelected, setAlternativeSelected] = useState<null | number>(
+    null,
+  );
   const [statusReply, setStatusReply] = useState(0);
   const [quizHistory, setQuizHistory] = useState<HistoryProps[]>([]);
 
@@ -49,70 +51,82 @@ export function Quiz() {
 
   const { navigate } = useNavigation();
 
-  const currentQuestionHistory = quizHistory.find((item) => item.questionIndex === currentQuestion);
+  const currentQuestionHistory = quizHistory.find((item) =>
+    item.questionIndex === currentQuestion
+  );
 
   const route = useRoute();
   const { id } = route.params as Params;
 
   function handleSkipConfirm() {
-    Alert.alert('Për të kaluar', 'Nuk keni zgjedhur asnjë përgjigje.');
+    Alert.alert("Për të kaluar", "Nuk keni zgjedhur asnjë përgjigje.");
   }
 
-  async function handleFinished(updatedPoints: number) {
+  function handleNextQuestion(updatedPoints: number) {
+    setQuizHistory((prevState) => {
+      const existingHistoryIndex = prevState.findIndex((history) =>
+        history.questionIndex === currentQuestion
+      );
+
+      if (existingHistoryIndex !== -1) {
+        // Update existing history
+        const updatedHistory = [...prevState];
+        updatedHistory[existingHistoryIndex] = {
+          ...updatedHistory[existingHistoryIndex],
+          points: updatedPoints,
+          alternativeSelected: alternativeSelected || 0,
+        };
+        return updatedHistory;
+      } else {
+        // Add new history entry
+        return [
+          ...prevState,
+          {
+            id: new Date().getTime().toString(),
+            title: quiz.title,
+            points: updatedPoints,
+            level: quiz.level,
+            questions: quiz.questions.length,
+            questionIndex: currentQuestion,
+            alternativeSelected: alternativeSelected || 0,
+          },
+        ];
+      }
+    });
+
+    if (currentQuestion < quiz.questions.length - 1) {
+      setCurrentQuestion((prevState) => prevState + 1);
+    } else {
+      setQuizHistory((prevState) => {
+        handleFinished(updatedPoints, prevState);
+        return prevState;
+      });
+    }
+  }
+
+  async function handleFinished(
+    updatedPoints: number,
+    updatedQuizHistory: HistoryProps[],
+  ) {
     await historyAdd({
       id: new Date().getTime().toString(),
       title: quiz.title,
       level: quiz.level,
       points: updatedPoints,
-      questions: quiz.questions.length
+      questions: quiz.questions.length,
     });
 
-    navigate('finish', {
+    navigate("finish", {
       points: String(updatedPoints),
       total: String(quiz.questions.length),
+      quizHistory: updatedQuizHistory,
     });
   }
-
-  function handleNextQuestion(updatedPoints: number) {
-    if (currentQuestion < quiz.questions.length - 1) {
-      setCurrentQuestion(prevState => prevState + 1);
-  
-      setQuizHistory(prevState => {
-        const existingHistoryIndex = prevState.findIndex(history => history.questionIndex === currentQuestion);
-  
-        if (existingHistoryIndex !== -1) {
-          // Update existing history
-          const updatedHistory = [...prevState];
-          updatedHistory[existingHistoryIndex] = {
-            ...updatedHistory[existingHistoryIndex],
-            points: updatedPoints,
-            alternativeSelected: alternativeSelected || 0,
-          };
-          return updatedHistory;
-        } else {
-          // Add new history entry
-          return [
-            ...prevState,
-            {
-              id: new Date().getTime().toString(),
-              title: quiz.title,
-              points: updatedPoints,
-              level: quiz.level,
-              questions: quiz.questions.length,
-              questionIndex: currentQuestion,
-              alternativeSelected: alternativeSelected || 0,
-            }
-          ];
-        }
-      });
-    } else {
-      handleFinished(updatedPoints);
-    }
-  }
+  console.log(quizHistory.length);
 
   function handlePreviousQuestion() {
     if (currentQuestion > 0) {
-      setCurrentQuestion(prevState => prevState - 1);
+      setCurrentQuestion((prevState) => prevState - 1);
       let updatedPoints = points;
       updatedPoints = points - 1;
       setPoints(updatedPoints);
@@ -121,14 +135,16 @@ export function Quiz() {
 
   console.log("ALT", alternativeSelected);
 
-
   async function handleConfirm() {
-    if (alternativeSelected === null && currentQuestionHistory?.alternativeSelected === undefined) {
+    if (
+      alternativeSelected === null &&
+      currentQuestionHistory?.alternativeSelected === undefined
+    ) {
       return handleSkipConfirm();
     }
 
     let updatedPoints = points;
-  
+
     if (quiz.questions[currentQuestion].correct === alternativeSelected) {
       updatedPoints = points + 1;
       setPoints(updatedPoints);
@@ -142,15 +158,15 @@ export function Quiz() {
 
   function handleStop() {
     if (currentQuestion === 0) {
-      Alert.alert('Parar', 'Deshiron te kthehesh?', [
+      Alert.alert("Parar", "Deshiron te kthehesh?", [
         {
-          text: 'No',
-          style: 'cancel',
+          text: "Jo",
+          style: "cancel",
         },
         {
-          text: 'Exit',
-          style: 'destructive',
-          onPress: () => navigate('home')
+          text: "Po",
+          style: "destructive",
+          onPress: () => navigate("home"),
         },
       ]);
     } else {
@@ -164,18 +180,18 @@ export function Quiz() {
   }
 
   const scrollHandler = useAnimatedScrollHandler({
-    onScroll: event => {
+    onScroll: (event) => {
       scrollY.value = event.contentOffset.y;
-    }
+    },
   });
 
   const fixedProgressBarStyles = useAnimatedStyle(() => ({
-    position: 'absolute',
+    position: "absolute",
     zIndex: 1,
     paddingTop: 50,
     backgroundColor: THEME.COLORS.GREY_500,
-    width: '110%',
-    left: '-5%',
+    width: "110%",
+    left: "-5%",
     opacity: interpolate(scrollY.value, [50, 90], [0, 1], Extrapolate.CLAMP),
     transform: [
       {
@@ -184,9 +200,9 @@ export function Quiz() {
           [50, 100],
           [-40, 0],
           Extrapolate.CLAMP,
-        )
-      }
-    ]
+        ),
+      },
+    ],
   }));
 
   const headerStyles = useAnimatedStyle(() => ({
@@ -196,20 +212,20 @@ export function Quiz() {
   const onPan = Gesture
     .Pan()
     .activateAfterLongPress(200)
-    .onUpdate(event => {
+    .onUpdate((event) => {
       const moveToLeft = event.translationX < 0;
 
       if (moveToLeft) {
         cardPosition.value = event.translationX;
       }
     })
-    .onEnd(event => {
+    .onEnd((event) => {
       if (event.translationX < CARD_SKIP_AREA) {
         runOnJS(handleSkipConfirm)();
       }
 
       cardPosition.value = withTiming(0);
-    })
+    });
 
   const dragStyles = useAnimatedStyle(() => {
     const rotateZ = cardPosition.value / CARD_INCLINATION;
@@ -217,13 +233,13 @@ export function Quiz() {
     return {
       transform: [
         { translateX: cardPosition.value },
-        { rotateZ: `${rotateZ}deg` }
-      ]
-    }
+        { rotateZ: `${rotateZ}deg` },
+      ],
+    };
   });
 
   useEffect(() => {
-    const quizSelected = QUIZ.filter(item => item.id === id)[0];
+    const quizSelected = QUIZ.filter((item) => item.id === id)[0];
 
     setQuiz(quizSelected);
     setIsLoading(false);
@@ -231,7 +247,7 @@ export function Quiz() {
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
+      "hardwareBackPress",
       handleStop,
     );
 
@@ -239,12 +255,11 @@ export function Quiz() {
   }, []);
 
   if (isLoading) {
-    return <Loading />
+    return <Loading />;
   }
 
   return (
     <View style={styles.container}>
-
       <Animated.View style={fixedProgressBarStyles}>
         <Text style={styles.title}>{quiz.title}</Text>
 
@@ -286,20 +301,36 @@ export function Quiz() {
           <OutlineButton title="Kthehu" onPress={handleStop} />
           <ConfirmButton onPress={handleConfirm} />
         </View>
-        {quizHistory.length > 0 && (
-        <View>
-          {quizHistory.map((history, index) => (
-            <TouchableOpacity key={history.id} onPress={() => handleGoToStep(history.questionIndex || 0)}>
-              <Text style={{ color: 'white' }}>
-                {`${index + 1}`}
-              </Text>
-            </TouchableOpacity>
-          ))}
-        </View>
-      )}
+
+        {quiz.questions.length > 0 && (
+          <View style={styles.scoreContainer}>
+            {quiz.questions.map((history, index) => {
+              const isAnswered = quizHistory.some(
+                (item) => item.questionIndex === index,
+              );
+              return isAnswered
+                ? (
+                  <TouchableOpacity
+                    style={styles.scoreButton}
+                    key={history.title}
+                    onPress={() => handleGoToStep(index)}
+                  >
+                    <Text style={{ color: "black" }}>
+                      {`${index + 1}`}
+                    </Text>
+                  </TouchableOpacity>
+                )
+                : (
+                  <View style={styles.scoreButtonGray} key={history.title}>
+                    <Text style={{ color: "black" }}>
+                      {`${index + 1}`}
+                    </Text>
+                  </View>
+                );
+            })}
+          </View>
+        )}
       </Animated.ScrollView>
-
-
-    </View >
+    </View>
   );
 }

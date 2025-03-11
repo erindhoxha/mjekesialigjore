@@ -26,5 +26,34 @@ export const styles = StyleSheet.create({
   header: {
     width: '100%',
     marginBottom: 21,
-  }
+  },
+  scoreContainer: {
+    display: 'flex',
+    width: '100%',
+    marginTop: 24,
+    flexDirection: 'row',
+    gap: 12,
+  },
+  scoreButton: {
+    width: 24,
+    height: 24,
+    backgroundColor: 'white',
+    color: 'black',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 6,
+    marginRight: 6,
+  },
+  scoreButtonGray: {
+    width: 24,
+    height: 24,
+    backgroundColor: 'gray',
+    color: 'black',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 6,
+    marginRight: 6,
+  },
 });

@@ -19,7 +19,7 @@ export function QuizHeader({ title, totalOfQuestions, currentQuestion }: Props) 
 
       <View style={styles.header}>
         <Text style={styles.question}>
-          Question {currentQuestion}
+          Pyetja {currentQuestion}
         </Text>
 
         <Text style={styles.length}>
