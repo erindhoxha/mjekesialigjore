@@ -5,14 +5,12 @@ import {
   Path,
   Circle,
   BlurMask,
-  runTiming,
-  useValue,
-  Easing,
 } from '@shopify/react-native-skia';
 
 import { styles } from './styles';
 import { THEME } from '../../styles/theme';
 import { useEffect } from 'react';
+import { useSharedValue, withTiming, Easing } from 'react-native-reanimated';
 
 type Props = TouchableOpacityProps & {
   checked: boolean;
@@ -25,37 +23,35 @@ const RADIUS = (CHECK_SIZE - CHECK_STROKE) / 2;
 const CENTER_CIRCLE = RADIUS / 2;
 
 export function Option({ checked, title, ...rest }: Props) {
-  const percentage = useValue(0);
-  const circle = useValue(0);
+  const percentage = useSharedValue(0);
+  const circle = useSharedValue(0);
 
   const path = Skia.Path.Make();
-  path.addCircle(CHECK_SIZE, CHECK_SIZE, RADIUS)
+  path.addCircle(CHECK_SIZE, CHECK_SIZE, RADIUS);
 
   useEffect(() => {
     if (checked) {
-      runTiming(percentage, 1, { duration: 700 });
-      runTiming(circle, CENTER_CIRCLE, { easing: Easing.bounce });
+      percentage.value = withTiming(1, { duration: 700 });
+      circle.value = withTiming(CENTER_CIRCLE, { duration: 700, easing: Easing.bounce });
     } else {
-      runTiming(percentage, 0, { duration: 700 });
-      runTiming(circle, 0, { duration: 300 });
+      percentage.value = withTiming(0, { duration: 700 });
+      circle.value = withTiming(0, { duration: 300 });
     }
   }, [checked]);
 
   return (
     <TouchableOpacity
-      style={
-        [
-          styles.container,
-          checked && styles.checked
-        ]
-      }
+      style={[
+        styles.container,
+        checked && styles.checked
+      ]}
       {...rest}
     >
       <Text style={styles.title}>
         {title}
       </Text>
 
-      <Canvas style={{width: CHECK_SIZE * 2, height: CHECK_SIZE * 2}}>
+      <Canvas style={{ width: CHECK_SIZE * 2, height: CHECK_SIZE * 2 }}>
         <Path
           path={path}
           color={THEME.COLORS.GREY_500}

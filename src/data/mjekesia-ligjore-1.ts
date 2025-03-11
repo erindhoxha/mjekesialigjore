@@ -12,7 +12,7 @@ export const MJEKESIA_LIGJORE_1 = {
        "Sdi",
        "Genta"
      ],
-     correct: 1
+     correct: 0
    },
    {
     title: 'A kjo?',
@@ -23,7 +23,7 @@ export const MJEKESIA_LIGJORE_1 = {
       "Sdi",
       "Genta"
     ],
-    correct: 1
+    correct: 0
   },
    {
      title: 'Cka eshte kufoma?',
