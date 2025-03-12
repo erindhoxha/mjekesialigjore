@@ -4,6 +4,7 @@ import Animated from 'react-native-reanimated';
 import { Option } from '../Option';
 import { styles } from './styles';
 import { HistoryProps } from '../HistoryCard';
+import { useEffect } from 'react';
 
 type QuestionProps = {
   title: string;
@@ -16,7 +17,7 @@ type Props = {
   alternativeSelected?: number | null;
   currentQuestionIndex: number;
   history: HistoryProps[];
-  setAlternativeSelected?: (value: number) => void;
+  setAlternativeSelected?: (value: number | null) => void;
   onUnmount: () => void;
 }
 
@@ -28,6 +29,11 @@ export function Question({
   history,
 }: Props) {
   const currentQuestionHistory = history.find((item) => item.questionIndex === currentQuestionIndex);
+  useEffect(() => {
+    return () => {
+      setAlternativeSelected && setAlternativeSelected(null);
+    }
+  }, [currentQuestionIndex]);
   return (
     <Animated.View style={styles.container}>
       {question?.image && <Image style={{

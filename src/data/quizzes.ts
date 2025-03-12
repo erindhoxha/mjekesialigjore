@@ -4,7 +4,7 @@ export const QUIZZES = [
   {
     id: '1',
     title: 'Mjekesia Ligjore I',
-    description: "Njesiti i pare i mjekesise ligjiore",
+    description: "Njesiti i pare i mjekesise ligjiore test test test test test test test test test",
     level: 1,
     svg: ToggleLeft,
   },
