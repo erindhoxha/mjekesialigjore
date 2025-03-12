@@ -37,5 +37,15 @@ export const MJEKESIA_LIGJORE_1 = {
       ],
       correct: 1,
     },
+    {
+      title: "Cilat janë objektet e hetimit mjekoligjor?",
+      alternatives: [
+        "Vetëm kufomat", 
+        "Vetëm personat e gjallë", 
+        "Kufomat, personat e gjallë dhe provat materiale biologjike", 
+        "Vetëm provat materiale biologjike."
+      ],
+      correct: 2,
+    },
   ],
 };
