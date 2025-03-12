@@ -28,9 +28,11 @@ export function QuizCard({ index, data, ...rest }: Props) {
           {Icon && <Icon size={24} color={THEME.COLORS.GREY_100} />}
         </View>
       </View>
-      <Text style={styles.title}>
-        {data.title}
-      </Text>
+      <View style={{flexDirection:'row'}}> 
+        <Text style={styles.title}>
+          {data.title}
+        </Text>
+      </View>
       <Text style={styles.description}>
         {data.description}
       </Text>

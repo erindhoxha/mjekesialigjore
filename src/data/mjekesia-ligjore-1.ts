@@ -13,6 +13,7 @@ export const MJEKESIA_LIGJORE_1 = {
         "Trajtimi i të sëmurëve në spitale",
         "Vlerësimi i dëmtimeve trupore.",
       ],
+      explanation: "Trajtimi i të sëmurëve në spitale nuk është detyrë e mjekësisë ligjore.",
       correct: 2,
     },
     {

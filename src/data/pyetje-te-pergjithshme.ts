@@ -11,7 +11,8 @@ export const PYETJE_TE_PERGJITHSHME_1 =   {
        'Shkodra',
        'Vlora'
      ],
-     correct: 0
+     correct: 0,
+     explanation: "",
    },
    {
      title: 'Sa është popullsia e Shqipërisë?',

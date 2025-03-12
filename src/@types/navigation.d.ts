@@ -6,7 +6,7 @@ export declare global {
       home: undefined;
       quiz: { id: string };
       history: undefined;
-      finish: { total: string, points: string, quizHistory: HistoryProps[] };
+      finish: { total: string, points: string, quizHistory: HistoryProps[], quiz: { id: string } };
     }
   }
 }

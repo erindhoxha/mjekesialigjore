@@ -17,7 +17,6 @@ type Props = {
 }
 
 export function HistoryCard({ data }: Props) {
-  console.log(data.points);
   return (
     <View style={styles.container}>
       <View>
@@ -26,7 +25,7 @@ export function HistoryCard({ data }: Props) {
         </Text>
 
         <Text style={styles.subtitle}>
-          Você acertou {data.points} de {data.questions}
+          Ju keni përgjigjur saktë {data.points} nga {data.questions}
         </Text>
       </View>
     </View>

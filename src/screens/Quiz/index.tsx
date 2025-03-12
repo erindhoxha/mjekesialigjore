@@ -120,6 +120,7 @@ export function Quiz() {
       points: String(updatedPoints),
       total: String(quiz.questions.length),
       quizHistory: updatedQuizHistory,
+      quiz: quiz,
     });
   }
   console.log(quizHistory.length);

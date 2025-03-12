@@ -24,4 +24,45 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 8
   },
+  scoreContainer: {
+    display: 'flex',
+    width: '100%',
+    marginTop: 24,
+    flexDirection: 'row',
+    gap: 12,
+  },
+  scoreButton: {
+    width: 24,
+    height: 24,
+    backgroundColor: 'white',
+    color: 'black',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 6,
+    marginRight: 6,
+  },
+  scoreButtonGray: {
+    width: 24,
+    height: 24,
+    backgroundColor: 'gray',
+    color: 'black',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 6,
+    marginRight: 6,
+  },
+  scoreButtonCorrect: {
+    backgroundColor: THEME.COLORS.BRAND_LIGHT,
+  },
+  scoreButtonIncorrect: {
+    backgroundColor: THEME.COLORS.DANGER_LIGHT,
+  },
+  selectedQuestionDetails: {
+    marginTop: 24,
+    padding: 16,
+    backgroundColor: THEME.COLORS.GREY_700,
+    borderRadius: 8,
+  },
 });

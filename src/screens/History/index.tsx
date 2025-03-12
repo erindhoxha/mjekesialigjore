@@ -35,18 +35,17 @@ export function History() {
 
   function handleRemove(id: string, index: number) {
     swipeableRefs.current?.[index].close();
-
+  
     Alert.alert(
-      'Remover',
-      'Deseja remover esse registro?',
+      'Fshij',
+      'Dëshironi ta fshini këtë regjistrim?',
       [
         {
-          text: 'Sim', onPress: () => remove(id)
+          text: 'Po', onPress: () => remove(id)
         },
-        { text: 'Não', style: 'cancel' }
+        { text: 'Jo', style: 'cancel' }
       ]
     );
-
   }
 
   useEffect(() => {
@@ -60,8 +59,8 @@ export function History() {
   return (
     <View style={styles.container}>
       <Header
-        title="Histórico"
-        subtitle={`Seu histórico de estudos${'\n'}realizados`}
+        title="Historia"
+        subtitle={`Historia juaj e studimeve të realizuara`}
         icon={HouseLine}
         onPress={goBack}
       />

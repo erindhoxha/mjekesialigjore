@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: THEME.FONTS.REGULAR,
     color: THEME.COLORS.GREY_100,
-    marginTop: 24
+    marginTop: 24,
   },
   description: {
     flex: 1,
