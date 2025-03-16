@@ -6,7 +6,17 @@ export const styles = StyleSheet.create({
     flexGrow: 1,
     backgroundColor: THEME.COLORS.GREY_800,
     padding: 32,
-    paddingTop: 120,
+    paddingTop: 51,
+  },
+  scoreButtonSelected: {
+    backgroundColor: THEME.COLORS.STAR_GREY,
+    borderWidth: 1,
+    borderColor: THEME.COLORS.WHITE,
+    fontFamily: THEME.FONTS.BOLD,
+    fontWeight: '700',
+  },
+  bold: {
+    fontFamily: THEME.FONTS.BOLD,
   },
   safeContainer: {
     flex: 1,
@@ -14,18 +24,19 @@ export const styles = StyleSheet.create({
   },
   message: {
     alignItems: 'center',
-    marginBottom: 80,
+    marginBottom: 24,
   },
   title: {
     color: THEME.COLORS.GREY_100,
     fontFamily: THEME.FONTS.BOLD,
     fontSize: 24,
-    marginTop: 41
+    marginTop: 12
   },
   title2: {
     color: THEME.COLORS.GREY_100,
     fontFamily: THEME.FONTS.BOLD,
     fontSize: 24,
+    marginBottom: 24,
   },
   subtitle: {
     color: THEME.COLORS.GREY_100,
@@ -42,8 +53,8 @@ export const styles = StyleSheet.create({
     gap: 12,
   },
   scoreButton: {
-    width: 24,
-    height: 24,
+    width: 28,
+    height: 28,
     backgroundColor: 'white',
     color: 'black',
     display: 'flex',
@@ -53,9 +64,9 @@ export const styles = StyleSheet.create({
     marginRight: 6,
   },
   scoreButtonGray: {
-    width: 24,
-    height: 24,
-    backgroundColor: 'gray',
+    width: 28,
+    height: 28,
+    backgroundColor: THEME.COLORS.GREY_500,
     color: 'black',
     display: 'flex',
     justifyContent: 'center',

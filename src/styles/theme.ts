@@ -9,8 +9,8 @@ export const THEME = {
     GREY_700: '#29292E',
     GREY_800: '#202024',
 
-    BRAND_LIGHT: '#00B37E',
-    BRAND_MID: '#00875F',
+    BRAND_LIGHT: '#1F7D53',
+    BRAND_MID: '#1F7D53',
     WARNING_LIGHT: '#FBA94C',
     DANGER_LIGHT: '#F75A68',
 

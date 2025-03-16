@@ -12,6 +12,7 @@ import { QUIZ } from "../../data/quiz";
 import Animated from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Question } from "../../components/Question";
+import { Option } from "../../components/Option";
 
 type QuizProps = typeof QUIZ[0];
 interface Params {
@@ -25,6 +26,7 @@ export function Finish() {
   const route = useRoute();
   const { points, total, quizHistory, quiz } = route.params as Params;
 
+  const [selectedHistoryQuestion, setSelectedHistoryQuestion] = useState<number | null>(null);
   const { navigate } = useNavigation();
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
 
@@ -41,96 +43,92 @@ export function Finish() {
 
   return (
     <SafeAreaView style={styles.safeContainer}>
-    <ScrollView
-      style={styles.container}
-      showsVerticalScrollIndicator={false}
-    >
-      <Animated.View>
-        {/* <Stars /> */}
-
-        <View style={styles.message}>
-          <Text style={styles.title}>
-            {points === total ? "Bravo!" : "Më mirë herën tjetër!"}
-          </Text>
-
-          <Text style={styles.subtitle}>
-            Ju keni përgjigjur saktë {points} nga {total} pyetje
-          </Text>
-        </View>
-        <Button
-          title="Kthehu në fillim"
-          onPress={() => navigate("home")}
-        />
-        {quiz.questions.length > 0 && (
-          <View style={styles.scoreContainer}>
-            {quiz.questions.map((question, index) => {
-              const historyItem = quizHistory.find(
-                (item) => item.questionIndex === index,
-              );
-              const isAnswered = !!historyItem;
-              const isCorrect = isAnswered &&
-                question.correct === historyItem?.alternativeSelected;
-
-              return isAnswered
-                ? (
-                  <TouchableOpacity
-                    style={[
-                      styles.scoreButton,
-                      !isAnswered && styles.scoreButtonGray,
-                      isAnswered && isCorrect && styles.scoreButtonCorrect,
-                      isAnswered && !isCorrect && styles.scoreButtonIncorrect,
-                    ]}
-                    key={question.title}
-                    onPress={() => handleQuestionPress(index)}
-                  >
-                    <Text style={{ color: "black" }}>
-                      {`${index + 1}`}
-                    </Text>
-                  </TouchableOpacity>
-                )
-                : (
-                  <View style={styles.scoreButtonGray} key={question.title}>
-                    <Text style={{ color: "black" }}>
-                      {`${index + 1}`}
-                    </Text>
-                  </View>
+      <ScrollView
+        style={styles.container}
+        showsVerticalScrollIndicator={false}
+      >
+        <Animated.View>
+          {/* <Stars /> */}
+          <View style={styles.message}>
+            <Text style={styles.title}>
+              {points === total ? "Bravo!" : "Më mirë herën tjetër!"}
+            </Text>
+            <Text style={styles.subtitle}>
+              Ju keni përgjigjur saktë <Text style={styles.bold}>{points}</Text> nga <Text style={styles.bold}>{total}</Text> pyetje
+            </Text>
+          </View>
+          <Button
+            title="Kthehu në fillim"
+            onPress={() => navigate("home")}
+          />
+          {quiz.questions.length > 0 && (
+            <View style={styles.scoreContainer}>
+              {quiz.questions.map((question, index) => {
+                const historyItem = quizHistory.find(
+                  (item) => item.questionIndex === index,
                 );
-            })}
-          </View>
-        )}
-        {selectedQuestionDetails && selectedHistoryItem && (
-          <View style={styles.selectedQuestionDetails}>
-                   {/* {selectedQuestion && (
-              <Question
-                  key={quiz.questions[selectedQuestion].title}
-                  question={quiz.questions[selectedQuestion]}
-                  alternativeSelected={selectedQuestion}
-                  history={quizHistory}
-                />
-            )} */}
-            <Text style={styles.title2}>
-              {selectedQuestionDetails.title}
-            </Text>
-            <Text style={styles.subtitle}>
-              Your answer:{" "}
-              {selectedQuestionDetails
-                .alternatives[selectedHistoryItem.alternativeSelected || 0]}
-            </Text>
-            <Text></Text>
-            <Text style={styles.subtitle}>
-              Correct answer:{" "}
-              {selectedQuestionDetails
-                .alternatives[selectedQuestionDetails.correct]}
-            </Text>
-            {selectedQuestionDetails.explanation && (
-              <Text style={styles.subtitle}>
-                Pergjigja e plote: {selectedQuestionDetails.explanation}
+                const isAnswered = !!historyItem;
+                const isCorrect = isAnswered &&
+                  question.correct === historyItem?.alternativeSelected;
+                const isSelected = selectedQuestion === index;
+                return isAnswered
+                  ? (
+                    <TouchableOpacity
+                      style={[
+                        styles.scoreButton,
+                        !isAnswered && styles.scoreButtonGray,
+                        isAnswered && isCorrect && styles.scoreButtonCorrect,
+                        isAnswered && !isCorrect && styles.scoreButtonIncorrect,
+                        isSelected && styles.scoreButtonSelected,
+                      ]}
+                      key={question.title}
+                      onPress={() => handleQuestionPress(index)}
+                    >
+                      <Text style={[{ color: "black" }, isSelected && { color: "white", fontWeight: "bold" }]}>
+                        {`${index + 1}`}
+                      </Text>
+                    </TouchableOpacity>
+                  )
+                  : (
+                    <View style={styles.scoreButtonGray} key={question.title}>
+                      <Text style={{ color: "black" }}>
+                        {`${index + 1}`}
+                      </Text>
+                    </View>
+                  );
+              })}
+            </View>
+          )}
+          {selectedQuestionDetails && selectedHistoryItem && (
+            <View style={styles.selectedQuestionDetails}>
+              <Text style={styles.title2}>
+                {selectedQuestionDetails.title}
               </Text>
-            )}
-          </View>
-        )}
-      </Animated.View>
-    </ScrollView>
+              {selectedQuestionDetails.alternatives.map((alternative, index) => {
+                let status: 'correct' | 'incorrect' | 'neutral' = 'neutral';
+                if (index === selectedQuestionDetails.correct) {
+                  status = 'correct';
+                } else if (index === selectedHistoryItem.alternativeSelected) {
+                  status = 'incorrect';
+                }
+                return (
+                  <Option
+                    key={index}
+                    title={alternative}
+                    checked={selectedHistoryItem.alternativeSelected !== null ? selectedHistoryItem.alternativeSelected === index : selectedHistoryItem.alternativeSelected === index}
+                    status={status}
+                  />
+                );
+              })}
+              {selectedQuestionDetails.explanation && (
+                <Text style={styles.subtitle}>
+                  Pergjigja e plote: {selectedQuestionDetails.explanation}
+                </Text>
+              )}
+            </View>
+          )}
+        </Animated.View>
+      </ScrollView>
     </SafeAreaView>
   );
 }

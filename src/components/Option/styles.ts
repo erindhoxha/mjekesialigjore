@@ -24,5 +24,13 @@ export const styles = StyleSheet.create({
   },
   checked: {
     borderColor: THEME.COLORS.BRAND_LIGHT
-  }
+  },
+  correct: {
+    borderColor: THEME.COLORS.BRAND_MID,
+    borderWidth: 1,
+  },
+  incorrect: {
+    borderColor: THEME.COLORS.DANGER_LIGHT,
+    borderWidth: 1,
+  },
 });

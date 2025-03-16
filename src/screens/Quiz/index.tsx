@@ -261,8 +261,6 @@ export function Quiz() {
   useEffect(() => {
     const quizSelected = QUIZ.filter((item) => item.id === id)[0];
 
-    console.log(quizSelected);
-
     setQuiz(quizSelected);
     setIsLoading(false);
   }, []);

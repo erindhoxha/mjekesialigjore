@@ -15,6 +15,7 @@ import { useSharedValue, withTiming, Easing } from 'react-native-reanimated';
 type Props = TouchableOpacityProps & {
   checked: boolean;
   title: string;
+  status?: 'correct' | 'incorrect' | 'neutral';
 }
 
 const CHECK_SIZE = 28;
@@ -22,7 +23,7 @@ const CHECK_STROKE = 2;
 const RADIUS = (CHECK_SIZE - CHECK_STROKE) / 2;
 const CENTER_CIRCLE = RADIUS / 2;
 
-export function Option({ checked, title, ...rest }: Props) {
+export function Option({ checked, title, status = 'neutral', ...rest }: Props) {
   const percentage = useSharedValue(0);
   const circle = useSharedValue(0);
 
@@ -39,11 +40,23 @@ export function Option({ checked, title, ...rest }: Props) {
     }
   }, [checked]);
 
+  const getStatusStyle = () => {
+    switch (status) {
+      case 'correct':
+        return styles.correct;
+      case 'incorrect':
+        return styles.incorrect;
+      default:
+        return {};
+    }
+  };
+
   return (
     <TouchableOpacity
       style={[
         styles.container,
-        checked && styles.checked
+        checked && styles.checked,
+        getStatusStyle()
       ]}
       {...rest}
     >
@@ -61,18 +74,17 @@ export function Option({ checked, title, ...rest }: Props) {
 
         <Path
           path={path}
-          color={THEME.COLORS.BRAND_LIGHT}
+          color={status && (status === 'correct' || status === 'neutral') ? THEME.COLORS.BRAND_LIGHT : THEME.COLORS.DANGER_LIGHT}
           style="stroke"
           strokeWidth={CHECK_STROKE}
           start={0}
           end={percentage}
         />
-
         <Circle
           cx={CHECK_SIZE}
           cy={CHECK_SIZE}
           r={circle}
-          color={THEME.COLORS.BRAND_LIGHT}
+          color={status && (status === 'correct' || status === 'neutral') ? THEME.COLORS.BRAND_LIGHT : THEME.COLORS.DANGER_LIGHT}
         >
           <BlurMask blur={4} style="solid" />
         </Circle>
