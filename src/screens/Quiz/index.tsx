@@ -86,7 +86,6 @@ export function Quiz() {
             id: new Date().getTime().toString(),
             title: quiz.title,
             points: updatedPoints,
-            level: quiz.level,
             questions: quiz.questions.length,
             questionIndex: currentQuestion,
             alternativeSelected: alternativeSelected || 0,
@@ -112,7 +111,6 @@ export function Quiz() {
     await historyAdd({
       id: new Date().getTime().toString(),
       title: quiz.title,
-      level: quiz.level,
       points: updatedPoints,
       questions: quiz.questions.length,
     });
@@ -180,7 +178,7 @@ export function Quiz() {
 
   function handleStop() {
     if (currentQuestion === 0) {
-      Alert.alert("Parar", "Deshiron te kthehesh?", [
+      Alert.alert("Kthehu", "Deshiron te kthehesh?", [
         {
           text: "Jo",
           style: "cancel",
@@ -291,7 +289,7 @@ export function Quiz() {
       /> */
       }
       <Animated.View style={fixedProgressBarStyles}>
-        <Text style={styles.title}>{quiz.title}</Text>
+        {quiz.title && <Text style={styles.title}>{quiz.title}</Text>}
         <ProgressBar
           total={quiz.questions.length}
           current={currentQuestion + 1}
@@ -305,11 +303,13 @@ export function Quiz() {
         scrollEventThrottle={16}
       >
         <Animated.View style={[styles.header, headerStyles]}>
-          <QuizHeader
-            title={quiz.title}
-            currentQuestion={currentQuestion + 1}
-            totalOfQuestions={quiz.questions.length}
-          />
+          {quiz.title && (
+            <QuizHeader
+              title={quiz.title}
+              currentQuestion={currentQuestion + 1}
+              totalOfQuestions={quiz.questions.length}
+            />
+          )}
         </Animated.View>
 
         <GestureDetector gesture={onPan}>
@@ -329,17 +329,6 @@ export function Quiz() {
         <View style={styles.footer}>
           <OutlineButton title="Kthehu" onPress={handleStop} />
           <ConfirmButton onPress={handleConfirm} />
-        </View>
-
-        <View style={styles.footerSub}>
-          <TouchableOpacity
-            style={styles.footerButton}
-            onPress={() => navigate("home")}
-          >
-            <Text style={styles.footerButtonTitle}>
-              Kthehu ne fillim
-            </Text>
-          </TouchableOpacity>
         </View>
 
         {quiz.questions.length > 0 && (
@@ -370,6 +359,28 @@ export function Quiz() {
             })}
           </View>
         )}
+        <View style={styles.footerSub}>
+          <TouchableOpacity
+            style={styles.footerButton}
+            onPressIn={() => {
+              Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+                {
+                  text: "Jo",
+                  style: "cancel",
+                },
+                {
+                  text: "Po",
+                  style: "destructive",
+                  onPress: () => navigate("home"),
+                },
+              ]);
+            }}
+          >
+            <Text style={styles.footerButtonTitle}>
+              Kthehu ne faqen kryesore
+            </Text>
+          </TouchableOpacity>
+        </View>
       </Animated.ScrollView>
     </View>
   );

@@ -14,8 +14,6 @@ type Props = TouchableOpacityProps & {
 const TouchableOpacityAnimated = Animated.createAnimatedComponent(TouchableOpacity);
 
 export function QuizCard({ index, data, ...rest }: Props) {
-  const Icon = data.svg;
-
   return (
     <TouchableOpacityAnimated
       entering={FadeInUp.delay(index * 100)}
@@ -24,9 +22,7 @@ export function QuizCard({ index, data, ...rest }: Props) {
       {...rest}
     >
       <View style={styles.header}>
-        <View style={styles.iconContainer}>
-          {Icon && <Icon size={24} color={THEME.COLORS.GREY_100} />}
-        </View>
+        <Text style={styles.subtitle}>{data.subtitle}</Text>
       </View>
       <View style={{flexDirection:'row'}}> 
         <Text style={styles.title}>

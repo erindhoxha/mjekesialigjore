@@ -23,6 +23,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  subtitle: {
+    fontSize: 16,
+    color: THEME.COLORS.GREY_100,
+  },
   iconContainer: {
     width: 40,
     height: 40,
@@ -34,13 +38,13 @@ export const styles = StyleSheet.create({
   title: {
     flex: 1,
     fontSize: 16,
-    fontFamily: THEME.FONTS.REGULAR,
+    fontFamily: THEME.FONTS.BOLD,
     color: THEME.COLORS.GREY_100,
-    marginTop: 24,
+    marginTop: 12,
   },
   description: {
     flex: 1,
-    fontSize: 12,
+    fontSize: 14,
     fontFamily: THEME.FONTS.REGULAR,
     color: THEME.COLORS.GREY_100,
     marginTop: 12

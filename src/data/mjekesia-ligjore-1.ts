@@ -1,7 +1,6 @@
 export const MJEKESIA_LIGJORE_1 = {
   id: "1",
   title: "Mjekesia Ligjore I",
-  level: 1,
   questions: [
     {
       title:

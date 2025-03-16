@@ -1,7 +1,6 @@
 export const PYETJE_TE_PERGJITHSHME_1 =   {
  id: '2',
  title: 'Pyetje të Përgjithshme',
- level: 1,
  questions: [
    {
      title: 'Cili është kryeqyteti i Shqipërisë?',

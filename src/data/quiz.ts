@@ -7,7 +7,6 @@ export const QUIZ = [
   {
     id: '3',
     title: 'Histori',
-    level: 2,
     questions: [
       {
         title: 'Kush ishte heroi kombëtar i Shqipërisë?',
@@ -44,7 +43,6 @@ export const QUIZ = [
   {
     id: '4',
     title: 'Gjeografi',
-    level: 2,
     questions: [
       {
         title: 'Cili është mali më i lartë në Shqipëri?',
@@ -81,7 +79,6 @@ export const QUIZ = [
   {
     id: '5',
     title: 'Kulturë',
-    level: 3,
     questions: [
       {
         title: 'Cila është festa kombëtare e Shqipërisë?',
@@ -118,7 +115,6 @@ export const QUIZ = [
   {
     id: '6',
     title: 'Sport',
-    level: 1,
     questions: [
       {
         title: 'Cili është sporti më i njohur në Shqipëri?',

@@ -9,7 +9,6 @@ export type HistoryProps = {
   questions: number;
   questionIndex?: number;
   alternativeSelected?: number;
-  level: number;
 }
 
 type Props = {
