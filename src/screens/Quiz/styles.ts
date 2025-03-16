@@ -16,6 +16,29 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 24,
   },
+  footerSub: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 24,
+    width: '100%',
+  },
+  footerButton: {
+    width: '100%',
+    display: 'flex',
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: THEME.COLORS.DANGER_LIGHT,
+    color: THEME.COLORS.DANGER_LIGHT,
+  },
+  footerButtonTitle: {
+    color: THEME.COLORS.DANGER_LIGHT,
+    fontFamily: 'Roboto_700Bold',
+    fontSize: 16
+  },
   title: {
     fontFamily: THEME.FONTS.BOLD,
     color: THEME.COLORS.GREY_100,

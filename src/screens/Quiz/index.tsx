@@ -25,6 +25,9 @@ import { ConfirmButton } from "../../components/ConfirmButton";
 import { OutlineButton } from "../../components/OutlineButton";
 import { ProgressBar } from "../../components/ProgressBar";
 import { HistoryProps } from "../../components/HistoryCard";
+import { Header } from "../../components/Header";
+import { Trophy } from "phosphor-react-native";
+import { Button } from "../../components/Button";
 
 interface Params {
   id: string;
@@ -134,20 +137,21 @@ export function Quiz() {
     ) {
       return handleSkipConfirm();
     }
-  
+
     let updatedPoints = points;
-  
+
     if (currentQuestionHistory?.alternativeSelected !== undefined) {
       if (
-        currentQuestionHistory.alternativeSelected === quiz.questions[currentQuestion].correct &&
+        currentQuestionHistory.alternativeSelected ===
+          quiz.questions[currentQuestion].correct &&
         alternativeSelected !== quiz.questions[currentQuestion].correct
       ) {
         updatedPoints = points - 1;
         setPoints(updatedPoints);
         setStatusReply(2);
-      }
-      else if (
-        currentQuestionHistory.alternativeSelected !== quiz.questions[currentQuestion].correct &&
+      } else if (
+        currentQuestionHistory.alternativeSelected !==
+          quiz.questions[currentQuestion].correct &&
         alternativeSelected === quiz.questions[currentQuestion].correct
       ) {
         updatedPoints = points + 1;
@@ -155,7 +159,9 @@ export function Quiz() {
         setStatusReply(1);
       } else {
         setStatusReply(
-          alternativeSelected === quiz.questions[currentQuestion].correct ? 1 : 2
+          alternativeSelected === quiz.questions[currentQuestion].correct
+            ? 1
+            : 2,
         );
       }
     } else {
@@ -167,7 +173,7 @@ export function Quiz() {
         setStatusReply(2);
       }
     }
-  
+
     setAlternativeSelected(null);
     handleNextQuestion(updatedPoints);
   }
@@ -276,9 +282,16 @@ export function Quiz() {
 
   return (
     <View style={styles.container}>
+      {
+        /* <Header
+        icon={Trophy}
+        title="Mjekesia ligjore"
+        subtitle="Bazuar nga libri i mjekesise ligjore"
+        onPress={() => navigate('history')}
+      /> */
+      }
       <Animated.View style={fixedProgressBarStyles}>
         <Text style={styles.title}>{quiz.title}</Text>
-
         <ProgressBar
           total={quiz.questions.length}
           current={currentQuestion + 1}
@@ -316,6 +329,17 @@ export function Quiz() {
         <View style={styles.footer}>
           <OutlineButton title="Kthehu" onPress={handleStop} />
           <ConfirmButton onPress={handleConfirm} />
+        </View>
+
+        <View style={styles.footerSub}>
+          <TouchableOpacity
+            style={styles.footerButton}
+            onPress={() => navigate("home")}
+          >
+            <Text style={styles.footerButtonTitle}>
+              Kthehu ne fillim
+            </Text>
+          </TouchableOpacity>
         </View>
 
         {quiz.questions.length > 0 && (
