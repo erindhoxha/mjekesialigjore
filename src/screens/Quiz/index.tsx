@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Alert, BackHandler, Text, TouchableOpacity, View } from "react-native";
 import Animated, {
   Extrapolate,
@@ -28,6 +28,7 @@ import { HistoryProps } from "../../components/HistoryCard";
 import { Header } from "../../components/Header";
 import { Trophy, House } from "phosphor-react-native";
 import { Button } from "../../components/Button";
+import { RNNativeScrollEvent } from "react-native-reanimated/lib/typescript/hook/commonTypes";
 
 interface Params {
   id: string;
@@ -65,6 +66,8 @@ export function Quiz() {
     Alert.alert("Për të kaluar", "Nuk keni zgjedhur asnjë përgjigje.");
   }
 
+  const scrollViewRef = useRef<Animated.ScrollView>(null);
+
   function handleNextQuestion(updatedPoints: number) {
     setQuizHistory((prevState) => {
       const existingHistoryIndex = prevState.findIndex((history) =>
@@ -93,9 +96,10 @@ export function Quiz() {
         ];
       }
     });
-
     if (currentQuestion < quiz.questions.length - 1) {
       setCurrentQuestion((prevState) => prevState + 1);
+      // Scroll to top when moving to the next question
+      scrollViewRef.current?.scrollTo({ y: 0, animated: true });
     } else {
       setQuizHistory((prevState) => {
         handleFinished(updatedPoints, prevState);
@@ -302,6 +306,7 @@ export function Quiz() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.question}
         onScroll={scrollHandler}
+        ref={scrollViewRef}
         scrollEventThrottle={16}
       >
         <Animated.View style={[styles.header, headerStyles]}>

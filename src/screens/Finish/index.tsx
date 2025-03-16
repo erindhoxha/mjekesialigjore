@@ -3,7 +3,6 @@ import { ScrollView, Text, View } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Button } from "../../components/Button";
-import { Stars } from "../../components/Stars";
 
 import { styles } from "./styles";
 import { HistoryProps } from "../../components/HistoryCard";
@@ -11,10 +10,8 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { QUIZ } from "../../data/quiz";
 import Animated from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Question } from "../../components/Question";
 import { Option } from "../../components/Option";
 import { OutlineButton } from "../../components/OutlineButton";
-import { ConfirmButton } from "../../components/ConfirmButton";
 
 type QuizProps = typeof QUIZ[0];
 interface Params {
@@ -28,9 +25,6 @@ export function Finish() {
   const route = useRoute();
   const { points, total, quizHistory, quiz } = route.params as Params;
 
-  const [selectedHistoryQuestion, setSelectedHistoryQuestion] = useState<
-    number | null
-  >(null);
   const { navigate } = useNavigation();
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(0);
 
