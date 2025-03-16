@@ -8,8 +8,14 @@ export const styles = StyleSheet.create({
     padding: 32,
     paddingTop: 51,
   },
+  footer: {
+    marginTop: 24,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
   scoreButtonSelected: {
-    backgroundColor: THEME.COLORS.STAR_GREY,
     borderWidth: 1,
     borderColor: THEME.COLORS.WHITE,
     fontFamily: THEME.FONTS.BOLD,
@@ -82,7 +88,6 @@ export const styles = StyleSheet.create({
   },
   selectedQuestionDetails: {
     marginTop: 24,
-    backgroundColor: THEME.COLORS.GREY_700,
     borderRadius: 8,
   },
 });

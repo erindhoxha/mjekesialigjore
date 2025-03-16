@@ -13,6 +13,8 @@ import Animated from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Question } from "../../components/Question";
 import { Option } from "../../components/Option";
+import { OutlineButton } from "../../components/OutlineButton";
+import { ConfirmButton } from "../../components/ConfirmButton";
 
 type QuizProps = typeof QUIZ[0];
 interface Params {
@@ -26,9 +28,11 @@ export function Finish() {
   const route = useRoute();
   const { points, total, quizHistory, quiz } = route.params as Params;
 
-  const [selectedHistoryQuestion, setSelectedHistoryQuestion] = useState<number | null>(null);
+  const [selectedHistoryQuestion, setSelectedHistoryQuestion] = useState<
+    number | null
+  >(null);
   const { navigate } = useNavigation();
-  const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
+  const [selectedQuestion, setSelectedQuestion] = useState<number | null>(0);
 
   const handleQuestionPress = (index: number) => {
     setSelectedQuestion(index);
@@ -54,7 +58,9 @@ export function Finish() {
               {points === total ? "Bravo!" : "Më mirë herën tjetër!"}
             </Text>
             <Text style={styles.subtitle}>
-              Ju keni përgjigjur saktë <Text style={styles.bold}>{points}</Text> nga <Text style={styles.bold}>{total}</Text> pyetje
+              Ju keni përgjigjur saktë <Text style={styles.bold}>{points}</Text>
+              {" "}
+              nga <Text style={styles.bold}>{total}</Text> pyetje
             </Text>
           </View>
           <Button
@@ -84,7 +90,12 @@ export function Finish() {
                       key={question.title}
                       onPress={() => handleQuestionPress(index)}
                     >
-                      <Text style={[{ color: "black" }, isSelected && { color: "white", fontWeight: "bold" }]}>
+                      <Text
+                        style={[
+                          { color: "white" },
+                          isSelected && { color: "white", fontWeight: "bold" },
+                        ]}
+                      >
                         {`${index + 1}`}
                       </Text>
                     </TouchableOpacity>
@@ -104,22 +115,28 @@ export function Finish() {
               <Text style={styles.title2}>
                 {selectedQuestionDetails.title}
               </Text>
-              {selectedQuestionDetails.alternatives.map((alternative, index) => {
-                let status: 'correct' | 'incorrect' | 'neutral' = 'neutral';
-                if (index === selectedQuestionDetails.correct) {
-                  status = 'correct';
-                } else if (index === selectedHistoryItem.alternativeSelected) {
-                  status = 'incorrect';
-                }
-                return (
-                  <Option
-                    key={index}
-                    title={alternative}
-                    checked={selectedHistoryItem.alternativeSelected !== null ? selectedHistoryItem.alternativeSelected === index : selectedHistoryItem.alternativeSelected === index}
-                    status={status}
-                  />
-                );
-              })}
+              {selectedQuestionDetails.alternatives.map(
+                (alternative, index) => {
+                  let status: "correct" | "incorrect" | "neutral" = "neutral";
+                  if (index === selectedQuestionDetails.correct) {
+                    status = "correct";
+                  } else if (
+                    index === selectedHistoryItem.alternativeSelected
+                  ) {
+                    status = "incorrect";
+                  }
+                  return (
+                    <Option
+                      key={index}
+                      title={alternative}
+                      checked={selectedHistoryItem.alternativeSelected !== null
+                        ? selectedHistoryItem.alternativeSelected === index
+                        : selectedHistoryItem.alternativeSelected === index}
+                      status={status}
+                    />
+                  );
+                },
+              )}
               {selectedQuestionDetails.explanation && (
                 <Text style={styles.subtitle}>
                   Pergjigja e plote: {selectedQuestionDetails.explanation}
@@ -128,6 +145,27 @@ export function Finish() {
             </View>
           )}
         </Animated.View>
+        <View style={styles.footer}>
+          <OutlineButton
+            title="Kthehu"
+            onPress={() => {
+              if (selectedQuestion !== null && selectedQuestion > 0) {
+                setSelectedQuestion(selectedQuestion - 1);
+              }
+            }}
+          />
+          <Button
+            title="Vazhdo"
+            onPress={() => {
+              if (
+                selectedQuestion !== null &&
+                selectedQuestion < quiz.questions.length - 1
+              ) {
+                setSelectedQuestion(selectedQuestion + 1);
+              }
+            }}
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
