@@ -1,50 +1,26 @@
-![cover](.github/cover.png)
+# Mjekesia Ligjore
 
-## :computer: Project
+## Overview
+Mjekesia Ligjore is a quiz-based learning app designed to help users test their knowledge of the book "Mjekesia Ligjore." The app consists of multiple-choice quizzes that cover all seven chapters of the book, allowing users to reinforce their understanding through interactive learning.
 
-Quiz app in React Native focusing on animations and micro interactions.
+## Features
+- **Chapter-Based Quizzes**: Each of the seven chapters contains multiple quizzes.
+- **Four Questions per Quiz**: Each quiz consists of four multiple-choice questions.
+- **Skill Testing**: Users can assess their knowledge and track their progress.
+- **Educational Tool**: Ideal for students, professionals, and anyone interested in legal medicine.
 
-<div align="center">
-  <video src="https://user-images.githubusercontent.com/22561893/230719225-0eda7d9b-cab6-409a-a9f9-7ec8c1ec7ecd.MP4" width="400" />
-</div>
+## How to Use
+1. Open the app and select a chapter to begin.
+2. Answer four multiple-choice questions per quiz.
+3. Submit your answers to see the correct responses.
+4. Track your progress and improve your knowledge over time.
 
-## :rocket: Techs
+## License
+This project is licensed under the MIT License. See `LICENSE` for more details.
 
-- [x] [React Native](https://reactnative.dev)
-- [x] [Expo](https://docs.expo.dev)
-- [x] [TypeScript](https://www.typescriptlang.org)
-- [x] [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated)
-- [x] [React Native Skia](https://shopify.github.io/react-native-skia)
-- [x] [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/docs)
-- [x] [Expo AV](https://docs.expo.dev/versions/latest/sdk/av)
-- [x] [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics)
+## Contact
+For questions or suggestions, feel free to open an issue or reach out to the maintainer.
 
-## :hammer_and_wrench: Features
+---
+Happy learning with **Mjekesia Ligjore**! 🚀
 
-- [x] Keyframe animation
-- [x] Shake animation
-- [x] Entry and exit animation
-- [x] Rotate animation
-
-
-- [x] Layout animation
-- [x] Swipeable interaction
-- [x] Fixed header on scroll up
-- [x] SVG Path animation using Skia
-- [x] Check animation using Skia
-- [x] Audio as feedback
-- [x] Vibration as feedback
-
-## :gear: Run project
-
-Install dependencies:
-
-```bash
-$ npm i
-```
-
-Run app:
-
-```bash
-$ npm run start
-```

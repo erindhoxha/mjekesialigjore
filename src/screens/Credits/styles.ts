@@ -33,8 +33,26 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 12,
   },
+  text1: {
+    color: THEME.COLORS.GREY_100,
+    fontFamily: THEME.FONTS.REGULAR,
+    fontSize: 14,
+    lineHeight: 18,
+    marginBottom: 2,
+  },
+  text2: {
+    color: THEME.COLORS.GREY_300,
+    fontFamily: THEME.FONTS.REGULAR,
+    fontSize: 12,
+    lineHeight: 18,
+    marginBottom: 12,
+  },
   textContainer: {
    flex: 1,
    padding: 32,
-  }
+  },
+  link: {
+    color: THEME.COLORS.BRAND_MID,
+    textDecorationLine: 'underline',
+  },
 });

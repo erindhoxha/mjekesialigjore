@@ -289,7 +289,7 @@ export function Quiz() {
         title={quiz.title}
         subtitle={quiz.description}
         onPress={() => {
-          Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+          Alert.alert("Kthehu", "Dëshiron te kthehësh ne fillim?", [
             {
               text: "Jo",
               style: "cancel",
@@ -370,7 +370,7 @@ export function Quiz() {
           <TouchableOpacity
             style={styles.footerButton}
             onPressIn={() => {
-              Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+              Alert.alert("Kthehu", "Dëshiron te kthehësh?", [
                 {
                   text: "Jo",
                   style: "cancel",
