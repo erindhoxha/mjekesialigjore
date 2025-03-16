@@ -69,7 +69,6 @@ export function Quiz() {
       );
 
       if (existingHistoryIndex !== -1) {
-        // Update existing history
         const updatedHistory = [...prevState];
         updatedHistory[existingHistoryIndex] = {
           ...updatedHistory[existingHistoryIndex],
@@ -78,7 +77,6 @@ export function Quiz() {
         };
         return updatedHistory;
       } else {
-        // Add new history entry
         return [
           ...prevState,
           {
@@ -123,18 +121,11 @@ export function Quiz() {
       quiz: quiz,
     });
   }
-  console.log(quizHistory.length);
-
   function handlePreviousQuestion() {
     if (currentQuestion > 0) {
       setCurrentQuestion((prevState) => prevState - 1);
-      let updatedPoints = points;
-      updatedPoints = points - 1;
-      setPoints(updatedPoints);
     }
   }
-
-  console.log("ALT", alternativeSelected);
 
   async function handleConfirm() {
     if (
@@ -143,16 +134,40 @@ export function Quiz() {
     ) {
       return handleSkipConfirm();
     }
-
+  
     let updatedPoints = points;
-
-    if (quiz.questions[currentQuestion].correct === alternativeSelected) {
-      updatedPoints = points + 1;
-      setPoints(updatedPoints);
-      setStatusReply(1);
+  
+    if (currentQuestionHistory?.alternativeSelected !== undefined) {
+      if (
+        currentQuestionHistory.alternativeSelected === quiz.questions[currentQuestion].correct &&
+        alternativeSelected !== quiz.questions[currentQuestion].correct
+      ) {
+        updatedPoints = points - 1;
+        setPoints(updatedPoints);
+        setStatusReply(2);
+      }
+      else if (
+        currentQuestionHistory.alternativeSelected !== quiz.questions[currentQuestion].correct &&
+        alternativeSelected === quiz.questions[currentQuestion].correct
+      ) {
+        updatedPoints = points + 1;
+        setPoints(updatedPoints);
+        setStatusReply(1);
+      } else {
+        setStatusReply(
+          alternativeSelected === quiz.questions[currentQuestion].correct ? 1 : 2
+        );
+      }
     } else {
-      setStatusReply(2);
+      if (quiz.questions[currentQuestion].correct === alternativeSelected) {
+        updatedPoints = points + 1;
+        setPoints(updatedPoints);
+        setStatusReply(1);
+      } else {
+        setStatusReply(2);
+      }
     }
+  
     setAlternativeSelected(null);
     handleNextQuestion(updatedPoints);
   }

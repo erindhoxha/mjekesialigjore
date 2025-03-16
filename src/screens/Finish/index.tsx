@@ -11,6 +11,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { QUIZ } from "../../data/quiz";
 import Animated from "react-native-reanimated";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Question } from "../../components/Question";
 
 type QuizProps = typeof QUIZ[0];
 interface Params {
@@ -99,6 +100,14 @@ export function Finish() {
         )}
         {selectedQuestionDetails && selectedHistoryItem && (
           <View style={styles.selectedQuestionDetails}>
+                   {/* {selectedQuestion && (
+              <Question
+                  key={quiz.questions[selectedQuestion].title}
+                  question={quiz.questions[selectedQuestion]}
+                  alternativeSelected={selectedQuestion}
+                  history={quizHistory}
+                />
+            )} */}
             <Text style={styles.title2}>
               {selectedQuestionDetails.title}
             </Text>
@@ -107,14 +116,17 @@ export function Finish() {
               {selectedQuestionDetails
                 .alternatives[selectedHistoryItem.alternativeSelected || 0]}
             </Text>
+            <Text></Text>
             <Text style={styles.subtitle}>
               Correct answer:{" "}
               {selectedQuestionDetails
                 .alternatives[selectedQuestionDetails.correct]}
             </Text>
-            <Text style={styles.subtitle}>
-              Explanation: {selectedQuestionDetails.explanation}
-            </Text>
+            {selectedQuestionDetails.explanation && (
+              <Text style={styles.subtitle}>
+                Pergjigja e plote: {selectedQuestionDetails.explanation}
+              </Text>
+            )}
           </View>
         )}
       </Animated.View>

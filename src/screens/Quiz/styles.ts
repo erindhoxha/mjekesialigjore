@@ -29,6 +29,7 @@ export const styles = StyleSheet.create({
   },
   scoreContainer: {
     display: 'flex',
+    flexWrap: 'wrap',
     width: '100%',
     marginTop: 24,
     flexDirection: 'row',
