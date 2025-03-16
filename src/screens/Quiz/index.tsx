@@ -26,7 +26,7 @@ import { OutlineButton } from "../../components/OutlineButton";
 import { ProgressBar } from "../../components/ProgressBar";
 import { HistoryProps } from "../../components/HistoryCard";
 import { Header } from "../../components/Header";
-import { Trophy } from "phosphor-react-native";
+import { Trophy, House } from "phosphor-react-native";
 import { Button } from "../../components/Button";
 
 interface Params {
@@ -261,6 +261,8 @@ export function Quiz() {
   useEffect(() => {
     const quizSelected = QUIZ.filter((item) => item.id === id)[0];
 
+    console.log(quizSelected);
+
     setQuiz(quizSelected);
     setIsLoading(false);
   }, []);
@@ -280,22 +282,24 @@ export function Quiz() {
 
   return (
     <View style={styles.container}>
-      {
-        /* <Header
-        icon={Trophy}
-        title="Mjekesia ligjore"
-        subtitle="Bazuar nga libri i mjekesise ligjore"
-        onPress={() => navigate('history')}
-      /> */
-      }
-      <Animated.View style={fixedProgressBarStyles}>
-        {quiz.title && <Text style={styles.title}>{quiz.title}</Text>}
-        <ProgressBar
-          total={quiz.questions.length}
-          current={currentQuestion + 1}
-        />
-      </Animated.View>
-
+      <Header
+        icon={House}
+        title={quiz.title}
+        subtitle={quiz.description}
+        onPress={() => {
+          Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+            {
+              text: "Jo",
+              style: "cancel",
+            },
+            {
+              text: "Po",
+              style: "destructive",
+              onPress: () => navigate("home"),
+            },
+          ]);
+        }}
+      />
       <Animated.ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.question}

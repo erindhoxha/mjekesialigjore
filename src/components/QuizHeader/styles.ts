@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 8,
-    marginTop: 40,
   },
   title: {
     fontFamily: THEME.FONTS.BOLD,

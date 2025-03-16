@@ -1,5 +1,5 @@
 import { FlatList, View } from 'react-native';
-import { Trophy } from 'phosphor-react-native';
+import { Trophy, Medal } from 'phosphor-react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import { Header } from '../../components/Header';
@@ -14,10 +14,10 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Header
-        icon={Trophy}
-        title="Mjekesia ligjore"
-        subtitle="Bazuar nga libri i mjekesise ligjore"
-        onPress={() => navigate('history')}
+        icon={Medal}
+        onPress={() => navigate('credits')}
+        title="Mjekësia Ligjore"
+        subtitle="Teste teorike për mjekësinë ligjore"
       />
       <FlatList
         data={QUIZZES}

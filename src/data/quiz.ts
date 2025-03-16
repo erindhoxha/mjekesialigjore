@@ -6,7 +6,8 @@ export const QUIZ = [
   PYETJE_TE_PERGJITHSHME_1,
   {
     id: '3',
-    title: 'Histori',
+    title: 'Pjesa e tretë',
+    description: "Investigimi mjekoligjor përballë krimeve kunder shëndetit",
     questions: [
       {
         title: 'Kush ishte heroi kombëtar i Shqipërisë?',
@@ -42,7 +43,8 @@ export const QUIZ = [
   },
   {
     id: '4',
-    title: 'Gjeografi',
+    title: 'Pjesa e katërt',
+    description: "Identifikimi mjekoligjor",
     questions: [
       {
         title: 'Cili është mali më i lartë në Shqipëri?',
@@ -78,7 +80,8 @@ export const QUIZ = [
   },
   {
     id: '5',
-    title: 'Kulturë',
+    title: 'Pjesa e pestë',
+    description: "Investigimi i provave materiale biologjike",
     questions: [
       {
         title: 'Cila është festa kombëtare e Shqipërisë?',
@@ -114,7 +117,45 @@ export const QUIZ = [
   },
   {
     id: '6',
-    title: 'Sport',
+    title: 'Pjesa e gjashtë',
+    description: "Etika dhe deontologjia mjekësore",
+    questions: [
+      {
+        title: 'Cili është sporti më i njohur në Shqipëri?',
+        alternatives: [
+          'Futbolli',
+          'Basketbolli',
+          'Volejbolli',
+          'Tenisi'
+        ],
+        correct: 0
+      },
+      {
+        title: 'Cili është klubi më i suksesshëm i futbollit në Shqipëri?',
+        alternatives: [
+          'KF Tirana',
+          'Partizani',
+          'Skënderbeu',
+          'Vllaznia'
+        ],
+        correct: 0
+      },
+      {
+        title: 'Cili është sportisti më i njohur shqiptar?',
+        alternatives: [
+          'Lorik Cana',
+          'Edi Rama',
+          'Ismail Qemali',
+          'Gjergj Kastrioti'
+        ],
+        correct: 0
+      },
+    ]
+  },
+  {
+    id: '7',
+    title: 'Pjesa e shtatë',
+    description: "Ekspertiza mjekësore në procedurë civile",
     questions: [
       {
         title: 'Cili është sporti më i njohur në Shqipëri?',

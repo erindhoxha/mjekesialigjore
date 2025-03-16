@@ -1,6 +1,7 @@
 export const PYETJE_TE_PERGJITHSHME_1 =   {
  id: '2',
- title: 'Pyetje të Përgjithshme',
+ title: 'Pjesa e dytë',
+ description: "Investigimi mjekoligjor përballë krimeve kunder jetës së personit",
  questions: [
    {
      title: 'Cili është kryeqyteti i Shqipërisë?',

@@ -7,23 +7,22 @@ import { IconProps } from 'phosphor-react-native';
 type Props = {
   title: string;
   subtitle: string;
-  onPress: () => void;
-  icon: React.FC<IconProps>;
+  onPress?: () => void;
+  icon?: React.FC<IconProps>;
 }
 
 export function Header({ title, subtitle, icon: Icon, onPress }: Props) {
   return (
     <View style={styles.container}>
-      <View>
+      <View style={styles.textWrapper}>
         <Text style={styles.title}>
           {title}
         </Text>
-
         <Text style={styles.subtitle}>
           {subtitle}
         </Text>
       </View>
-
+      {Icon && onPress && (
       <TouchableOpacity
         style={styles.history}
         activeOpacity={0.7}
@@ -34,6 +33,7 @@ export function Header({ title, subtitle, icon: Icon, onPress }: Props) {
           color={THEME.COLORS.GREY_100}
         />
       </TouchableOpacity>
+      )}
     </View>
   );
 }

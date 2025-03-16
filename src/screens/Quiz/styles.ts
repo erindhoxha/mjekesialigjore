@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   question: {
     alignItems: 'center',
-    paddingTop: 80,
+    paddingTop: 24,
     paddingBottom: 80,
     padding: 32,
   },

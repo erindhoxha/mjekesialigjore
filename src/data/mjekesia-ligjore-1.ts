@@ -1,6 +1,7 @@
 export const MJEKESIA_LIGJORE_1 = {
   id: "1",
-  title: "Mjekesia Ligjore I",
+  title: 'Pjesa e parë',
+  description: "Konsiderata të përgjithshme",
   questions: [
     {
       title:

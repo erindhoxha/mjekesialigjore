@@ -13,10 +13,6 @@ interface Props {
 export function QuizHeader({ title, totalOfQuestions, currentQuestion }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
-        {title}
-      </Text>
-
       <View style={styles.header}>
         <Text style={styles.question}>
           Pyetja {currentQuestion}
