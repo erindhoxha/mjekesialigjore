@@ -27,10 +27,13 @@ export function Credits() {
         <Text style={styles.h1}>Falenderojme</Text>
         <Text style={styles.text}>Dr. Genta Bunjaku (Doktore, hulumtuese)</Text>
         <Text style={styles.text}>Flamur Blakaj dhe Sokrat Meksi janë autorët e librit Mjekësia Ligjore</Text>
-        <Text style={styles.text}>Mund ta gjeni librin ta bleni ne keto pika te shitjes: Libraria Dukagjini, Libraria Buzuku, IML.</Text>
+        <Text style={styles.text}>Mund ta gjeni librin ta bleni ne keto pika te shitjës: Libraria Dukagjini, Libraria Buzuku, IML.</Text>
         <Text style={styles.text}>Erind Hoxha (Zhvillues i aplikacionit)</Text>
-
-        <Text style={styles.contact}>Kontaktoni ne +38348377390 ose ne mjekesialigjoreapp@gmail.com</Text>
+        <View style={styles.contactWrapper}>
+         <Text style={styles.contact}>Mund të na kontaktoni në:</Text>
+         <Text style={styles.text}>Telefon: +38348377390</Text>
+         <Text style={styles.text}>E-mail: mjekesialigjoreapp@gmail.com</Text>
+        </View>
       </ScrollView>
     </View>
   );

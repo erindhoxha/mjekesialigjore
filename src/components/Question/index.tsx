@@ -37,7 +37,7 @@ export function Question({
   return (
     <Animated.View style={styles.container}>
       {question?.image && <Image style={{
-        width: 400,
+        width: "100%",
         height: 200,
         marginBottom: 24,
       }} source={question.image} />}

@@ -6,7 +6,7 @@ export const MJEKESIA_LIGJORE_1 = {
     {
       title:
         "Cila nga alternativat e mëposhtme nuk është detyrë e mjekësisë ligjore?",
-      //  image: require( "../assets/knife2.png"),
+      image: require( "../assets/image2.png"),
       alternatives: [
         "Zbulimi i shkaqeve të vdekjes",
         "Identifikimi i kufomave",

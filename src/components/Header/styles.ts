@@ -30,6 +30,6 @@ export const styles = StyleSheet.create({
     borderRadius: 6,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: THEME.COLORS.STAR_GREY,
+    backgroundColor: THEME.COLORS.GREY_100,
   }
 });
