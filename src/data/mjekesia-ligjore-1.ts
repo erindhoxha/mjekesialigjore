@@ -96,17 +96,6 @@ export const MJEKESIA_LIGJORE_1 = {
       correct: 1,
     },
     {
-      title: "Në cilat raste mund të kërkohet ekspertimi mjekoligjor në procedurën civile?",
-      alternatives: [
-        "Vetëm në rastet e aksidenteve të trafikut", 
-        "Vetëm në rastet e përcaktimit të atësisë", 
-        "Në rastet e përcaktimit të gjendjes seksuale, moshës dhe dëmtimeve shëndetësore", 
-        "Vetëm në rastet e krimeve seksuale.",
-      ],
-      explanation: "Ekspertimi mjekoligjor në procedurën civile kërkohet në rastet e përcaktimit të gjendjes seksuale, moshës dhe dëmtimeve shëndetësore për të siguruar prova dhe fakte.",
-      correct: 2,
-    },
-    {
       title: "Cili është roli i ekspertit mjekoligjor në identifikimin e kufomave?",
       alternatives: [
         "Të marrë vendime përfundimtare për identitetin e kufomës", 
@@ -124,6 +113,102 @@ export const MJEKESIA_LIGJORE_1 = {
         "Për të përcaktuar shkakun e vdekjes.", 
         "Për të përcaktuar mekanizmin dhe mënyrën e ardhjes së vdekjes ose të plagosjes.",
         "Për të përcaktuar tempin e ardhjes së vdekjes (e atëçastshme ose me mundime)."
+      ],
+      correct: 0,
+    },
+    {
+      title: "Në grup hetimor bejne pjesë:",
+      alternatives: [
+        "Prokurori, eksperti kriminalistik, eksperti mjeko ligjor.", 
+        "Prokurori, eksperti mjeko ligjor, kufoma.",
+        "Eksperti kriminalistik, eksperti mjeko ligjore, eksperti i daktilografise.",
+      ],
+      correct: 0,
+    },
+    {
+      title: "Cila nga keto paraqet Principin e Leocardit?",
+      alternatives: [
+        "Dy objekte mund te jene te padallueshme mes njeri tjetrit, porse asnjehere identike.", 
+        "Kurdohere kur dy objekte ndeshen dhunshem midis tyre, do te shkembejne gjurmet perkatese te njeri tjetrit.", 
+        "Vertete i vdekuri eshte ne gjumin perjetshem qiellor, porse po te dime ta zgjojme per nje cast dicka do te na thote: pse iku nga kjo bote.",
+        "Sic ka vdekje kriminale pa shenja dhune, ka dhe vdekje natyrore me shenja dhune.",
+      ],
+      correct: 1,
+    },
+    {
+      title: "Diferencimi i provave nga me e thejshta dhe te qarta deri tek ato me komplekse dhe te paqarta paraqet:",
+      alternatives: [
+        "Teorine e probabilitetit", 
+        "Besueshmerine teknike", 
+        "Sigurine shkencore",
+      ],
+      correct: 1,
+    },
+    {
+      title: "Teoria e probabilitetit, besueshmeria teknike dhe siguria shkencore paraqesin:",
+      alternatives: [
+        "Principin e Leocardit", 
+        "Principin e individualitetit", 
+        "Kategorine e njohjes shkencore",
+      ],
+      correct: 2,
+    },
+    {
+      title: "Limiti i perfundimit te nje akt espertimi mjekoligjor mbi provat materiale bilogjike eshte:",
+      alternatives: [
+        "1 jave", 
+        "2 jave", 
+        "3 jave",
+      ],
+      correct: 1,
+    },
+    {
+      title: "Limiti i perfundimit te nje ekspertimi mjekoligjor prej 4 javesh eshte tek:",
+      alternatives: [
+        "Akt ekspertimi mbi provat materiale", 
+        "Akt ekspertimi mjekoligjor mbi dokumentat e ceshtjes",
+        "Akt deshmite mjekologjiore ambullantore",
+      ],
+      correct: 1,
+    },
+    {
+      title: "Shpjegimi me i mire i objektit te investigimit tek akti i ekspertimit behet ne pjesen e:",
+      alternatives: [
+        "Hyrjes", 
+        "Peshkrimit", 
+        "Perfundimtare",
+      ],
+      correct: 0,
+    },
+    {
+      title: "Cili nga shembujt e mëposhtëm ilustron më mirë rolin e mjekësisë ligjore në një procedurë civile, në krahasim me një procedurë penale?",
+      alternatives: [
+        "Ekzaminimi i një kufome për të përcaktuar shkakun e vdekjes në një rast vrasjeje.",
+        "Vlerësimi i dëmtimeve trupore të një personi të përfshirë në një aksident automobilistik për qëllime kompensimi.",
+        "Analiza e provave biologjike të gjetura në vendin e krimit për të identifikuar autorin e mundshëm.", 
+        "Përcaktimi i kohës së vdekjes së një personi të gjetur të vdekur në rrethana të dyshimta.",
+      ],
+      correct: 1,
+      explanation: "Opsioni (b) fokusohet në vlerësimin e dëmeve për kompensim, që është një aspekt kryesor i procedurave civile",
+    },
+    {
+      title: "Në cilën nga situatat e mëposhtme përdoret mjekësia ligjore klinike në hetimet mjekoligjore?",
+      alternatives: [
+        "Hetimi i shkaqeve të vdekjes në rastet e vrasjeve.", 
+        "Përcaktimi i shkallës së dehjes alkoolike në rastet e aksidenteve automobilistike.",
+        "Ekzaminimi i kufomave në rastet e krimeve kundër jetës.",
+        "Identifikimi i personave të vdekur.",
+      ],
+      correct: 1,
+      explanation: "Opsionet (a), (c) dhe (d) janë më të lidhura me hetimet penale të krimeve kundër jetës, ku fokusi është te ekzaminimi i kufomave, përcaktimi i shkaqeve të vdekjes dhe identifikimi i viktimave. Ndersa opsioni (b) është i saktë sepse përcaktimi i shkallës së dehjes alkoolike ose intoksikimit nga droga janë shembuj të përdorimit të mjekësisë ligjore klinike në kontekstin e procedurave civile, siç përmendet në tekst.",
+    },
+    {
+      title: "Ne provat biologjike nuk bejne pjese:",
+      alternatives: [
+        "Teshat", 
+        "Lotet",
+        "Peshtyma",
+        "Fekaliet"
       ],
       correct: 0,
     }
