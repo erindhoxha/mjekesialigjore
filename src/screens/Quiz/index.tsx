@@ -69,17 +69,27 @@ export function Quiz() {
   const scrollViewRef = useRef<Animated.ScrollView>(null);
 
   function handleNextQuestion(updatedPoints: number) {
+    console.log(updatedPoints);
     setQuizHistory((prevState) => {
       const existingHistoryIndex = prevState.findIndex((history) =>
         history.questionIndex === currentQuestion
       );
-
+  
+      const existingHistoryAlternativeSelected = prevState[
+        existingHistoryIndex
+      ]?.alternativeSelected;
+  
+      const selectedAlternative =
+        alternativeSelected !== null && alternativeSelected !== undefined
+          ? alternativeSelected
+          : existingHistoryAlternativeSelected;
+  
       if (existingHistoryIndex !== -1) {
         const updatedHistory = [...prevState];
         updatedHistory[existingHistoryIndex] = {
           ...updatedHistory[existingHistoryIndex],
           points: updatedPoints,
-          alternativeSelected: alternativeSelected || 0,
+          alternativeSelected: selectedAlternative,
         };
         return updatedHistory;
       } else {
@@ -91,11 +101,12 @@ export function Quiz() {
             points: updatedPoints,
             questions: quiz.questions.length,
             questionIndex: currentQuestion,
-            alternativeSelected: alternativeSelected || 0,
+            alternativeSelected: selectedAlternative,
           },
         ];
       }
     });
+  
     if (currentQuestion < quiz.questions.length - 1) {
       setCurrentQuestion((prevState) => prevState + 1);
       // Scroll to top when moving to the next question
@@ -133,41 +144,49 @@ export function Quiz() {
   }
 
   async function handleConfirm() {
-    if (
-      alternativeSelected === null &&
-      currentQuestionHistory?.alternativeSelected === undefined
-    ) {
+    // Use the previously selected answer from history if alternativeSelected is null
+    const selectedAlternative =
+      alternativeSelected !== null
+        ? alternativeSelected
+        : currentQuestionHistory?.alternativeSelected;
+  
+    if (selectedAlternative === null || selectedAlternative === undefined) {
       return handleSkipConfirm();
     }
-
+  
     let updatedPoints = points;
-
+  
+    // Check if the question has already been answered
     if (currentQuestionHistory?.alternativeSelected !== undefined) {
-      if (
+      const wasCorrect =
         currentQuestionHistory.alternativeSelected ===
-          quiz.questions[currentQuestion].correct &&
-        alternativeSelected !== quiz.questions[currentQuestion].correct
-      ) {
-        updatedPoints = points - 1;
-        setPoints(updatedPoints);
-        setStatusReply(2);
-      } else if (
-        currentQuestionHistory.alternativeSelected !==
-          quiz.questions[currentQuestion].correct &&
-        alternativeSelected === quiz.questions[currentQuestion].correct
-      ) {
-        updatedPoints = points + 1;
-        setPoints(updatedPoints);
-        setStatusReply(1);
+        quiz.questions[currentQuestion].correct;
+      const isNowCorrect =
+        selectedAlternative === quiz.questions[currentQuestion].correct;
+  
+      // Only update points if the correctness changes
+      if (currentQuestionHistory.alternativeSelected !== selectedAlternative) {
+        if (wasCorrect && !isNowCorrect) {
+          // Previously correct, now incorrect
+          updatedPoints = points - 1;
+          setPoints(updatedPoints);
+          setStatusReply(2);
+        } else if (!wasCorrect && isNowCorrect) {
+          // Previously incorrect, now correct
+          updatedPoints = points + 1;
+          setPoints(updatedPoints);
+          setStatusReply(1);
+        } else {
+          // No change in correctness
+          setStatusReply(isNowCorrect ? 1 : 2);
+        }
       } else {
-        setStatusReply(
-          alternativeSelected === quiz.questions[currentQuestion].correct
-            ? 1
-            : 2,
-        );
+        // If the answer hasn't changed, just update the status reply
+        setStatusReply(isNowCorrect ? 1 : 2);
       }
     } else {
-      if (quiz.questions[currentQuestion].correct === alternativeSelected) {
+      // If the question has not been answered before
+      if (quiz.questions[currentQuestion].correct === selectedAlternative) {
         updatedPoints = points + 1;
         setPoints(updatedPoints);
         setStatusReply(1);
@@ -175,7 +194,7 @@ export function Quiz() {
         setStatusReply(2);
       }
     }
-
+  
     setAlternativeSelected(null);
     handleNextQuestion(updatedPoints);
   }

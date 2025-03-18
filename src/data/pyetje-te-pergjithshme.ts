@@ -6,14 +6,25 @@ export const PYETJE_TE_PERGJITHSHME_1 =   {
    {
      title: 'Cili është kryeqyteti i Shqipërisë?',
      alternatives: [
-       'Tirana',
        'Durrësi',
+       'Tirana',
        'Shkodra',
        'Vlora'
      ],
-     correct: 0,
+     correct: 1,
      explanation: "",
    },
+   {
+    title: 'Cili është kryeqyteti i Kosoves?',
+    alternatives: [
+      'Prishtina',
+      'Durrësi',
+      'Shkodra',
+      'Vlora'
+    ],
+    correct: 0,
+    explanation: "",
+  },
    {
      title: 'Sa është popullsia e Shqipërisë?',
      alternatives: [

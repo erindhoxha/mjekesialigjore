@@ -25,6 +25,8 @@ export function Finish() {
   const route = useRoute();
   const { points, total, quizHistory, quiz } = route.params as Params;
 
+  console.log(points, total, quizHistory);
+
   const { navigate } = useNavigation();
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(0);
 
