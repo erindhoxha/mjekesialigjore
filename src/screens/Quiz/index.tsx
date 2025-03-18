@@ -13,7 +13,6 @@ import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { styles } from "./styles";
-import { THEME } from "../../styles/theme";
 
 import { QUIZ } from "../../data/quiz";
 import { historyAdd } from "../../storage/quizHistoryStorage";
@@ -23,13 +22,9 @@ import { Question } from "../../components/Question";
 import { QuizHeader } from "../../components/QuizHeader";
 import { ConfirmButton } from "../../components/ConfirmButton";
 import { OutlineButton } from "../../components/OutlineButton";
-import { ProgressBar } from "../../components/ProgressBar";
 import { HistoryProps } from "../../components/HistoryCard";
 import { Header } from "../../components/Header";
-import { Trophy, House } from "phosphor-react-native";
-import { Button } from "../../components/Button";
-import { RNNativeScrollEvent } from "react-native-reanimated/lib/typescript/hook/commonTypes";
-
+import { House } from "phosphor-react-native";
 interface Params {
   id: string;
 }
@@ -69,7 +64,6 @@ export function Quiz() {
   const scrollViewRef = useRef<Animated.ScrollView>(null);
 
   function handleNextQuestion(updatedPoints: number) {
-    console.log(updatedPoints);
     setQuizHistory((prevState) => {
       const existingHistoryIndex = prevState.findIndex((history) =>
         history.questionIndex === currentQuestion
@@ -227,26 +221,6 @@ export function Quiz() {
       scrollY.value = event.contentOffset.y;
     },
   });
-
-  const fixedProgressBarStyles = useAnimatedStyle(() => ({
-    position: "absolute",
-    zIndex: 1,
-    paddingTop: 50,
-    backgroundColor: THEME.COLORS.GREY_500,
-    width: "110%",
-    left: "-5%",
-    opacity: interpolate(scrollY.value, [50, 90], [0, 1], Extrapolate.CLAMP),
-    transform: [
-      {
-        translateY: interpolate(
-          scrollY.value,
-          [50, 100],
-          [-40, 0],
-          Extrapolate.CLAMP,
-        ),
-      },
-    ],
-  }));
 
   const headerStyles = useAnimatedStyle(() => ({
     opacity: interpolate(scrollY.value, [60, 90], [1, 0], Extrapolate.CLAMP),
