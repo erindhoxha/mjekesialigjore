@@ -50,6 +50,16 @@ export const styles = StyleSheet.create({
     fontFamily: THEME.FONTS.REGULAR,
     fontSize: 14,
   },
+  sub2: {
+    color: THEME.COLORS.GREY_100,
+    borderRadius: 8,
+    fontFamily: THEME.FONTS.REGULAR,
+    fontSize: 14,
+    marginTop: 12,
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: THEME.COLORS.GREY_500,
+  },
   explanation: {
     marginTop: 12,
     borderRadius: 12,

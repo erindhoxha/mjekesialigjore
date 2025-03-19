@@ -14,13 +14,14 @@ export const PJESA_E_PARE = {
       ],
       explanation: "Trajtimi i të sëmurëve në spitale nuk është detyrë e mjekësisë ligjore.",
       correct: 2,
+      pageNumber: "",
     },
     {
       title: "Në cilat raste mund të kërkohet ekspertimi mjekoligjor i kufomave?",
       //  image: require( "../assets/knife2.png"),
       alternatives: [
-        "Vetëm në rastet e vdekjeve të dhunshme",
-        "Vetëm në rastet e vdekjeve të papritura",
+        "Në rastet e vdekjeve të dhunshme",
+        "Në rastet e vdekjeve të papritura",
         "Në të gjitha rastet e vdekjeve të dyshimta ose të dhunshme",
         "Vetëm në rastet kur familjarët e viktimës e kërkojnë.",
       ],

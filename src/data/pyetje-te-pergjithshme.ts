@@ -7,7 +7,9 @@ export const PJESA_E_DYTE = {
       title: "Nga veprimi i dhunshem i nje agjenti te jashtem shkaktohet:",
       alternatives: ["Semundja", "Trauma", "Vdekja Natyrore"],
       correct: 1,
-      explanation: "",
+      pageNumber: 26,
+      explanation:
+        "Trauma, nënkupton cënimin e tërësise anatomike ose funksionale te indeve dhe organeve nga veprimi i dhunshëm i një agienti të jashtëm (fizik, termik. kimik etj), duke shkaktuar dëmtimin e shëndetit ose vdekjën.",
     },
     {
       title: "Cili është kryeqyteti i Kosoves?",

@@ -104,8 +104,19 @@ export function Finish() {
               })}
               {selectedQuestionDetails.explanation && (
                 <View style={styles.explanation}>
-                  <Text style={styles.sub}>Shpjegimi:</Text>
+                  {/* Correct answer */}
+                  <Text style={styles.sub}>Përgjigja e saktë:</Text>
+                  <Text style={styles.subtitle}>
+                    {selectedQuestionDetails.alternatives[selectedQuestionDetails.correct]}
+                  </Text>
+                  <Text style={styles.sub2}>Shpjegimi:</Text>
                   <Text style={styles.subtitle}>{selectedQuestionDetails.explanation}</Text>
+                  {selectedQuestionDetails.pageNumber && (
+                    <>
+                      <Text style={styles.sub2}>Faqja në librin e Mjekësisë Ligjore:</Text>
+                      <Text style={styles.subtitle}>{selectedQuestionDetails.pageNumber}</Text>
+                    </>
+                  )}
                 </View>
               )}
             </View>
