@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { THEME } from '../../styles/theme';
+import { StyleSheet } from "react-native";
+import { THEME } from "../../styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
@@ -10,16 +10,16 @@ export const styles = StyleSheet.create({
   },
   footer: {
     marginTop: 24,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
   },
   scoreButtonSelected: {
     borderWidth: 1,
     borderColor: THEME.COLORS.WHITE,
     fontFamily: THEME.FONTS.BOLD,
-    fontWeight: '700',
+    fontWeight: "700",
   },
   bold: {
     fontFamily: THEME.FONTS.BOLD,
@@ -29,14 +29,14 @@ export const styles = StyleSheet.create({
     backgroundColor: THEME.COLORS.GREY_800,
   },
   message: {
-    alignItems: 'center',
+    alignItems: "center",
     marginBottom: 24,
   },
   title: {
     color: THEME.COLORS.GREY_100,
     fontFamily: THEME.FONTS.BOLD,
     fontSize: 24,
-    marginTop: 12
+    marginTop: 12,
   },
   title2: {
     color: THEME.COLORS.GREY_100,
@@ -44,28 +44,39 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 24,
   },
+  sub: {
+    color: THEME.COLORS.GREY_100,
+    borderRadius: 8,
+    fontFamily: THEME.FONTS.REGULAR,
+    fontSize: 14,
+  },
+  explanation: {
+    marginTop: 12,
+    borderRadius: 12,
+  },
   subtitle: {
     color: THEME.COLORS.GREY_100,
-    fontFamily: THEME.FONTS.REGULAR,
-    fontSize: 16,
-    marginTop: 8
+    borderRadius: 8,
+    fontFamily: THEME.FONTS.BOLD,
+    fontSize: 14,
+    marginTop: 12,
   },
   scoreContainer: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    width: '100%',
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100%",
     marginTop: 24,
-    flexDirection: 'row',
+    flexDirection: "row",
     gap: 12,
   },
   scoreButton: {
     width: 28,
     height: 28,
-    backgroundColor: 'white',
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "white",
+    color: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 6,
     marginRight: 6,
   },
@@ -73,10 +84,10 @@ export const styles = StyleSheet.create({
     width: 28,
     height: 28,
     backgroundColor: THEME.COLORS.GREY_500,
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    color: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 6,
     marginRight: 6,
   },
@@ -89,5 +100,7 @@ export const styles = StyleSheet.create({
   selectedQuestionDetails: {
     marginTop: 24,
     borderRadius: 8,
+    backgroundColor: THEME.COLORS.GREY_700,
+    padding: 16,
   },
 });

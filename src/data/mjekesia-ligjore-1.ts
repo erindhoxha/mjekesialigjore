@@ -1,4 +1,4 @@
-export const MJEKESIA_LIGJORE_1 = {
+export const PJESA_E_PARE = {
   id: "1",
   title: "Pjesa e parë",
   description: "Konsiderata të përgjithshme",

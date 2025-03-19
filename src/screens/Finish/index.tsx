@@ -13,7 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Option } from "../../components/Option";
 import { OutlineButton } from "../../components/OutlineButton";
 
-type QuizProps = typeof QUIZ[0];
+type QuizProps = (typeof QUIZ)[0];
 interface Params {
   total: string;
   points: string;
@@ -32,109 +32,81 @@ export function Finish() {
     setSelectedQuestion(index);
   };
 
-  const selectedQuestionDetails = selectedQuestion !== null
-    ? quiz.questions[selectedQuestion]
-    : null;
-  const selectedHistoryItem = selectedQuestion !== null
-    ? quizHistory.find((item) => item.questionIndex === selectedQuestion)
-    : null;
+  const selectedQuestionDetails = selectedQuestion !== null ? quiz.questions[selectedQuestion] : null;
+  const selectedHistoryItem =
+    selectedQuestion !== null ? quizHistory.find((item) => item.questionIndex === selectedQuestion) : null;
 
   return (
     <SafeAreaView style={styles.safeContainer}>
-      <ScrollView
-        style={styles.container}
-        showsVerticalScrollIndicator={false}
-      >
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         <Animated.View>
           {/* <Stars /> */}
           <View style={styles.message}>
-            <Text style={styles.title}>
-              {points === total ? "Bravo!" : "Më mirë herën tjetër!"}
-            </Text>
+            <Text style={styles.title}>{points === total ? "Bravo!" : "Më mirë herën tjetër!"}</Text>
             <Text style={styles.subtitle}>
-              Ju keni përgjigjur saktë <Text style={styles.bold}>{points}</Text>
-              {" "}
-              nga <Text style={styles.bold}>{total}</Text> pyetje
+              Ju keni përgjigjur saktë <Text style={styles.bold}>{points}</Text> nga{" "}
+              <Text style={styles.bold}>{total}</Text> pyetje
             </Text>
           </View>
-          <Button
-            title="Kthehu në fillim"
-            onPress={() => navigate("home")}
-          />
+          <Button title="Kthehu në fillim" onPress={() => navigate("home")} />
           {quiz.questions.length > 0 && (
             <View style={styles.scoreContainer}>
               {quiz.questions.map((question, index) => {
-                const historyItem = quizHistory.find(
-                  (item) => item.questionIndex === index,
-                );
+                const historyItem = quizHistory.find((item) => item.questionIndex === index);
                 const isAnswered = !!historyItem;
-                const isCorrect = isAnswered &&
-                  question.correct === historyItem?.alternativeSelected;
+                const isCorrect = isAnswered && question.correct === historyItem?.alternativeSelected;
                 const isSelected = selectedQuestion === index;
-                return isAnswered
-                  ? (
-                    <TouchableOpacity
-                      style={[
-                        styles.scoreButton,
-                        !isAnswered && styles.scoreButtonGray,
-                        isAnswered && isCorrect && styles.scoreButtonCorrect,
-                        isAnswered && !isCorrect && styles.scoreButtonIncorrect,
-                        isSelected && styles.scoreButtonSelected,
-                      ]}
-                      key={question.title}
-                      onPress={() => handleQuestionPress(index)}
-                    >
-                      <Text
-                        style={[
-                          { color: "white" },
-                          isSelected && { color: "white", fontWeight: "bold" },
-                        ]}
-                      >
-                        {`${index + 1}`}
-                      </Text>
-                    </TouchableOpacity>
-                  )
-                  : (
-                    <View style={styles.scoreButtonGray} key={question.title}>
-                      <Text style={{ color: "black" }}>
-                        {`${index + 1}`}
-                      </Text>
-                    </View>
-                  );
+                return isAnswered ? (
+                  <TouchableOpacity
+                    style={[
+                      styles.scoreButton,
+                      !isAnswered && styles.scoreButtonGray,
+                      isAnswered && isCorrect && styles.scoreButtonCorrect,
+                      isAnswered && !isCorrect && styles.scoreButtonIncorrect,
+                      isSelected && styles.scoreButtonSelected,
+                    ]}
+                    key={question.title}
+                    onPress={() => handleQuestionPress(index)}>
+                    <Text style={[{ color: "white" }, isSelected && { color: "white", fontWeight: "bold" }]}>
+                      {`${index + 1}`}
+                    </Text>
+                  </TouchableOpacity>
+                ) : (
+                  <View style={styles.scoreButtonGray} key={question.title}>
+                    <Text style={{ color: "black" }}>{`${index + 1}`}</Text>
+                  </View>
+                );
               })}
             </View>
           )}
           {selectedQuestionDetails && selectedHistoryItem && (
             <View style={styles.selectedQuestionDetails}>
-              <Text style={styles.title2}>
-                {selectedQuestionDetails.title}
-              </Text>
-              {selectedQuestionDetails.alternatives.map(
-                (alternative, index) => {
-                  let status: "correct" | "incorrect" | "neutral" = "neutral";
-                  if (index === selectedQuestionDetails.correct) {
-                    status = "correct";
-                  } else if (
-                    index === selectedHistoryItem.alternativeSelected
-                  ) {
-                    status = "incorrect";
-                  }
-                  return (
-                    <Option
-                      key={index}
-                      title={alternative}
-                      checked={selectedHistoryItem.alternativeSelected !== null
+              <Text style={styles.title2}>{selectedQuestionDetails.title}</Text>
+              {selectedQuestionDetails.alternatives.map((alternative, index) => {
+                let status: "correct" | "incorrect" | "neutral" = "neutral";
+                if (index === selectedQuestionDetails.correct) {
+                  status = "correct";
+                } else if (index === selectedHistoryItem.alternativeSelected) {
+                  status = "incorrect";
+                }
+                return (
+                  <Option
+                    key={index}
+                    title={alternative}
+                    checked={
+                      selectedHistoryItem.alternativeSelected !== null
                         ? selectedHistoryItem.alternativeSelected === index
-                        : selectedHistoryItem.alternativeSelected === index}
-                      status={status}
-                    />
-                  );
-                },
-              )}
+                        : selectedHistoryItem.alternativeSelected === index
+                    }
+                    status={status}
+                  />
+                );
+              })}
               {selectedQuestionDetails.explanation && (
-                <Text style={styles.subtitle}>
-                  Pergjigja e plote: {selectedQuestionDetails.explanation}
-                </Text>
+                <View style={styles.explanation}>
+                  <Text style={styles.sub}>Shpjegimi:</Text>
+                  <Text style={styles.subtitle}>{selectedQuestionDetails.explanation}</Text>
+                </View>
               )}
             </View>
           )}
@@ -151,10 +123,7 @@ export function Finish() {
           <Button
             title="Vazhdo"
             onPress={() => {
-              if (
-                selectedQuestion !== null &&
-                selectedQuestion < quiz.questions.length - 1
-              ) {
+              if (selectedQuestion !== null && selectedQuestion < quiz.questions.length - 1) {
                 setSelectedQuestion(selectedQuestion + 1);
               }
             }}
