@@ -29,7 +29,7 @@ interface Params {
   id: string;
 }
 
-type QuizProps = typeof QUIZ[0];
+type QuizProps = (typeof QUIZ)[0];
 
 const CARD_INCLINATION = 10;
 const CARD_SKIP_AREA = -200;
@@ -39,9 +39,7 @@ export function Quiz() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [quiz, setQuiz] = useState<QuizProps>({} as QuizProps);
-  const [alternativeSelected, setAlternativeSelected] = useState<null | number>(
-    null,
-  );
+  const [alternativeSelected, setAlternativeSelected] = useState<null | number>(null);
   const [statusReply, setStatusReply] = useState(0);
   const [quizHistory, setQuizHistory] = useState<HistoryProps[]>([]);
 
@@ -50,9 +48,7 @@ export function Quiz() {
 
   const { navigate } = useNavigation();
 
-  const currentQuestionHistory = quizHistory.find((item) =>
-    item.questionIndex === currentQuestion
-  );
+  const currentQuestionHistory = quizHistory.find((item) => item.questionIndex === currentQuestion);
 
   const route = useRoute();
   const { id } = route.params as Params;
@@ -65,19 +61,15 @@ export function Quiz() {
 
   function handleNextQuestion(updatedPoints: number) {
     setQuizHistory((prevState) => {
-      const existingHistoryIndex = prevState.findIndex((history) =>
-        history.questionIndex === currentQuestion
-      );
-  
-      const existingHistoryAlternativeSelected = prevState[
-        existingHistoryIndex
-      ]?.alternativeSelected;
-  
+      const existingHistoryIndex = prevState.findIndex((history) => history.questionIndex === currentQuestion);
+
+      const existingHistoryAlternativeSelected = prevState[existingHistoryIndex]?.alternativeSelected;
+
       const selectedAlternative =
         alternativeSelected !== null && alternativeSelected !== undefined
           ? alternativeSelected
           : existingHistoryAlternativeSelected;
-  
+
       if (existingHistoryIndex !== -1) {
         const updatedHistory = [...prevState];
         updatedHistory[existingHistoryIndex] = {
@@ -100,7 +92,7 @@ export function Quiz() {
         ];
       }
     });
-  
+
     if (currentQuestion < quiz.questions.length - 1) {
       setCurrentQuestion((prevState) => prevState + 1);
       // Scroll to top when moving to the next question
@@ -113,10 +105,7 @@ export function Quiz() {
     }
   }
 
-  async function handleFinished(
-    updatedPoints: number,
-    updatedQuizHistory: HistoryProps[],
-  ) {
+  async function handleFinished(updatedPoints: number, updatedQuizHistory: HistoryProps[]) {
     await historyAdd({
       id: new Date().getTime().toString(),
       title: quiz.title,
@@ -140,24 +129,19 @@ export function Quiz() {
   async function handleConfirm() {
     // Use the previously selected answer from history if alternativeSelected is null
     const selectedAlternative =
-      alternativeSelected !== null
-        ? alternativeSelected
-        : currentQuestionHistory?.alternativeSelected;
-  
+      alternativeSelected !== null ? alternativeSelected : currentQuestionHistory?.alternativeSelected;
+
     if (selectedAlternative === null || selectedAlternative === undefined) {
       return handleSkipConfirm();
     }
-  
+
     let updatedPoints = points;
-  
+
     // Check if the question has already been answered
     if (currentQuestionHistory?.alternativeSelected !== undefined) {
-      const wasCorrect =
-        currentQuestionHistory.alternativeSelected ===
-        quiz.questions[currentQuestion].correct;
-      const isNowCorrect =
-        selectedAlternative === quiz.questions[currentQuestion].correct;
-  
+      const wasCorrect = currentQuestionHistory.alternativeSelected === quiz.questions[currentQuestion].correct;
+      const isNowCorrect = selectedAlternative === quiz.questions[currentQuestion].correct;
+
       // Only update points if the correctness changes
       if (currentQuestionHistory.alternativeSelected !== selectedAlternative) {
         if (wasCorrect && !isNowCorrect) {
@@ -188,7 +172,7 @@ export function Quiz() {
         setStatusReply(2);
       }
     }
-  
+
     setAlternativeSelected(null);
     handleNextQuestion(updatedPoints);
   }
@@ -226,8 +210,7 @@ export function Quiz() {
     opacity: interpolate(scrollY.value, [60, 90], [1, 0], Extrapolate.CLAMP),
   }));
 
-  const onPan = Gesture
-    .Pan()
+  const onPan = Gesture.Pan()
     .activateAfterLongPress(200)
     .onUpdate((event) => {
       const moveToLeft = event.translationX < 0;
@@ -248,10 +231,7 @@ export function Quiz() {
     const rotateZ = cardPosition.value / CARD_INCLINATION;
 
     return {
-      transform: [
-        { translateX: cardPosition.value },
-        { rotateZ: `${rotateZ}deg` },
-      ],
+      transform: [{ translateX: cardPosition.value }, { rotateZ: `${rotateZ}deg` }],
     };
   });
 
@@ -263,10 +243,7 @@ export function Quiz() {
   }, []);
 
   useEffect(() => {
-    const backHandler = BackHandler.addEventListener(
-      "hardwareBackPress",
-      handleStop,
-    );
+    const backHandler = BackHandler.addEventListener("hardwareBackPress", handleStop);
 
     return () => backHandler.remove();
   }, []);
@@ -300,8 +277,7 @@ export function Quiz() {
         contentContainerStyle={styles.question}
         onScroll={scrollHandler}
         ref={scrollViewRef}
-        scrollEventThrottle={16}
-      >
+        scrollEventThrottle={16}>
         <Animated.View style={[styles.header, headerStyles]}>
           {quiz.title && (
             <QuizHeader
@@ -311,11 +287,9 @@ export function Quiz() {
             />
           )}
         </Animated.View>
-
         <GestureDetector gesture={onPan}>
           <Animated.View style={[dragStyles]}>
             <Question
-              key={quiz.questions[currentQuestion].title}
               question={quiz.questions[currentQuestion]}
               alternativeSelected={alternativeSelected}
               setAlternativeSelected={setAlternativeSelected}
@@ -334,28 +308,26 @@ export function Quiz() {
         {quiz.questions.length > 0 && (
           <View style={styles.scoreContainer}>
             {quiz.questions.map((history, index) => {
-              const isAnswered = quizHistory.some(
-                (item) => item.questionIndex === index,
+              const isAnswered = quizHistory.some((item) => item.questionIndex === index);
+              const isCurrentQuestion = currentQuestion === index;
+              return isAnswered ? (
+                <TouchableOpacity
+                  style={[styles.scoreButton, , isCurrentQuestion ? styles.current : null]}
+                  key={history.title + index}
+                  onPress={() => handleGoToStep(index)}>
+                  <Text style={[{ color: "black" }, isCurrentQuestion ? styles.currentText : null]}>{`${
+                    index + 1
+                  }`}</Text>
+                </TouchableOpacity>
+              ) : (
+                <View
+                  style={[styles.scoreButtonGray, isCurrentQuestion ? styles.current : null]}
+                  key={history.title + index}>
+                  <Text style={[{ color: "black" }, isCurrentQuestion ? styles.currentText : null]}>{`${
+                    index + 1
+                  }`}</Text>
+                </View>
               );
-              return isAnswered
-                ? (
-                  <TouchableOpacity
-                    style={styles.scoreButton}
-                    key={history.title}
-                    onPress={() => handleGoToStep(index)}
-                  >
-                    <Text style={{ color: "black" }}>
-                      {`${index + 1}`}
-                    </Text>
-                  </TouchableOpacity>
-                )
-                : (
-                  <View style={styles.scoreButtonGray} key={history.title}>
-                    <Text style={{ color: "black" }}>
-                      {`${index + 1}`}
-                    </Text>
-                  </View>
-                );
             })}
           </View>
         )}
@@ -374,11 +346,8 @@ export function Quiz() {
                   onPress: () => navigate("home"),
                 },
               ]);
-            }}
-          >
-            <Text style={styles.footerButtonTitle}>
-              Kthehu ne faqen kryesore
-            </Text>
+            }}>
+            <Text style={styles.footerButtonTitle}>Kthehu ne faqen kryesore</Text>
           </TouchableOpacity>
         </View>
       </Animated.ScrollView>

@@ -65,14 +65,14 @@ export function Finish() {
                       isAnswered && !isCorrect && styles.scoreButtonIncorrect,
                       isSelected && styles.scoreButtonSelected,
                     ]}
-                    key={question.title}
+                    key={question.title + index}
                     onPress={() => handleQuestionPress(index)}>
                     <Text style={[{ color: "white" }, isSelected && { color: "white", fontWeight: "bold" }]}>
                       {`${index + 1}`}
                     </Text>
                   </TouchableOpacity>
                 ) : (
-                  <View style={styles.scoreButtonGray} key={question.title}>
+                  <View style={styles.scoreButtonGray} key={question.title + index}>
                     <Text style={{ color: "black" }}>{`${index + 1}`}</Text>
                   </View>
                 );

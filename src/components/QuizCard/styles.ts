@@ -1,7 +1,7 @@
-import { Dimensions, StyleSheet } from 'react-native';
-import { THEME } from '../../styles/theme';
+import { Dimensions, StyleSheet } from "react-native";
+import { THEME } from "../../styles/theme";
 
-const dimensions = Dimensions.get('window');
+const dimensions = Dimensions.get("window");
 
 const CARDS_PER_ROW = 2;
 const HORIZONTAL_PADDING_SCREEN = 32 * 2;
@@ -18,10 +18,20 @@ export const styles = StyleSheet.create({
     padding: 16,
     margin: MARGIN,
   },
+  score: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 4,
+    alignItems: "center",
+  },
+  scoreTitle: {
+    fontSize: 12,
+    color: THEME.COLORS.BRAND_LIGHT,
+  },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   subtitle: {
     fontSize: 16,
@@ -32,8 +42,8 @@ export const styles = StyleSheet.create({
     height: 40,
     borderRadius: 6,
     backgroundColor: THEME.COLORS.GREY_600,
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: "center",
+    alignItems: "center",
   },
   title: {
     flex: 1,
@@ -47,6 +57,6 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: THEME.FONTS.REGULAR,
     color: THEME.COLORS.GREY_100,
-    marginTop: 12
-  }
+    marginTop: 12,
+  },
 });

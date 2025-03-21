@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { THEME } from '../../styles/theme';
+import { StyleSheet } from "react-native";
+import { THEME } from "../../styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
@@ -7,27 +7,27 @@ export const styles = StyleSheet.create({
     backgroundColor: THEME.COLORS.GREY_800,
   },
   question: {
-    alignItems: 'center',
+    alignItems: "center",
     paddingTop: 24,
     paddingBottom: 80,
     padding: 32,
   },
   footer: {
-    flexDirection: 'row',
+    flexDirection: "row",
     marginTop: 24,
   },
   footerSub: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginTop: 24,
-    width: '100%',
+    width: "100%",
   },
   footerButton: {
-    width: '100%',
-    display: 'flex',
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
+    width: "100%",
+    display: "flex",
+    textAlign: "center",
+    justifyContent: "center",
+    alignItems: "center",
     padding: 16,
     borderRadius: 8,
     borderWidth: 1,
@@ -36,36 +36,36 @@ export const styles = StyleSheet.create({
   },
   footerButtonTitle: {
     color: THEME.COLORS.DANGER_LIGHT,
-    fontFamily: 'Roboto_700Bold',
-    fontSize: 16
+    fontFamily: "Roboto_700Bold",
+    fontSize: 16,
   },
   title: {
     fontFamily: THEME.FONTS.BOLD,
     color: THEME.COLORS.GREY_100,
     fontSize: 16,
     marginBottom: 7,
-    textAlign: 'center'
+    textAlign: "center",
   },
   header: {
-    width: '100%',
+    width: "100%",
     marginBottom: 21,
   },
   scoreContainer: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    width: '100%',
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100%",
     marginTop: 24,
-    flexDirection: 'row',
+    flexDirection: "row",
     gap: 12,
   },
   scoreButton: {
     width: 28,
     height: 28,
-    backgroundColor: 'white',
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "white",
+    color: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 6,
     marginRight: 6,
   },
@@ -73,11 +73,21 @@ export const styles = StyleSheet.create({
     width: 28,
     height: 28,
     backgroundColor: THEME.COLORS.GREY_500,
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    color: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 6,
     marginRight: 6,
+  },
+  current: {
+    // backgroundColor: THEME.COLORS.GREY_800,
+    fontSize: 16,
+    borderWidth: 3,
+    borderColor: THEME.COLORS.STAR_BLUE,
+  },
+  currentText: {
+    fontFamily: THEME.FONTS.BOLD,
+    // color: THEME.COLORS.GREY_100,
   },
 });
