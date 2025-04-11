@@ -14,11 +14,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.erindhoxha.mjekesialigjore",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -34,6 +36,14 @@
         "projectId": "0b6c9f0a-f1bc-48ce-b408-0906ac9ed7d8"
       }
     },
-    "owner": "erindhoxha"
+    "owner": "erindhoxha",
+    "plugins": [
+      [
+        "expo-dev-client",
+        {
+          "launchMode": "most-recent"
+        }
+      ]
+    ]
   }
 }
