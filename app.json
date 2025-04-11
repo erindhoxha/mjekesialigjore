@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ignitequiz",
-    "slug": "ignitequiz",
+    "slug": "mjekesia-ligjore",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0b6c9f0a-f1bc-48ce-b408-0906ac9ed7d8"
+      }
+    },
+    "owner": "erindhoxha"
   }
 }
