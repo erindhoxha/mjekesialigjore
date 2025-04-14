@@ -7,7 +7,7 @@ import { CheckCircle } from "phosphor-react-native";
 import { QUIZZES } from "../../data/quizzes";
 import Animated, { FadeInUp, FadeOutUp } from "react-native-reanimated";
 import { historyGetAll } from "../../storage/quizHistoryStorage";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HistoryProps } from "../HistoryCard";
 
 type Props = TouchableOpacityProps & {
@@ -28,8 +28,6 @@ export function QuizCard({ index, data, ...rest }: Props) {
     setIsLoading(false);
     return response;
   }
-
-  console.log(data.pytjet);
 
   useEffect(() => {
     fetchHistory().then((history) => {

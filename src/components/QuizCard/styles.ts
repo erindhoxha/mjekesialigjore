@@ -57,6 +57,6 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: THEME.FONTS.REGULAR,
     color: THEME.COLORS.GREY_100,
-    marginTop: 12,
+    marginTop: 4,
   },
 });

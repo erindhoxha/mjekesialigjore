@@ -1,29 +1,30 @@
-import { StyleSheet } from 'react-native';
-import { THEME } from '../../styles/theme';
+import { StyleSheet } from "react-native";
+import { THEME } from "../../styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    minHeight: 76,
+    width: "100%",
+    minHeight: 44,
     backgroundColor: THEME.COLORS.GREY_800,
     borderRadius: 6,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 8,
+    paddingHorizontal: 12,
     marginBottom: 12,
     borderWidth: 1,
     borderColor: "transparent",
   },
   title: {
     color: THEME.COLORS.GREY_100,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: "Roboto_400Regular",
     fontSize: 14,
-    marginRight: 32,
+    marginRight: 12,
     flex: 1,
   },
   checked: {
-    borderColor: THEME.COLORS.BRAND_LIGHT
+    borderColor: THEME.COLORS.BRAND_LIGHT,
   },
   correct: {
     borderColor: THEME.COLORS.BRAND_MID,

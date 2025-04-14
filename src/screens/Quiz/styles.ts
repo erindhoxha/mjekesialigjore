@@ -84,10 +84,12 @@ export const styles = StyleSheet.create({
     // backgroundColor: THEME.COLORS.GREY_800,
     fontSize: 16,
     borderWidth: 3,
-    borderColor: THEME.COLORS.STAR_BLUE,
+    borderColor: THEME.COLORS.WHITE,
+    color: THEME.COLORS.WHITE,
+    backgroundColor: THEME.COLORS.GREY_800,
   },
   currentText: {
     fontFamily: THEME.FONTS.BOLD,
-    // color: THEME.COLORS.GREY_100,
+    color: THEME.COLORS.GREY_100,
   },
 });

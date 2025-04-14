@@ -1,8 +1,8 @@
-import { View, Text } from 'react-native';
+import { View, Text } from "react-native";
 
-import { ProgressBar } from '../ProgressBar';
+import { ProgressBar } from "../ProgressBar";
 
-import { styles } from './styles';
+import { styles } from "./styles";
 
 interface Props {
   title: string;
@@ -15,7 +15,7 @@ export function QuizHeader({ title, totalOfQuestions, currentQuestion }: Props) 
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.question}>
-          Pyetja {currentQuestion}
+          {title} / Pyetja e {currentQuestion}
         </Text>
 
         <Text style={styles.length}>
@@ -23,10 +23,7 @@ export function QuizHeader({ title, totalOfQuestions, currentQuestion }: Props) 
         </Text>
       </View>
 
-      <ProgressBar
-        total={totalOfQuestions}
-        current={currentQuestion}
-      />
+      <ProgressBar total={totalOfQuestions} current={currentQuestion} />
     </View>
   );
 }
