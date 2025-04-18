@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     color: THEME.COLORS.GREY_100,
-    fontFamily: "Roboto_400Regular",
+    fontFamily: "Roboto_500Medium", // TODO: Decide foht size
     fontSize: 14,
     marginRight: 12,
     flex: 1,

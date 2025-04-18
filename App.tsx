@@ -1,13 +1,12 @@
 import { StatusBar } from "react-native";
-import { useFonts, Roboto_400Regular, Roboto_700Bold } from "@expo-google-fonts/roboto";
-// TODO: Status
+import { useFonts, Roboto_400Regular, Roboto_700Bold, Roboto_500Medium } from "@expo-google-fonts/roboto";
 
 import { Routes } from "./src/routes";
 import { Loading } from "./src/components/Loading";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
-  const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
+  const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_500Medium, Roboto_700Bold });
 
   if (!fontsLoaded) {
     return <Loading />;

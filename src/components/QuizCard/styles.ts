@@ -34,7 +34,8 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   subtitle: {
-    fontSize: 16,
+    fontSize: 20,
+    fontFamily: "Roboto_700Bold", // TODO: Add font serif
     color: THEME.COLORS.GREY_100,
   },
   iconContainer: {
