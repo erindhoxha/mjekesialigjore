@@ -7,9 +7,11 @@ export const styles = StyleSheet.create({
     backgroundColor: THEME.COLORS.GREY_800,
     padding: 32,
     paddingTop: 51,
+    paddingBottom: 51,
   },
   footer: {
     marginTop: 24,
+    marginBottom: 24,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
