@@ -255,7 +255,8 @@ export function Quiz() {
   return (
     <View style={styles.container}>
       <Header
-        icon={House}
+        // icon={House} TODO: Check if this is better
+        backButton
         title={quiz.title}
         subtitle={quiz.description}
         onPress={() => {

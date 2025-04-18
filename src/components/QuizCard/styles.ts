@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 20,
-    fontFamily: "Roboto_700Bold", // TODO: Add font serif
+    fontFamily: "Roboto_", // TODO: Add font serif or Georgia
     color: THEME.COLORS.GREY_100,
   },
   iconContainer: {
