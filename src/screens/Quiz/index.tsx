@@ -310,14 +310,23 @@ export function Quiz() {
             {quiz.questions.map((history, index) => {
               const isAnswered = quizHistory.some((item) => item.questionIndex === index);
               const isCurrentQuestion = currentQuestion === index;
-              return isAnswered ? (
+              const lastHistory = quizHistory.sort()[quizHistory.length - 1]?.questionIndex;
+              const isLastAnswered = lastHistory && lastHistory + 1 === index;
+              return isAnswered || isLastAnswered ? (
                 <TouchableOpacity
-                  style={[styles.scoreButton, , isCurrentQuestion ? styles.current : null]}
+                  style={[
+                    styles.scoreButton,
+                    isLastAnswered ? styles.answered : null,
+                    isCurrentQuestion ? styles.current : null,
+                  ]}
                   key={history.title + index}
                   onPress={() => handleGoToStep(index)}>
-                  <Text style={[{ color: "black" }, isCurrentQuestion ? styles.currentText : null]}>{`${
-                    index + 1
-                  }`}</Text>
+                  <Text
+                    style={[
+                      { color: "black" },
+                      isLastAnswered ? styles.answeredText : null,
+                      isCurrentQuestion ? styles.currentText : null,
+                    ]}>{`${index + 1}`}</Text>
                 </TouchableOpacity>
               ) : (
                 <View

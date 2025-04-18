@@ -88,6 +88,18 @@ export const styles = StyleSheet.create({
     color: THEME.COLORS.WHITE,
     backgroundColor: THEME.COLORS.GREY_800,
   },
+  answered: {
+    // backgroundColor: THEME.COLORS.GREY_800,
+    fontSize: 16,
+    borderWidth: 3,
+    borderColor: THEME.COLORS.WARNING_LIGHT,
+    color: THEME.COLORS.WHITE,
+    backgroundColor: THEME.COLORS.WARNING_LIGHT,
+  },
+  answeredText: {
+    fontFamily: THEME.FONTS.BOLD,
+    color: THEME.COLORS.GREY_800,
+  },
   currentText: {
     fontFamily: THEME.FONTS.BOLD,
     color: THEME.COLORS.GREY_100,
