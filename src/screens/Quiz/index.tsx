@@ -311,7 +311,7 @@ export function Quiz() {
               const isAnswered = quizHistory.some((item) => item.questionIndex === index);
               const isCurrentQuestion = currentQuestion === index;
               const lastHistory = quizHistory.sort()[quizHistory.length - 1]?.questionIndex;
-              const isLastAnswered = lastHistory && lastHistory + 1 === index;
+              const isLastAnswered = lastHistory !== undefined && lastHistory + 1 === index;
               return isAnswered || isLastAnswered ? (
                 <TouchableOpacity
                   style={[
