@@ -22,6 +22,8 @@ export function QuizCard({ index, data, ...rest }: Props) {
   const [isFinished, setIsFinished] = useState(false);
   const [history, setHistory] = useState<HistoryProps[]>([]);
 
+  console.log(data);
+
   async function fetchHistory() {
     const response = await historyGetAll();
     setHistory(response);
@@ -88,7 +90,10 @@ export function QuizCard({ index, data, ...rest }: Props) {
         <View style={{ flexDirection: "row" }}>
           <Text style={styles.title}>{data.title}</Text>
         </View>
-        <Text style={styles.description}>{data.description}</Text>
+        <View style={styles.descriptionView}>
+          <Text style={styles.description}>{data.description}</Text>
+        </View>
+        <Text style={styles.pytjet}>{data.pytjet} pyetje</Text>
       </TouchableOpacityAnimated>
     );
   }

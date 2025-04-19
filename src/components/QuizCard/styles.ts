@@ -12,7 +12,7 @@ const CARD_WIDTH = (dimensions.width - HORIZONTAL_PADDING_SCREEN - MARGIN) / CAR
 export const styles = StyleSheet.create({
   container: {
     width: CARD_WIDTH,
-    height: 169,
+    height: 210,
     backgroundColor: THEME.COLORS.GREY_700,
     borderRadius: 6,
     padding: 16,
@@ -34,9 +34,9 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   subtitle: {
-    fontSize: 20,
-    fontFamily: "Roboto_", // TODO: Add font serif or Georgia
-    color: THEME.COLORS.GREY_100,
+    fontSize: 14,
+    fontFamily: "Cardo_700Bold", // TODO: Add font serif or Georgia
+    color: THEME.COLORS.GREY_300,
   },
   iconContainer: {
     width: 40,
@@ -49,15 +49,27 @@ export const styles = StyleSheet.create({
   title: {
     flex: 1,
     fontSize: 16,
-    fontFamily: THEME.FONTS.BOLD,
+    fontWeight: 600,
     color: THEME.COLORS.GREY_100,
     marginTop: 12,
   },
   description: {
-    flex: 1,
     fontSize: 14,
     fontFamily: THEME.FONTS.REGULAR,
     color: THEME.COLORS.GREY_100,
-    marginTop: 4,
+    lineHeight: 20,
+  },
+  pytjet: {
+    fontSize: 14,
+    fontFamily: THEME.FONTS.REGULAR,
+    color: THEME.COLORS.GREY_300,
+    marginTop: 8,
+  },
+  descriptionView: {
+    paddingTop: 8, // Add this
+    borderTopColor: THEME.COLORS.GREY_500,
+    borderTopWidth: 1,
+    flex: 1,
+    marginTop: 8,
   },
 });

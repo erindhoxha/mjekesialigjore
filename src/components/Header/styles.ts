@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: THEME.COLORS.GREY_600,
     paddingHorizontal: 32,
-    paddingTop: 54,
+    paddingTop: 61,
     paddingBottom: 12,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: THEME.COLORS.GREY_100,
     fontFamily: THEME.FONTS.BOLD,
+    marginBottom: 4,
   },
   subtitle: {
     fontSize: 14,
