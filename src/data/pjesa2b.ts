@@ -133,13 +133,6 @@ export const PJESA_E_DYTE_B = {
         'Vdekja pas vdekjes (tanatologjia mjekoligjore)"  e përcakton tanatologjinë mjekoligjore si studimin e ndryshimeve që ndodhin në trup pas vdekjes.',
     },
     {
-      // TODO: Add photo
-      // image: "",
-      title: "Ne foton e meposhtme paraqitet:",
-      alternatives: ["Destrukscioni", "Carja", "Crush Syndrome", "Detrakcioni"],
-      correct: 3,
-    },
-    {
       title: "Shkak i vdekjës është:",
       alternatives: ["Arresti kardiorespirator", "Paraliza e frymëmarrjes", "Toksemia", "Helmimi"],
       correct: 3,

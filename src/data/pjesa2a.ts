@@ -133,13 +133,6 @@ export const PJESA_E_DYTE = {
         'Vdekja pas vdekjes (tanatologjia mjekoligjore)"  e përcakton tanatologjinë mjekoligjore si studimin e ndryshimeve që ndodhin në trup pas vdekjes.',
     },
     {
-      // TODO: Add photo
-      // image: "",
-      title: "Ne foton e meposhtme paraqitet:",
-      alternatives: ["Destrukscioni", "Carja", "Crush Syndrome", "Detrakcioni"],
-      correct: 3,
-    },
-    {
       title: "Shkak i vdekjës është:",
       alternatives: ["Arresti kardiorespirator", "Paraliza e frymëmarrjes", "Toksemia", "Helmimi"],
       correct: 3,
@@ -177,6 +170,22 @@ export const PJESA_E_DYTE = {
         "Tek pacienti i cili vuan nga nje semundje e pasherueshme dhe eshte ne gjendje terminale, deshiron te lehtesoj dhimbjet dhe i pershpejtohet vdekja me rruge mjekesore kemi te bejme me vdekje:",
       alternatives: ["Ligjore", "Eutanazike", "Denim kapital", "Vdekje shpirterore"],
       correct: 1,
+    },
+    {
+      title: "Ndryshimet makroskopike në zonën e infraktit bëhen të dallueshme jo me përpara se:",
+      alternatives: ["8 orë", "12 orë", "24 orë", "Një ditë"],
+      correct: 1,
+      explanation: "Ndryshimet makroskopike në zonën e infraktit bëhen të dallushme jo më përpara se 12 orë.",
+      pageNumber: 40,
+    },
+    {
+      title:
+        "Pas sa kohe zona e infarktit përkufizohet qartë, merr ngjyrë të verdhë, bëhet më e butë në prekje se indi përreth (malatia cordis)?",
+      alternatives: ["8 orë", "12 orë", "24 orë", "Një ditë"],
+      correct: 2,
+      explanation:
+        "Pas 24 ore zona e infarktit përkufizohet qartë, merr ngjyrë të verdhë, bëhet më e butë në prekje se indi përreth (malatia cordis), ndëekaq kjo zonë brenda 2 muajve, do të zëvendeësohet me ind ligjor me ngjyrë gri",
+      pageNumber: 40,
     },
   ],
 };

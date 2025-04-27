@@ -210,6 +210,14 @@ export function Quiz() {
     opacity: interpolate(scrollY.value, [60, 90], [1, 0], Extrapolate.CLAMP),
   }));
 
+  function shuffleArray(array: any[]) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
   const onPan = Gesture.Pan()
     .activateAfterLongPress(200)
     .onUpdate((event) => {
@@ -238,7 +246,11 @@ export function Quiz() {
   useEffect(() => {
     const quizSelected = QUIZ.filter((item) => item.id === id)[0];
 
-    setQuiz(quizSelected);
+    // Shuffle the questions
+    const shuffledQuestions = shuffleArray([...quizSelected.questions]);
+
+    // Set the quiz with shuffled questions
+    setQuiz({ ...quizSelected, questions: shuffledQuestions });
     setIsLoading(false);
   }, []);
 
