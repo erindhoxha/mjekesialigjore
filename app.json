@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#C9DEEA"
+      "backgroundColor": "#29292E"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -25,7 +25,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#C9DEEA"
+        "backgroundColor": "#29292E"
       },
       "package": "com.erindhoxha.mjekesialigjore"
     },
@@ -48,11 +48,11 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#C9DEEA",
+          "backgroundColor": "#29292E",
           "image": "./assets/images/splash.png",
           "dark": {
             "image": "./assets/images/splash.png",
-            "backgroundColor": "#C9DEEA"
+            "backgroundColor": "#29292E"
           },
           "imageWidth": 200
         }
