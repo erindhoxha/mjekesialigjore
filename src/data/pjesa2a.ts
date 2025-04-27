@@ -1,6 +1,6 @@
 export const PJESA_E_DYTE = {
   id: "2",
-  title: "Pjesa e dytë",
+  title: "Pjesa e dytë (a)",
   description: "Investigimi mjekoligjor përballë krimeve kunder jetës së personit",
   questions: [
     {

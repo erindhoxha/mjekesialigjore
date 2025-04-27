@@ -179,7 +179,7 @@ export function Quiz() {
 
   function handleStop() {
     if (currentQuestion === 0) {
-      Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+      Alert.alert("Kthehu", "Dëshiron te kthehesh në faqën kryesore?", [
         {
           text: "Jo",
           style: "cancel",
@@ -357,7 +357,7 @@ export function Quiz() {
                 },
               ]);
             }}>
-            <Text style={styles.footerButtonTitle}>Kthehu ne faqen kryesore</Text>
+            <Text style={styles.footerButtonTitle}>Kthehu në faqën kryesore</Text>
           </TouchableOpacity>
         </View>
       </Animated.ScrollView>

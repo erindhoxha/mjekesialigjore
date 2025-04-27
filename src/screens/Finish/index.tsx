@@ -129,7 +129,7 @@ export function Finish() {
               if (selectedQuestion !== null && selectedQuestion > 0) {
                 setSelectedQuestion(selectedQuestion - 1);
               } else {
-                Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+                Alert.alert("Kthehu", "Dëshiron te kthehesh në faqën kryesore?", [
                   {
                     text: "Jo",
                     style: "cancel",

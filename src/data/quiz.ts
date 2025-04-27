@@ -1,53 +1,13 @@
 import { PJESA_E_PARE } from "./mjekesia-ligjore-1";
-import { PJESA_E_DYTE } from "./pyetje-te-pergjithshme";
+import { PJESA_E_DYTE } from "./pjesa2a";
+import { PJESA_E_DYTE_B } from "./pjesa2b";
+import { PJESA_E_DYTE_C } from "./pjesa2c";
 
 export const QUIZ = [
   PJESA_E_PARE,
   PJESA_E_DYTE,
-  {
-    id: "3",
-    title: "Pjesa e tretë",
-    description: "Investigimi mjekoligjor përballë krimeve kunder shëndetit",
-    questions: [
-      {
-        title: "Kush ishte heroi kombëtar i Shqipërisë?",
-        alternatives: ["Ismail Qemali", "Gjergj Kastrioti Skënderbeu", "Enver Hoxha", "Ahmet Zogu"],
-        correct: 1,
-      },
-      {
-        title: "Në cilin vit Shqipëria shpalli pavarësinë?",
-        alternatives: ["1912", "1944", "1991", "2008"],
-        correct: 0,
-      },
-      {
-        title: "Cila ishte kryeqyteti i parë i Shqipërisë?",
-        alternatives: ["Tirana", "Durrësi", "Shkodra", "Vlora"],
-        correct: 3,
-      },
-    ],
-  },
-  {
-    id: "4",
-    title: "Pjesa e katërt",
-    description: "Identifikimi mjekoligjor",
-    questions: [
-      {
-        title: "Cili është mali më i lartë në Shqipëri?",
-        alternatives: ["Mali i Dajtit", "Maja e Korabit", "Mali i Tomorrit", "Mali i Shpiragut"],
-        correct: 1,
-      },
-      {
-        title: "Cili është liqeni më i madh në Shqipëri?",
-        alternatives: ["Liqeni i Shkodrës", "Liqeni i Pogradecit", "Liqeni i Prespës", "Liqeni i Fierzës"],
-        correct: 0,
-      },
-      {
-        title: "Cili është lumi më i gjatë në Shqipëri?",
-        alternatives: ["Lumi i Vjosës", "Lumi i Drinit", "Lumi i Shkumbinit", "Lumi i Matit"],
-        correct: 1,
-      },
-    ],
-  },
+  PJESA_E_DYTE_B,
+  PJESA_E_DYTE_C,
   {
     id: "5",
     title: "Pjesa e pestë",
