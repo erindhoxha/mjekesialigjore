@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
   },
   footer: {
     marginTop: 24,
-    marginBottom: 24,
+    marginBottom: 128,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",

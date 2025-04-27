@@ -37,7 +37,7 @@ export function Finish() {
     selectedQuestion !== null ? quizHistory.find((item) => item.questionIndex === selectedQuestion) : null;
 
   return (
-    <SafeAreaView style={styles.safeContainer}>
+    <SafeAreaView style={styles.safeContainer} edges={["right", "left", "top"]}>
       <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         <Animated.View>
           {/* <Stars /> */}
