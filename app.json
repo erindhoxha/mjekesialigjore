@@ -4,10 +4,10 @@
     "slug": "mjekesia-ligjore",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/app-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/splash-img.png",
       "resizeMode": "contain",
       "backgroundColor": "#29292E"
     },
@@ -24,7 +24,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon-img.png",
         "backgroundColor": "#29292E"
       },
       "package": "com.erindhoxha.mjekesialigjore"
@@ -49,9 +49,9 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#29292E",
-          "image": "./assets/images/splash.png",
+          "image": "./assets/images/splash-img.png",
           "dark": {
-            "image": "./assets/images/splash.png",
+            "image": "./assets/images/splash-img.png",
             "backgroundColor": "#29292E"
           },
           "imageWidth": 200
