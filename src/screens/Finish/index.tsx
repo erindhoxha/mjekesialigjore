@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ScrollView, Text, View } from "react-native";
+import { Alert, ScrollView, Text, View } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
 import { Button } from "../../components/Button";
@@ -128,6 +128,18 @@ export function Finish() {
             onPress={() => {
               if (selectedQuestion !== null && selectedQuestion > 0) {
                 setSelectedQuestion(selectedQuestion - 1);
+              } else {
+                Alert.alert("Kthehu", "Deshiron te kthehesh?", [
+                  {
+                    text: "Jo",
+                    style: "cancel",
+                  },
+                  {
+                    text: "Po",
+                    style: "destructive",
+                    onPress: () => navigate("home"),
+                  },
+                ]);
               }
             }}
           />

@@ -83,7 +83,7 @@ export const styles = StyleSheet.create({
   current: {
     // backgroundColor: THEME.COLORS.GREY_800,
     fontSize: 16,
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: THEME.COLORS.WHITE,
     color: THEME.COLORS.WHITE,
     backgroundColor: THEME.COLORS.GREY_800,
@@ -91,7 +91,7 @@ export const styles = StyleSheet.create({
   answered: {
     // backgroundColor: THEME.COLORS.GREY_800,
     fontSize: 16,
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: THEME.COLORS.WARNING_LIGHT,
     color: THEME.COLORS.WHITE,
     backgroundColor: THEME.COLORS.WARNING_LIGHT,
