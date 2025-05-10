@@ -1,7 +1,7 @@
 export const PJESA_E_DYTE = {
   id: "2",
   title: "Pjesa e dytë (a)",
-  description: "Investigimi mjekoligjor përballë krimeve kunder jetës së personit",
+  description: "Investigimi mjekoligjor i kufomës",
   questions: [
     {
       title: "Nga veprimi i dhunshem i nje agjenti te jashtem shkaktohet:",
@@ -186,6 +186,72 @@ export const PJESA_E_DYTE = {
       explanation:
         "Pas 24 ore zona e infarktit përkufizohet qartë, merr ngjyrë të verdhë, bëhet më e butë në prekje se indi përreth (malatia cordis), ndëekaq kjo zonë brenda 2 muajve, do të zëvendeësohet me ind ligjor me ngjyrë gri",
       pageNumber: 40,
+    },
+    {
+      title: "Tek infarkti i miokaridit ndryshimet mikroskopike vërehen pas:",
+      alternatives: ["40 minutave", "4-7 orë", "1-3 ditë", "3-7 ditë"],
+      correct: 1,
+      explanation:
+        "Tek infarkti i miokaridit ndryshimet mikroskopike vërehen shumë më herët: pas 4-7 orë zona nekrotike bëhet e dukshme, e shoqëruar me reaksion leukocitar përreth",
+    },
+    {
+      title: "Në shenjat e menjëhershme pas vdekjes bën pjesë:",
+      alternatives: ["Perdja Winslow", "Ftohja e kufomës", "Regjja Torfore"],
+      correct: 0,
+      explanation:
+        "Perdja Winslow e cila paraqet humbjen e shkëlqimit të kornesë dhe lageshtinë e saj si pasojë e mungesës së lotit, duke marrë pamjen e trubullt brenda 30 minutave, hyn në shenjat e menjëhershme të pas vdekjës. Ftohja e kufomës bën pjesë në shenjat e hershme. Regjia torfore bën pjesë në shenjat e vonshme.",
+    },
+    {
+      title: "Në shenjat e menjëhershme pas vdekjes nuk bën pjesë bën pjesë:",
+      alternatives: [
+        "Njollat Larëshe",
+        "Zbehja dhe humbja e elasticitetit të lëkurës",
+        "Ndryshimi i hapjeve midis dy pupilave",
+        "Flluskat lëngëzuese.",
+      ],
+      correct: 3,
+      explanation:
+        "Flluskat lëngëzuese formohen ne stadin e lëngëzimit, i cili stad hyn në shenjat e vonshme të vdekjes.",
+    },
+    {
+      title: "Perdja Winslow e cila shfaqet pas 30 minutave pas vdekjës paraqet:",
+      alternatives: [
+        "Ndryshimin e hapjës ndërmjet pupilave",
+        "Mbulimin e plotësishëm kokërdhokut nga kapakët e syve",
+        "Humbjen e shkëlqimit dhe lagështisë nga mungesa e lotit.",
+      ],
+      correct: 2,
+      explanation:
+        "Ndryshimin e hapjës ndërmjet pupilave shfaqet si shenjë në rastet e dëmtimeve të trurit dhe të helmimit nga drogat. Mbulimin e plotësishëm kokërdhokut nga kapakët e syve paraqet njollat Larëshe. Humbjen e shkëlqimit dhe lagështisë nga mungesa e lotit paraqet perden Winslow.",
+    },
+    {
+      title: "Njollat kufomore fillojnë të bëhen të dukshme:",
+      alternatives: ["10-15 minuta pas vdekjes", "30 minuta deri ne 2 orë pas vdekjes", "15- 24 orë pas vdekjes"],
+      correct: 1,
+    },
+    {
+      title: "Njollat kufomore bëhen fikse:",
+      alternatives: ["10-15 minuta pas vdekjes", "30 minuta deri ne 2 orë pas vdekjes", "15- 24 orë pas vdekjes"],
+      correct: 2,
+    },
+    {
+      title: "Për të diferencuar njollat kufomore nga ekimozat kryhet:",
+      alternatives: [
+        "Prerje e thjeshtë e njollës",
+        "Prova Galenit",
+        "Prova e shtypjes së njollës",
+        "Formula e Casper-it",
+      ],
+      correct: 0,
+    },
+    {
+      title: "Rëndit kronologjinë e saktë në bazë të kohës tek shtangësia kufomore:",
+      alternatives: [
+        "Në 2 orët e para-relaksim i plotë; pas 2 ore fillon shtangësia kufomore; 8-16 orë kemi shtangësinë e plotë",
+        "Në 20 minutat e para kemi relaksimin e plotë; pas 2 ore fillon shtangësia kufomore; pas 2 dite kemi shtangësinë e plotë.",
+        "Në 20 minutat e para kemi relaksimin e plotë; pas 20 minutave fillon shtangësia kufomore; pas 2 ore kemi shtangësinë e plotë.",
+      ],
+      correct: 0,
     },
   ],
 };
