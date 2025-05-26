@@ -126,5 +126,66 @@ export const PJESA_E_DYTE_B = {
       explanation:
         "Plaga në trajtën e yllit apo kryqit dhe jo rrallë me stampim të tytës rreth saj është karakteristike për qitjet me puthitje të plotë",
     },
+    {
+      title: 'Dukuria e "spërklimi mbrapsht" është karakteristike për:',
+      alternatives: [
+        "Qitjes nga largësia",
+        "Qitjes me puthitje të pjesshme",
+        "Qitje me puthitje të plotë",
+        "Qitjes nga afërsia",
+      ],
+      correct: 2,
+      explanation:
+        'Sprucimi i pikëzave të gjakut, i pjesëzave indore, i blozës etj., të krijuara në hapësirëm e fryrë midis skalpit dhe kockës, i cili shpërndahet në një largësi maksimale deri në një metër dhe që njihet si dukuria e "spërklimi mbrapsht" është karakteristike për qitjet me puthitje.',
+    },
+    {
+      title: "Rregulla e Puppes:",
+      alternatives: [
+        "Përcakton kanalin e predhës në trup",
+        "Përcakton drejtimin e qitjes",
+        "Përcakton llojin e armës",
+        "Përcakton numrin dhe rradhën e kalimit të predhave në trup",
+      ],
+      correct: 3,
+      explanation:
+        "Përcaktimi i numrit dhe i radhës së kalimit të predhave në trup konsiston në numërimin e vrimave të hyrjes, ndjekjen e kanalit të predhës nëpërmjet sondimit, duke i korresponduar me vrimat e daljes. Përcaktimi i radhës bëhet i saktë kur dy predha kanë hyrë në të njejtin kavitet, p.sh. në kafkë oredha e parë shkakton fraktura rrethore dhe rrezore, ndërsa e dyta vetëm fraktura rrezore që ndërpriten me të parat, që njihet ndryshe si rregulla e Puppe-s.",
+    },
+    {
+      title: "Cilat nga këto bën pjesë në karakteristikat e qitjeve për motive vetëvrasje:",
+      alternatives: [
+        "Spërklimi mbrapsht",
+        "Plagë të shumta në regjione të ndryshme",
+        "Arma gjendet pranë viktimës",
+        "Vrima hyrëse në regjionin e shpinës",
+      ],
+      correct: 0,
+      explanation:
+        "Dukuria e spërklimit mbrapsht vërehet tek qitjet me motive vetëvrasjesh, ndërsa karakteristikat tjera hasen tek rastet me motive vrasjesh.",
+    },
+    {
+      title:
+        "Në rastet kur dëmtimet e shkaktuara në kokë shoqërohen me vrimosje të kockave të kafkës por pa fraktura përreth vrimës kemi të bëjmë me:",
+      alternatives: ["Qitje nga afërsia absolute", "Qitje nga largësia", 'Dëmtime nga "prredhat qorre"'],
+      correct: 2,
+      explanation:
+        "Në dëmtimet e shkaktuara nga predha qorre kemi dëmtimet e shkaktuara në kokë të shoqëruara me vrimosje të kockave të kafkës por pa fraktura përreth vrimës. Kjo sepse në këto raste predha nuk vepron me energjinë e saj kinetike por në mënyrë mekanike nën ndikimin e gravitetit.",
+    },
+    {
+      title: '"Frakturat e parakolpit" janë karakteristike për:',
+      alternatives: ["Aksidentet nga anash", "Aksidentet e këmbësorëve", "Aksidentet nga prapa", "Aksidentet nga para"],
+      correct: 1,
+    },
+    {
+      title: "Në grupin e dëmtimeve jo tipike të aksidenteve hekurudhore bën pjesë:",
+      alternatives: [
+        "Çarja e organeve të brendshme",
+        "Gjurmë të stampimit të rrotave",
+        "Shkëkuptje indesh",
+        "Gjurma e fërkimit",
+      ],
+      correct: 0,
+      explanation:
+        "Gjurma e stampimit të rrotës, gjurma e fërkimit, shkëputja e indeve bëjnë pjesë në dëmtime tipike të aksidenteve hekurrudhore. Ndërsa në dëmtime jo tipike hyjnë kryesisht plagë, fraktura, çarje të organeve të brendshme etj.",
+    },
   ],
 };
