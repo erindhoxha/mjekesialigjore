@@ -253,5 +253,58 @@ export const PJESA_E_DYTE = {
       ],
       correct: 0,
     },
+    {
+      title: "Në parim, në temperaturë ambienti rreth 0 gradë celcius, temperatura e kufomës ulet:",
+      alternatives: ["0 gradë/orë", "1 gradë/orë", "2 gradë/orë", "3 gradë/orë"],
+      correct: 2,
+    },
+    {
+      title: "Cka tregon Formula e Casperit:",
+      alternatives: [
+        "Shkalla e dekompozimit të një kufome gjatë qëndrimit për një javë në ujë është e barabartë me dy javë të qëndrimit në ajër",
+        "Shkalla e dekompozimit të një kufome gjatë qëndrimit për një javë në ambient të jashtëm është e barabratë sa për dy javë në ujë dhe tetë javë në dhe",
+        "Shkalla e dekompozimit të një kufome gjatë qëndrimit në ujë është e barabart me dy javë të qëndrimit në dhe.",
+      ],
+      correct: 1,
+    },
+    {
+      title: "Stadi i ngjyrimit, fryerjës dhe lëngëzimit janë stadet:",
+      alternatives: ["Konservimit", "Njollave kufomore", "Kalbëzimit", "Mumifikimit"],
+      correct: 2,
+    },
+    {
+      title: "Stadi i skeletizimit në kushte nëntokësore bëhet i plotë pas:",
+      alternatives: ["6 muajve", "1 vjete", "2 vjete", "3 muajve"],
+      correct: 2,
+    },
+    {
+      title: "Regjja torfore bën pjesë në:",
+      alternatives: [
+        "Stadin e kalbëzimit",
+        "Shenjat e hershme kufomore",
+        "Stadin e konservimit",
+        "Shenjat e menjehershme kufomore",
+      ],
+      correct: 3,
+    },
+    {
+      title: "Autopsia duhet të kryhet jo më pare se:",
+      alternatives: [
+        "3 orë nga momenti i vdekjes",
+        "6 orë nga momenti i vdekjes",
+        "12 orë nga momenti i vdekjes",
+        "24 orë nga momenti i vdekjes",
+      ],
+      correct: 3,
+    },
+    {
+      title: "Në përshkrimin e këqyrjes së jashtme, eksperti ndër të tjerash përshkruan dhe:",
+      alternatives: [
+        "Praninë ose mungesën e dhëmbëve",
+        "Sistemet e organeve sipas rënditjes",
+        "Mjetin që ka shkaktuar vdekjen",
+      ],
+      correct: 0,
+    },
   ],
 };

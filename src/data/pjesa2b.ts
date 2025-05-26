@@ -1,175 +1,130 @@
 export const PJESA_E_DYTE_B = {
   id: "3",
   title: "Pjesa e dytë (b)",
-  description: "Investigimi mjekoligjor përballë krimeve kunder jetës së personit",
+  description: "Vdekjet nga traumat fizike",
   questions: [
     {
-      title: "Nga veprimi i dhunshem i nje agjenti te jashtem shkaktohet:",
-      alternatives: ["Semundja", "Trauma", "Vdekja Natyrore"],
+      title: 'Simptomi i "syzeve të diellit" tregon për:',
+      alternatives: [
+        "Frakturat e komblikut",
+        "Frakturat e bazës së kafkës",
+        "Vdekjet asfiktike",
+        "Vdekjet pas keqtrajtimeve tek krimet seksuale",
+      ],
       correct: 1,
-      pageNumber: 26,
       explanation:
-        "Trauma, nënkupton cënimin e tërësise anatomike ose funksionale te indeve dhe organeve nga veprimi i dhunshëm i një agienti të jashtëm (fizik, termik. kimik etj), duke shkaktuar dëmtimin e shëndetit ose vdekjën.",
+        'Simptomi i "syzeve të diellit" (hematona përreth syve, rakoon eye) tregon për frakturat e bazës së kafkës.',
     },
     {
-      title: "Sendet të cilat rastësisht ose qëllimisht mund te perdoren per goditje ose vetembrojtje jane:",
-      alternatives: ["Mjetët", "Veglat", "Armët"],
+      title: "Si rregull, sasia e mbi sa mililitrave gjak e  tamponadës së zemrës shkakton vdekje?",
+      alternatives: ["50 mililitrave", "100 mililitra", "150 mililitra"],
+      correct: 2,
+      explanation: "Sasia e mbi 150 ml gjak të tamponadës shkakton vdekje.",
+    },
+    {
+      title: '"Fraktura e Colles" që është thyerje e kockës radiale në pjesën distale, vërehet:',
+      alternatives: [
+        "Tek drejtuesit e motorcikletave",
+        "Tek drejtuesit e automobilave",
+        "Tek rrezimet me dorë të shtrirë",
+      ],
+      correct: 2,
+      explanation:
+        'Fraktura e kycit të duarve vërehen tek drejtuesit e motorcikletave dhe automobileve. Ndërsa "fraktura e Colles" është thyerje e kockës radiale në pjesën distale dhe vërehet kur një person rrëzohet me dorë të shtrirë.',
+    },
+    {
+      title: "Në demtime mbrojtëse bëjnë pjesë:",
+      alternatives: ['"Fraktura e Colles"', "Fraktura e boksierit", "Plagët në parakrah."],
+      correct: 2,
+      explanation: 'Fraktura e Colles dhe fraktura e boksierit hyjnë në të ashtuquajturat "dëmtime sulmuese"',
+    },
+    {
+      title: 'Mungesa e "urëzave indore" janë vecori dalluese e:',
+      alternatives: [
+        "Plagëve të shkaktuara me mjete të mprehta",
+        "Plagëve të shkaktuara me intenzitet të lartë",
+        "Plagëve të shkaktuara nga përvlimet",
+        "Plagëve të shkaktuara nga mjeti i fortë",
+      ],
       correct: 0,
-      explanation: "",
+      explanation:
+        'Mungesa "urëzave indore" janë vecori dalluese e plagëve të shkaktuara me mjete të mprehta , pasi që mjeti shpies pret, mjeti i fortë gris.',
+    },
+    {
+      title: 'Trajta e shkronjës "Y" dhe "L" brenda kanalit të plagës ose trupit të viktimes, tregon për:',
+      alternatives: ["Trajtën e mjetit", "Lëvizjën e tehut", "Këndin e shpimit"],
+      correct: 1,
+      explanation:
+        'Brenda kanalit të plagës ose trupit të viktimës, në momentin e nxerrjes së thikës së ngulir, kur lëviz thika plaga do të ketë trajtën e shkronjës "Y", kur lëvizë trupi plaga do të ketë trajtën e shkronjës "L"',
     },
     {
       title:
-        "Dëmtimet e siperfaqëshme te lëkurës, nga veprimi në menyrë tangjenciale të buzëve te një mjeti te fortë ose rrallë nga shtypja me këtë mjet janë:",
-      alternatives: ["Hematoma", "Laceracione", "Dermishje dhe gervishje", "Ruptura"],
-      correct: 2,
-    },
-    {
-      title: "Për t'u cilësuar si rrëmishje duhet të kemi:",
-      alternatives: [
-        "Dermishje të shoqëruara me laceracionet jo më të mëdha se 2 cm",
-        "Dermishje të shoqëruara me ekimoza dhe hematoma",
-        "Dermishje të shoqëruara me dermishje gjatesore.",
-      ],
+        "Plagët me mjete të prehta mund të kenë karakteristika dalluese në vetërasje, vrasje dhe ngjarje aksidentale. Në motivet vetëvrasëse hasim:",
+      alternatives: ["Plagët shpuese mbrojtëse", "Plagët hezituese", "Plagë vetëm në regjionin e shpinës"],
       correct: 1,
+      explanation:
+        "Plagët e cekëta që vijnë gradualisht duke u bërë më të thella janë plagët hezituese, mbas të cilave gjendet plaka vdekjeprurëse.",
     },
     {
-      title: 'Simptoma e syzeve te errëta" ose "rakun eyes" na tregon për:',
-      alternatives: [
-        "Permasën e kontuzionit",
-        "Forcën e goditjës",
-        "Frakturën e bazës së kafkës",
-        "Frakturën e os nasale",
-      ],
+      title: "Vecorite dalluese mes plagëve shpuese bëhen në bazë të fijeve të:",
+      alternatives: ["Morga-n", "Litchenbergu-t", "Langer-it", "Locardi-t"],
       correct: 2,
+      explanation: "Të ashtuquajturat vijat ndarëse të Langerit, ku tufat e fibrave",
     },
     {
-      title: "Cfare ngjyre ka hematoma ne diten e 2te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce."],
-      correct: 2,
-    },
-    {
-      title: "Cfare ngjyre ka hematoma ne diten e 4te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
-      correct: 1,
-    },
-    {
-      title: "Cfare ngjyre ka hematoma ne diten e 8te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
+      title: '"Plagët shpuese mbrojtëse" na tregojnë për goditjetet me motive:',
+      alternatives: ["Vrasje", "Vetëvrasje", "Aksidente komunikacioni"],
       correct: 0,
-    },
-    {
-      title: 'Prania e "urezave indore" eshte karakteristike e:',
-      alternatives: ["Laceracioneve", "Kontuzioneve", "Crush Syndrome", "Frakturave"],
-      correct: 0,
-    },
-    {
-      title: "Per goditje me intensitet te larte, nga pikepamja mjeko ligjore tregon:",
-      alternatives: ["Laceracioni", "Kontuzioni", "Fraktura"],
-      correct: 2,
-    },
-    {
-      title: "Bazuar ne tendencen e organeve per te pesuar carje me mjetet e forta, cila nga keto ekuacione vlen:",
-      alternatives: ["Zorret>Melcia", "Melcia>Stomaku", "Stomaku>Shpretka"],
-      correct: 1,
-      explanation:
-        "Tendence per ruptura(carje) nga goditjet me mjetet e forta kane melcia, veshka, shpretka etj. dhe shume rralle stomaku apo zorret.",
-    },
-    {
-      title: "Me detrakcion kuptojme:",
-      alternatives: [
-        "Shkaterrimin e plote te arkitektures anatomike te organit",
-        "Shtypjen apo ngjeshjen e nje pjese te trupit",
-        "Copetimin apo prerjen e plote te nje pjese te trupit",
-        "Demtimin funksional dhe te menjehershem te vetedijes",
-      ],
-      correct: 2,
-    },
-    {
-      title: "Komucioni paraqet:",
-      alternatives: ["Shembjen e trurit", "Gjakderdhjen e trurit", "Tronditjen e trurit", "Te gjitha"],
-      correct: 2,
-    },
-    {
-      title: "Arresti kardiorespirator paraqet:",
-      alternatives: ["Shkakun e vdekjes", "Menyren e vdekjes", "Mekanizmin e vdekjes", "Asnjera"],
-      correct: 3,
-    },
-    {
-      title: "Në cilën nga situatat e mëposhtme nuk përfshihet hetimi mjekoligjor i kufomës?",
-      alternatives: [
-        "Vdekje nga shkaqe të dhunshme",
-        "Vdekje e sëmurësh në institucionet shëndetësore pas 72 orësh",
-        "Vdekje e papritur dhe e paparashikueshme",
-        "Kufomat e personave të panjohur",
-      ],
-      correct: 1,
-      explanation:
-        "Hetimet ndodhin në rastet e pacientëve që vdesin në institucionet shëndetësore brenda 24 orëve nga shtrimi, jo pas 72 orësh",
-    },
-    {
-      title: "Cila nga detyrat e mëposhtme nuk është detyrë e investigimit mjekoligjor në procesin penal?",
-      alternatives: [
-        "Përcaktimi i shkakut të vdekjes",
-        "Përcaktimi i mekanizmit dhe mënyrës së vdekjes",
-        "Përcaktimi i autorit të krimit",
-        "Dokumentimi i gjurmëve dhe shenjave të dëmtimeve",
-      ],
-      correct: 2,
-      explanation:
-        '"Përcaktimi i autorit të krimit" nuk është roli i investigimit mjekoligjor. Kjo bie në fushën e punës policore dhe hetimeve kriminale.',
-    },
-    {
-      title: "Nëse pas autopsisë dhe hetimeve të tjera nuk mund të përcaktohet shkaku i vdekjes, ajo konsiderohet:",
-      alternatives: ["Vdekje natyrore", "Vdekje e paklasifikuar", "Vdekje e papërcaktuar", "Vdekje aksidentale"],
-      correct: 2,
-      explanation:
-        "E papërcaktuar konsiderohet ajo vdekje që, edhe pas autopsisë, analizave laboratorike dhe hetimit të çështjes, nuk është e mundur të konkludohet nëse është vdekje kriminale apo natyrore.",
-    },
-    {
-      title: "Cili nga termat e mëposhtëm përshkruan më mirë studimin e ndryshimeve të ndodhura në trup pas vdekjes?",
-      alternatives: ["Biologjia ligjore", "Kriminalistika", "Patologjia ligjore", "Tanantologjia mjekoligjore"],
-      correct: 3,
-      explanaton:
-        'Vdekja pas vdekjes (tanatologjia mjekoligjore)"  e përcakton tanatologjinë mjekoligjore si studimin e ndryshimeve që ndodhin në trup pas vdekjes.',
-    },
-    {
-      title: "Shkak i vdekjës është:",
-      alternatives: ["Arresti kardiorespirator", "Paraliza e frymëmarrjes", "Toksemia", "Helmimi"],
-      correct: 3,
-      explanation:
-        "Arresti Kardiorespirator nuk paraqet shkak, mekanizem apo menyre te vdekjes. Toksemia dhe paraliza e frymemarrjes paraqesin mekanizmat e vdekjes.",
-    },
-    {
-      title: "Shkak i vdekjës është:",
-      alternatives: ["Aneurizma trunore", "Asistolia", "Pleqeria", "Shoku hemoragjik"],
-      correct: 0,
-    },
-    {
-      title: "Cila nga keto nuk paraqet shkakun e vdekjes:",
-      alternatives: ["Infarkti i muskulit te zemres", "Gripi toksik. Anoksia e trurit", "Goditja nga rryma elektrike"],
-      correct: 2,
-    },
-    {
-      title: "Cila nga keto nuk paraqet mekanizmin e vdekjes:",
-      alternatives: ["Bronkopneumonia", "Shoku traumatik", "Shtrengimi i qafes me lak", "Semundja kancerogjene"],
-      correct: 1,
-    },
-    {
-      title: "Lloji i ardhjes se shkakut te vdekjes qe nenkupton formen ligjore te vdekjes paraqet:",
-      alternatives: ["Shkakun e vdekjes", "Menyren e vdekjes", "Mekanizmin e vdekjes", "Asnjera"],
-      correct: 1,
+      explanation: `"Plagët shpuese mbrojtëse" na tregojnë qartazi përpjekjet e viktimës për t'u mbrojtur nga goditjetet me motive vrasëse.`,
     },
     {
       title:
-        "Vdekja nga helmimi, i fothti, traumat elektrike etj. funksionet dhe proceset metabolike reduktohen ne parametra minimal qe me apo pa dhenien e ndihmes mjekesore personi mund te kththet serish ne jete paraqet:",
-      alternatives: ["Vdekje e papritur", "Vdekje biologjike", "Vdekje fiktive apo letragjia", "Vdekje e papritur"],
-      correct: 2,
+        "Tek dëmtimet me armë zjarri, organet hetimore e gjyqësore kërkojnë nga ekspertimi mjekoligjor për të zgjidhur këto qështje:",
+      alternatives: [
+        "Përcaktimin e demtimeve nga arma e zjarrit dhe autorin e veprës",
+        "Përcaktimin e drejtimit të qitjës dhe llojit të armës",
+        "Përcaktimin e largësisë së qitjës dhe autorin e krimit",
+      ],
+      correct: 1,
+      explanation:
+        "Tek dëmtimet me armë zjarri, organet hetimore e gjyqësore kërkojnë nga ekspertimi mjekoligjor për të zgjidhur këto qështje: Përcaktimin e dëmtimeve nga arma e zjarrit; Përcaktimi i largësisë së qitjes; Përcaktimin e drejtimit të qitjës; Përcaktimi i llojit të armës.",
+    },
+    {
+      title: "Rryma e flakës, re gazi, karboni ose bloza dhe grimcat e padjegura bëjnë pjesë në:",
+      alternatives: [
+        "Cështjet kryesore të hetimeve",
+        "Faktorët plotësues të qitjës",
+        "Përcaktimin e dëmtimeve",
+        "Rregullin e Pupës",
+      ],
+      correct: 1,
+      explanation:
+        "Ndihmë e vecantë në përcaktimin e largësisë së qitjës japin faktorët plotësues të cilat janë: Rryma e flakës, reja e gazit, karboni ose bloza nga baroti i djegur dhe grimcat e padjegura të barotit.",
     },
     {
       title:
-        "Tek pacienti i cili vuan nga nje semundje e pasherueshme dhe eshte ne gjendje terminale, deshiron te lehtesoj dhimbjet dhe i pershpejtohet vdekja me rruge mjekesore kemi te bejme me vdekje:",
-      alternatives: ["Ligjore", "Eutanazike", "Denim kapital", "Vdekje shpirterore"],
+        "Prania e të gjithë faktorëve plotësues, buzët e vrimës së hyrjes të djegura dhe të nxira, prania e uazës me ngjyrë kafe të zezë etj., janë karakteristika të:",
+      alternatives: [
+        "Qitjes me puthitje të pjesshme",
+        "Qitjes nga afërsia",
+        "Qitjes nga largësia",
+        "Qitje me puthitje të plotë",
+      ],
+      correct: 3,
+      explanation:
+        "Prania e të gjithë faktorëve plotësues, buzët e vrimës së hyrjes të djegura dhe të nxira, prania e uazës me ngjyrë kafe të zezë etj., janë karakteristika të qitjeve me puthitje të plotë.",
+    },
+    {
+      title: "Plaga në trajtën e yllit është karakteristike për:",
+      alternatives: [
+        "Qitjes me puthitje të pjesshme",
+        "Qitje me puthitje të plotë",
+        "Qitjes nga afërsia",
+        "Qitjes nga largësia",
+      ],
       correct: 1,
+      explanation:
+        "Plaga në trajtën e yllit apo kryqit dhe jo rrallë me stampim të tytës rreth saj është karakteristike për qitjet me puthitje të plotë",
     },
   ],
 };

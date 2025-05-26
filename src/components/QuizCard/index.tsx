@@ -73,11 +73,14 @@ export function QuizCard({ index, data, ...rest }: Props) {
         <View style={{ flexDirection: "row" }}>
           <Text style={styles.title}>{data.title}</Text>
         </View>
-        <Text style={styles.description}>{data.description}</Text>
-        <Text style={styles.description}>{data.pytjet} pyetje</Text>
+        <View style={styles.descriptionView}>
+          <Text style={styles.description}>{data.description}</Text>
+        </View>
+        <Text style={styles.pytjet}>{data.pytjet} pyetje</Text>
       </TouchableOpacityAnimated>
     );
   } else {
+    console.log(data);
     return (
       <TouchableOpacityAnimated
         entering={FadeInUp.delay(index * 100)}

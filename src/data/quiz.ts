@@ -10,8 +10,8 @@ export const QUIZ = [
   PJESA_E_DYTE_C,
   {
     id: "5",
-    title: "Pjesa e pestë",
-    description: "Investigimi i provave materiale biologjike",
+    title: "Pjesa e dytë (d)",
+    description: "Dëmtimet nutritive, dëmtimet psikike dhe vdekja nga traumat kimike",
     questions: [
       {
         title: "Cila është festa kombëtare e Shqipërisë?",

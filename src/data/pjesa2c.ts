@@ -1,7 +1,7 @@
 export const PJESA_E_DYTE_C = {
   id: "4",
   title: "Pjesa e dytë (c)",
-  description: "Investigimi mjekoligjor përballë krimeve kunder jetës së personit",
+  description: "Vdekjet nga traumat asfiktike, termike dhe elektrike",
   questions: [
     {
       title: "Nga veprimi i dhunshem i nje agjenti te jashtem shkaktohet:",
