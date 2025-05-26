@@ -4,172 +4,136 @@ export const PJESA_E_DYTE_C = {
   description: "Vdekjet nga traumat asfiktike, termike dhe elektrike",
   questions: [
     {
-      title: "Nga veprimi i dhunshem i nje agjenti te jashtem shkaktohet:",
-      alternatives: ["Semundja", "Trauma", "Vdekja Natyrore"],
-      correct: 1,
-      pageNumber: 26,
+      title: "Mbytja mjedisore, mbytja nga mbyllja e vrimave të hundës dhe gojës, asfiksia traumatike bëjnë pjesë në:",
+      alternatives: ["Asfiksitë nga shtrëngimi", "Asfiksitë nga mbytja në lëngje", "Asfiksitë nga mbytja"],
+      correct: 2,
       explanation:
-        "Trauma, nënkupton cënimin e tërësise anatomike ose funksionale te indeve dhe organeve nga veprimi i dhunshëm i një agienti të jashtëm (fizik, termik. kimik etj), duke shkaktuar dëmtimin e shëndetit ose vdekjën.",
+        "Mbytja mjedisore, mbytja nga mbyllja e vrimave të hundës dhe gojës, Mbytja nga zënia e rrugëve të frymëmarrjes dhe asfiksia traumatike bëjnë pjesë në asfiksitë nga mbytja qe janë asfiksi kur oksigjeni nuk arrin në gjak.",
     },
     {
-      title: "Sendet të cilat rastësisht ose qëllimisht mund te perdoren per goditje ose vetembrojtje jane:",
-      alternatives: ["Mjetët", "Veglat", "Armët"],
+      title: "Asfiksia Posturale paraqet:",
+      alternatives: [
+        "Asfiksinë si pasojë e turmave të mëdha njerëzish qe bien sipër njëri tjetrit",
+        "Asfiksinë si pasojë e ngecjës së trupava të huaj në rrugët e frymëmarrjës",
+        "Asfiksi kur një person mbahet me kokë poshtë, apo kur dikush e shtrëngon fortë",
+        "Asfiksi si pasojë e shtypjës nga një objekt i fortë",
+      ],
+      correct: 2,
+      explanation:
+        "Asfiksia pozicionale apo posturale paraqet asfiksinë kur një person mbahet me kokë pooshtë, ose kur dikush e shtrëngon fort me krahë pas vetës, apo edhe kur transportohet i mbajtur në shpinë",
+    },
+    {
+      title: "Në rastet e varjeve, shenja tipike kryesore është:",
+      alternatives: [
+        "Zona ekimotike në mukozën e buzës së sipërme",
+        "Brazda e strangulimit",
+        "Prania e këpurdhës shkumoze",
+      ],
+      correct: 1,
+      explanation: "Në rastet e varjeve, shenja tipike kryesore është brazda e strangulimit.",
+    },
+    {
+      title: "Cila nga këto mbytje nuk mund të jetë vetërasje:",
+      alternatives: ["Mbytja me lak", "Mbytja nga shtrëngimi (strangulimi)", "Mbytja me duar"],
+      correct: 2,
+      explanation:
+        "Vetëvrasja nuk është e mundur të realizohet, mbasi humbja e ndërgjegjës bënë clirimin e shtypjes së qafës.",
+    },
+    {
+      title: "Njollat Tardiie jane:",
+      alternatives: [
+        "Dërmishjet rreth qafës",
+        "Pikëzimet hemorragjikek në cipat e organeve",
+        "Pikëzimet hemorragjike në indet e buta të qafës",
+        "Gërvishtjet në ekstremitetet e viktimës",
+      ],
+      correct: 1,
+      explanation: "Pikëzimet hemorragjike në cipat e organeve njihen si njollat e Tardieu-së dhe hasen tek varjet.",
+    },
+    {
+      title: "Mekanizmi i vdekjës ne mbytjet në lëngje është:",
+      alternatives: [
+        "Anoksia cerebrale e parikthyeshme",
+        "Gjakderdhja e brendshme",
+        "Gjakderdhja e jashtme",
+        "Dehidrimi dhe denatyrimi i proteinave",
+      ],
       correct: 0,
-      explanation: "",
+      explanation: "Mekanizmi i vdekjës në mbytjet me lëngje është anoksia cerebrale e parikthyeshme.",
+    },
+    {
+      title: "Këpurdha shkumore haset tek:",
+      alternatives: [
+        "Mbytjet me lak",
+        "Mbytjet nga traumat fizike",
+        "Mbytjet nga asfiksia mjedisore",
+        "Mbytjet nga lëngjet",
+      ],
+      correct: 3,
+      explanation:
+        'Këpurdhat shkumore hasen tek mbytjet në lëngje. Nëse një kufomë nxirret shpejt nga auji, një shkumë nga edema pumonare do të mbushë vrimat e hundës dhe gojës, krijuar "këpurdhën shkumore".',
+    },
+    {
+      title: '"Duart e robalarësës" krijohet kur kufoma ka ndenjur në ujë:',
+      alternatives: ["Jo më shumë se 30 minuta", "4-6 orë", "Jo më pak se 7 orë", "1-2 orë"],
+      correct: 3,
+      explanation: '"Duart e robalarësës" krijohen kur kufoma ka ndejtur të paktën 1-2 orë në ujë.',
+    },
+    {
+      title: '"Dorëzat dhe çorapet e vdekjes" krijohet kur kufoma ka ndenjur në ujë brenda:',
+      alternatives: ["2 orëve", "24 orëve", "2 ditëve", "2 javëve"],
+      correct: 3,
+      explanation: `"Duart e robalarësës" krijohen kur kufoma ka ndejtur të paktën 1-2 orë në ujë. Kur koha e qëndrimit në ujë zgjatet mbi 4-6 orë, rrudhat bëhen më të theksuara, të forta, të zbardhimta duke qëndruar kështu për një javë (fenomeni i macerimit), që më pas zbuten dhe fillojnëtë shqiten brenda dy javëve në trajtën e "dorëzave dhe çorapave të vdekjes".`,
+    },
+    {
+      title: "Shenjën e Svechnikov e hasim tek:",
+      alternatives: [
+        "Mbytja me lak",
+        "Mbytja nga shtrëngimi (strangulimi)",
+        "Mbytja me lëngje",
+        "Mbytja nga elektriiteti",
+      ],
+      correct: 2,
+      explanation:
+        "Në sinusin sfenoidal shpesh konstatohet prania e ujit, që njihet ndryshe si shenja Svechnikov, e cila do të konsiderohet shenjë patognomonike e mbytjeve me lëngje.",
+    },
+    {
+      title: "Përfshirja e epidermes nga djegia, e shoqëruar me skuqje dhe enjtje të lehtë, rrjepje e lëkurës paraqet:",
+      alternatives: [
+        "Shkallën e parë të djegieve",
+        "Shkallën e dytë të djegieve",
+        "Shkallën e tretë të djegjieve",
+        "Shkallën e katërt të djegieve",
+      ],
+      correct: 0,
+      explanation:
+        "Përfshirja e epidermes nga djegia, e shoqëruar me skuqje dhe enjtje të lehtë, rrjepje e lëkurës pa flluska, duke marrë një pamje të ngjajshme me djegiet nga dielli paraqet shkallën e parë të djegjeve (stadi eritematoz)",
     },
     {
       title:
-        "Dëmtimet e siperfaqëshme te lëkurës, nga veprimi në menyrë tangjenciale të buzëve te një mjeti te fortë ose rrallë nga shtypja me këtë mjet janë:",
-      alternatives: ["Hematoma", "Laceracione", "Dermishje dhe gervishje", "Ruptura"],
-      correct: 2,
-    },
-    {
-      title: "Për t'u cilësuar si rrëmishje duhet të kemi:",
+        "Përfshirja e epidermës dhe dermës, e shoqëruar me praninë e flluskave me madhësi të ndryshme, të mbushura me lëng të tejdukshëm paraqet:",
       alternatives: [
-        "Dermishje të shoqëruara me laceracionet jo më të mëdha se 2 cm",
-        "Dermishje të shoqëruara me ekimoza dhe hematoma",
-        "Dermishje të shoqëruara me dermishje gjatesore.",
-      ],
-      correct: 1,
-    },
-    {
-      title: 'Simptoma e syzeve te errëta" ose "rakun eyes" na tregon për:',
-      alternatives: [
-        "Permasën e kontuzionit",
-        "Forcën e goditjës",
-        "Frakturën e bazës së kafkës",
-        "Frakturën e os nasale",
-      ],
-      correct: 2,
-    },
-    {
-      title: "Cfare ngjyre ka hematoma ne diten e 2te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce."],
-      correct: 2,
-    },
-    {
-      title: "Cfare ngjyre ka hematoma ne diten e 4te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
-      correct: 1,
-    },
-    {
-      title: "Cfare ngjyre ka hematoma ne diten e 8te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
-      correct: 0,
-    },
-    {
-      title: 'Prania e "urezave indore" eshte karakteristike e:',
-      alternatives: ["Laceracioneve", "Kontuzioneve", "Crush Syndrome", "Frakturave"],
-      correct: 0,
-    },
-    {
-      title: "Per goditje me intensitet te larte, nga pikepamja mjeko ligjore tregon:",
-      alternatives: ["Laceracioni", "Kontuzioni", "Fraktura"],
-      correct: 2,
-    },
-    {
-      title: "Bazuar ne tendencen e organeve per te pesuar carje me mjetet e forta, cila nga keto ekuacione vlen:",
-      alternatives: ["Zorret>Melcia", "Melcia>Stomaku", "Stomaku>Shpretka"],
-      correct: 1,
-      explanation:
-        "Tendence per ruptura(carje) nga goditjet me mjetet e forta kane melcia, veshka, shpretka etj. dhe shume rralle stomaku apo zorret.",
-    },
-    {
-      title: "Me detrakcion kuptojme:",
-      alternatives: [
-        "Shkaterrimin e plote te arkitektures anatomike te organit",
-        "Shtypjen apo ngjeshjen e nje pjese te trupit",
-        "Copetimin apo prerjen e plote te nje pjese te trupit",
-        "Demtimin funksional dhe te menjehershem te vetedijes",
-      ],
-      correct: 2,
-    },
-    {
-      title: "Komucioni paraqet:",
-      alternatives: ["Shembjen e trurit", "Gjakderdhjen e trurit", "Tronditjen e trurit", "Te gjitha"],
-      correct: 2,
-    },
-    {
-      title: "Arresti kardiorespirator paraqet:",
-      alternatives: ["Shkakun e vdekjes", "Menyren e vdekjes", "Mekanizmin e vdekjes", "Asnjera"],
-      correct: 3,
-    },
-    {
-      title: "Në cilën nga situatat e mëposhtme nuk përfshihet hetimi mjekoligjor i kufomës?",
-      alternatives: [
-        "Vdekje nga shkaqe të dhunshme",
-        "Vdekje e sëmurësh në institucionet shëndetësore pas 72 orësh",
-        "Vdekje e papritur dhe e paparashikueshme",
-        "Kufomat e personave të panjohur",
+        "Shkallën e parë të djegieve",
+        "Shkallën e dytë të djegieve",
+        "Shkallën e tretë të djegjieve",
+        "Shkallën e katërt të djegieve",
       ],
       correct: 1,
       explanation:
-        "Hetimet ndodhin në rastet e pacientëve që vdesin në institucionet shëndetësore brenda 24 orëve nga shtrimi, jo pas 72 orësh",
-    },
-    {
-      title: "Cila nga detyrat e mëposhtme nuk është detyrë e investigimit mjekoligjor në procesin penal?",
-      alternatives: [
-        "Përcaktimi i shkakut të vdekjes",
-        "Përcaktimi i mekanizmit dhe mënyrës së vdekjes",
-        "Përcaktimi i autorit të krimit",
-        "Dokumentimi i gjurmëve dhe shenjave të dëmtimeve",
-      ],
-      correct: 2,
-      explanation:
-        '"Përcaktimi i autorit të krimit" nuk është roli i investigimit mjekoligjor. Kjo bie në fushën e punës policore dhe hetimeve kriminale.',
-    },
-    {
-      title: "Nëse pas autopsisë dhe hetimeve të tjera nuk mund të përcaktohet shkaku i vdekjes, ajo konsiderohet:",
-      alternatives: ["Vdekje natyrore", "Vdekje e paklasifikuar", "Vdekje e papërcaktuar", "Vdekje aksidentale"],
-      correct: 2,
-      explanation:
-        "E papërcaktuar konsiderohet ajo vdekje që, edhe pas autopsisë, analizave laboratorike dhe hetimit të çështjes, nuk është e mundur të konkludohet nëse është vdekje kriminale apo natyrore.",
-    },
-    {
-      title: "Cili nga termat e mëposhtëm përshkruan më mirë studimin e ndryshimeve të ndodhura në trup pas vdekjes?",
-      alternatives: ["Biologjia ligjore", "Kriminalistika", "Patologjia ligjore", "Tanantologjia mjekoligjore"],
-      correct: 3,
-      explanaton:
-        'Vdekja pas vdekjes (tanatologjia mjekoligjore)"  e përcakton tanatologjinë mjekoligjore si studimin e ndryshimeve që ndodhin në trup pas vdekjes.',
-    },
-    {
-      title: "Shkak i vdekjës është:",
-      alternatives: ["Arresti kardiorespirator", "Paraliza e frymëmarrjes", "Toksemia", "Helmimi"],
-      correct: 3,
-      explanation:
-        "Arresti Kardiorespirator nuk paraqet shkak, mekanizem apo menyre te vdekjes. Toksemia dhe paraliza e frymemarrjes paraqesin mekanizmat e vdekjes.",
-    },
-    {
-      title: "Shkak i vdekjës është:",
-      alternatives: ["Aneurizma trunore", "Asistolia", "Pleqeria", "Shoku hemoragjik"],
-      correct: 0,
-    },
-    {
-      title: "Cila nga keto nuk paraqet shkakun e vdekjes:",
-      alternatives: ["Infarkti i muskulit te zemres", "Gripi toksik. Anoksia e trurit", "Goditja nga rryma elektrike"],
-      correct: 2,
-    },
-    {
-      title: "Cila nga keto nuk paraqet mekanizmin e vdekjes:",
-      alternatives: ["Bronkopneumonia", "Shoku traumatik", "Shtrengimi i qafes me lak", "Semundja kancerogjene"],
-      correct: 1,
-    },
-    {
-      title: "Lloji i ardhjes se shkakut te vdekjes qe nenkupton formen ligjore te vdekjes paraqet:",
-      alternatives: ["Shkakun e vdekjes", "Menyren e vdekjes", "Mekanizmin e vdekjes", "Asnjera"],
-      correct: 1,
+        "Përfshirja e epidermës dhe dermës, e shoqëruar me praninë e flluskave me madhësi të ndryshme, të mbushura me lëng të tejdukshëm paraqet shkallën e dytë të djegies (stadi vezikulo-buloz)",
     },
     {
       title:
-        "Vdekja nga helmimi, i fothti, traumat elektrike etj. funksionet dhe proceset metabolike reduktohen ne parametra minimal qe me apo pa dhenien e ndihmes mjekesore personi mund te kththet serish ne jete paraqet:",
-      alternatives: ["Vdekje e papritur", "Vdekje biologjike", "Vdekje fiktive apo letragjia", "Vdekje e papritur"],
+        "Përfshirja e tërë shtresave të lëkurës duke i dhënë asaj pamjen e zonave nekrotike me ngjyrë të verdhë në të errët paraqet:",
+      alternatives: [
+        "Shkallën e parë të djegieve",
+        "Shkallën e dytë të djegieve",
+        "Shkallën e tretë të djegjieve",
+        "Shkallën e katërt të djegieve.",
+      ],
       correct: 2,
-    },
-    {
-      title:
-        "Tek pacienti i cili vuan nga nje semundje e pasherueshme dhe eshte ne gjendje terminale, deshiron te lehtesoj dhimbjet dhe i pershpejtohet vdekja me rruge mjekesore kemi te bejme me vdekje:",
-      alternatives: ["Ligjore", "Eutanazike", "Denim kapital", "Vdekje shpirterore"],
-      correct: 1,
+      explanation:
+        "Përfshirja e tërë shtresave të lëkurës duke i dhënë asaj pamjen e zonave nekrotike me ngjyrë të verdhë në të errët paraqet shkallën e tretë të diegies (stadi nekrotik)",
     },
   ],
 };

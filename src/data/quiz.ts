@@ -32,7 +32,7 @@ export const QUIZ = [
   },
   {
     id: "6",
-    title: "Pjesa e gjashtë",
+    title: "Pjesa e tretë",
     description: "Etika dhe deontologjia mjekësore",
     questions: [
       {
@@ -54,7 +54,7 @@ export const QUIZ = [
   },
   {
     id: "7",
-    title: "Pjesa e shtatë",
+    title: "Pjesa e katert",
     description: "Ekspertiza mjekësore në procedurë civile",
     questions: [
       {
