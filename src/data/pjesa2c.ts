@@ -135,5 +135,145 @@ export const PJESA_E_DYTE_C = {
       explanation:
         "Përfshirja e tërë shtresave të lëkurës duke i dhënë asaj pamjen e zonave nekrotike me ngjyrë të verdhë në të errët paraqet shkallën e tretë të diegies (stadi nekrotik)",
     },
+    {
+      title:
+        "Karbonizimi i pjesshëm ose i plotë jo vetëm i lëkurës por edhe i indeve më të thella, muskujve dhe eshtrave paraqet:",
+      alternatives: [
+        "Shkallën e parë të djegieve",
+        "Shkallën e dytë të djegieve",
+        "Shkallën e tretë të djegjieve",
+        "Shkallën e katërt të djegieve.",
+      ],
+      correct: 3,
+      explanation:
+        "Karbonizimi i pjesshëm ose i plotë jo vetëm i lëkurës por edhe i indeve më të thella, muskujve dhe eshtrave paraqet shkallën e katërt të djegies (karbonizimit)",
+    },
+    {
+      title: "Përvëlimet vdekjeprurëse përfshijnë:",
+      alternatives: [
+        "5-10% të sipërfaqes së lëkurës",
+        "10-30% të sipërfaqes së lëkurës",
+        "30-50% të sipërfaqes së lëkurës",
+      ],
+      correct: 1,
+      explanation:
+        "Lëngjet në vlim shkaktojnë vdekje të ashtuquajtura përvlimet vdekjeprurëse, të shkallës së tretë, duke mjaftuar të përfshijnë 30-50% të sipërfaqes së trupit.",
+    },
+    {
+      title:
+        'Sipas mjetit që shkakton djegie, cili nga mjetet e poshtë shenuara i jep lëkurës pamjen e "gëzofit të leopardit":',
+      alternatives: [
+        "Lënget në vlim",
+        "Flaka",
+        "Flaka si rezultat i djegies së benzinës",
+        "Lëndët kimike si acide, baza",
+      ],
+      correct: 1,
+      explanation:
+        'Flaka shkakton të gjitha shkallët e diegies dhe meqenëse vepron jo me të njejtin intenzitet në të gjithë sipërfaqen e trupit, lëkura shpesh merr pamjen e "gëzofit të leopardit"',
+    },
+    {
+      title:
+        "Sipas mjetit që shkakton djegie, cili nga mjetet e poshtë shenuara i jep lëkurës pamjen e hartave gjeografike?",
+      alternatives: [
+        "Lënget në vlim",
+        "Flaka",
+        "Flaka si rezultat i djegies së benzinës",
+        "Lëndët kimike si acide, baza",
+      ],
+      correct: 2,
+      explanation:
+        "Kur flaka është rezultat i djegies së benzines, vajgurit etj., lëkura digjet në trajtë hartash gjeografike dhe gjurmët e këtyre lëndëve mund të gjenden në pjesët e padjegura të teshave.",
+    },
+    {
+      title:
+        "Sipas mjetit që shkakton djegie, cili nga mjetet e poshtë shenuara i jep lëkurës plagë të thella në trajtë njollash?",
+      alternatives: [
+        "Lënget në vlim",
+        "Flaka",
+        "Flaka si rezultat i djegies së benzinës",
+        "Lëndët kimike si acide, baza",
+      ],
+      correct: 3,
+      explanation:
+        "Plagët djegëse nga lëndët kimike gërryesee si acidet e bazat, që zakonisht ndodhin nga hedhja e tyre në fytyrë, japin plagë të thella të lëkurës në trajtë njollash si dhe verbim nga dëmtimi i syve etj.",
+    },
+    {
+      title: "Poza e boksierit në mbrotje, është karakteristike për:",
+      alternatives: [
+        "Vdekjet nga traumat termike",
+        "Vdekjet nga traumat asfiktike",
+        "Vdekjet nga traumat elektrike",
+        "Vdekjet nga traumat fizike",
+      ],
+      correct: 0,
+      explanation:
+        'Vdekja nga traumat termike. Në djegiet e shkallës së katërt, si pasojë e tkurrjes së muskujve pas vdekjes, të cilat shkurtohen për shkak të dehidraatimit dhe denatyrimit të proteinave, muskujt fleksorë kontraktohen më shpejtë dhe më fuqishëm, duke i dhënë trupit të kufomës të ashtuquajturën "poza e boksierit në mbrojte" me krahë të mbledhur përpara kraharorit, këmbët të përkulura në gjunjë, koka dhe shpatullat të tërhequra.',
+    },
+    {
+      title: '"Hematoma e nxehtë" vërehet tek:',
+      alternatives: [
+        "Vdekjet nga traumat asfiktike",
+        "Vdekjet nga traumat elektrike",
+        "Vdekjet nga traumat fizike",
+        "Vdekjet nga traumat termike",
+      ],
+      correct: 3,
+    },
+    {
+      title: "Në veçorit dalluese të djegieve për së gjalli nuk bën pjesë:",
+      alternatives: [
+        "Prania e leukociteve dhe fibrinës në lëngun e fshikëzave",
+        "Prania e oksidit të karbonit në gjak",
+        "Prania e blozës në rrugët e frymëmarrjes",
+        "Prania e blozës në palët e kapakëve të syve",
+      ],
+      correct: 3,
+      explanation:
+        "Mungesa e dëmtimeve dhe mosprania e blozës në palët e kapakëve të syve të mbledhura instiktivisht nga mbyllja e syve për tu mbrojtur nga zjarri janë veçori dalluese të diegies për së gjalli.",
+    },
+    {
+      title: "Me vdekje nga të nxehtit nënkuptohet ngritja e temperaturës së trupit mbi:",
+      alternatives: ["37.5°C", "40.5°C", "60.5°C", "100°C"],
+      correct: 1,
+      explanation:
+        "Me vdekje nga të nxehtit nënkuptohet ngritja e temperaturës së trupit mbi 40.5°C dhe paraqet cenimin apo dëmtimin e shëndetit nga veprimi i përgjithshëm i temperaturës së lartë në organizmin e njeriut.",
+    },
+    {
+      title: "Tek vdekjet nga të nxehtit në autopsi diagnoza mjeko-ligjore percaktohet në bazë të: ",
+      alternatives: [
+        "Shenjave të morthit",
+        "Ngjyrës rozë të lëkurës",
+        "Dosjës klinike antemortem",
+        "Njollave të Vishnjevskit",
+      ],
+      correct: 2,
+      explanation:
+        "Pasi që shenja të rasteve të vdekjeve nga të nxehtit nuk mbartin ndonjë specifikë të vecantë diagnoza mjeko-ligjore bazohet nga dosja klinike antemortem, si dhe disa nga shenja të përgjithshme sic janë hiperemia e cipave të trurit dhe organeve tjera parenkimatoze. Morthi, ngjyra rozë e lëkurës dhe njollat e Vishnjevskit janë karakteristike për vdekjën nga të ftohtit.",
+    },
+    {
+      title:
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë:",
+      alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
+      correct: 3,
+      explanation:
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C. Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
+    },
+    {
+      title:
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e mesme shfaqet në temperaturë: ",
+      alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
+      correct: 1,
+      explanation:
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
+    },
+    {
+      title:
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e rëndë shfaqet në temperaturë:",
+      alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
+      correct: 2,
+      explanation:
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
+    },
   ],
 };
