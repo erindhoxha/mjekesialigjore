@@ -275,5 +275,59 @@ export const PJESA_E_DYTE_C = {
       explanation:
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
     },
+    {
+      title: '"Zhveshja paradoksale" haset tek:',
+      alternatives: ["Vdekja nga djegia", "Vdekja nga të nxehtit", "Vdekja nga të ftohtit."],
+      correct: 2,
+      explanation:
+        '"Zhveshja paradoksale" ku viktima gjendeti zhveshur, ndodh tek vdekjet nga të ftohti, tek personat qe kanë konsumuar alkool. Kjo pasi që viktimës në stadin e halucinacioneve i krijohet ndjesia subjektive e të nxehtit për shkak të anestezisë nga ngirja e terminacioneve nervore të lëkurës.',
+    },
+    {
+      title: '"Njollat e Vishnjevskit" i hasim tek vdekjet:',
+      alternatives: [
+        "Vdekja nga djegia",
+        "Vdekja nga të nxehtit",
+        "Vdekja nga rryma elektrike",
+        "Vdekjet nga të ftohti",
+      ],
+      correct: 3,
+      explanation:
+        '"Njollat e Vishjevskit" në trajtën e gërryerjeve hemorragjike në mukozën e stomakut janë shenjat qe hasen në autopsi tek vdekjet nga të ftohtit.',
+    },
+    {
+      title: '"Lëkura e krokodillit" haset tek:',
+      alternatives: [
+        "Dëmtimet nga elektriciteti teknik",
+        "Dëmtimet nga të ftohtit",
+        "Dëmtimet nga elektriciteti atmosferik",
+        "Dëmtimet nga te nxehtit",
+      ],
+      correct: 0,
+      explanation:
+        'Në rastet e elektrotraumave me kontakt indirekt (dëmtimet nga elektriciteti teknik) formohen të ashtuquajturat "elektroshenja valëzuese" që janë të ngjashme me lëkurën e krokodillit.',
+    },
+    {
+      title: '"Figura e Litchtenberg-ut" haset tek:',
+      alternatives: [
+        "Dëmtimet nga elektriciteti teknik",
+        "Dëmtimet nga të ftohtit",
+        "Dëmtimet nga elektriciteti atmosferik",
+        "Dëmtimet nga te nxehtit.",
+      ],
+      correct: 2,
+      explanation:
+        'Një nga shenjat dalluese të goditjës nga rrufeja është "pema e rrufesë" në trajtën e një degëzimi peme, apo ndryshe e quajtur figura e Lixhtenberg-ut. E cila lokalizohet me shpesh në gjoks, supe, krahë, kofshë.',
+    },
+    {
+      title: '"Figura e Litchtenberg-ut" shfaqet:',
+      alternatives: [
+        "Menjëherë pas goditjes nga rrufeja",
+        "1 orë pas goditjes nga rrufeja",
+        "1 ditë pas goditjes nga rrufeja",
+        "5 orë pas goditjes nga rrufeja",
+      ],
+      correct: 1,
+      explanation: "Figura e Lichtenbergut shfaqet një orë pas goditjes nga rrufeja.",
+    },
   ],
 };
