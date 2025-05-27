@@ -8,7 +8,7 @@ export const PJESA_E_DYTE_C = {
       alternatives: ["Asfiksitë nga shtrëngimi", "Asfiksitë nga mbytja në lëngje", "Asfiksitë nga mbytja"],
       correct: 2,
       explanation:
-        "Mbytja mjedisore, mbytja nga mbyllja e vrimave të hundës dhe gojës, Mbytja nga zënia e rrugëve të frymëmarrjes dhe asfiksia traumatike bëjnë pjesë në asfiksitë nga mbytja qe janë asfiksi kur oksigjeni nuk arrin në gjak.",
+        "Mbytja mjedisore, mbytja nga mbyllja e vrimave të hundës dhe gojës, Mbytja nga zënia e rrugëve të frymëmarrjes dhe asfiksia traumatike bëjnë pjesë në asfiksitë nga mbytja qe janë asfiksi kur oksigjeni nuk arrin në gjak",
     },
     {
       title: "Asfiksia Posturale paraqet:",
@@ -30,14 +30,14 @@ export const PJESA_E_DYTE_C = {
         "Prania e këpurdhës shkumoze",
       ],
       correct: 1,
-      explanation: "Në rastet e varjeve, shenja tipike kryesore është brazda e strangulimit.",
+      explanation: "Në rastet e varjeve, shenja tipike kryesore është brazda e strangulimit",
     },
     {
       title: "Cila nga këto mbytje nuk mund të jetë vetërasje:",
       alternatives: ["Mbytja me lak", "Mbytja nga shtrëngimi (strangulimi)", "Mbytja me duar"],
       correct: 2,
       explanation:
-        "Vetëvrasja nuk është e mundur të realizohet, mbasi humbja e ndërgjegjës bënë clirimin e shtypjes së qafës.",
+        "Vetëvrasja nuk është e mundur të realizohet, mbasi humbja e ndërgjegjës bënë clirimin e shtypjes së qafës",
     },
     {
       title: "Njollat Tardiie jane:",
@@ -48,7 +48,7 @@ export const PJESA_E_DYTE_C = {
         "Gërvishtjet në ekstremitetet e viktimës",
       ],
       correct: 1,
-      explanation: "Pikëzimet hemorragjike në cipat e organeve njihen si njollat e Tardieu-së dhe hasen tek varjet.",
+      explanation: "Pikëzimet hemorragjike në cipat e organeve njihen si njollat e Tardieu-së dhe hasen tek varjet",
     },
     {
       title: "Mekanizmi i vdekjës ne mbytjet në lëngje është:",
@@ -59,7 +59,7 @@ export const PJESA_E_DYTE_C = {
         "Dehidrimi dhe denatyrimi i proteinave",
       ],
       correct: 0,
-      explanation: "Mekanizmi i vdekjës në mbytjet me lëngje është anoksia cerebrale e parikthyeshme.",
+      explanation: "Mekanizmi i vdekjës në mbytjet me lëngje është anoksia cerebrale e parikthyeshme",
     },
     {
       title: "Këpurdha shkumore haset tek:",
@@ -95,7 +95,7 @@ export const PJESA_E_DYTE_C = {
       ],
       correct: 2,
       explanation:
-        "Në sinusin sfenoidal shpesh konstatohet prania e ujit, që njihet ndryshe si shenja Svechnikov, e cila do të konsiderohet shenjë patognomonike e mbytjeve me lëngje.",
+        "Në sinusin sfenoidal shpesh konstatohet prania e ujit, që njihet ndryshe si shenja Svechnikov, e cila do të konsiderohet shenjë patognomonike e mbytjeve me lëngje",
     },
     {
       title: "Përfshirja e epidermes nga djegia, e shoqëruar me skuqje dhe enjtje të lehtë, rrjepje e lëkurës paraqet:",
@@ -129,7 +129,7 @@ export const PJESA_E_DYTE_C = {
         "Shkallën e parë të djegieve",
         "Shkallën e dytë të djegieve",
         "Shkallën e tretë të djegjieve",
-        "Shkallën e katërt të djegieve.",
+        "Shkallën e katërt të djegieve",
       ],
       correct: 2,
       explanation:
@@ -142,7 +142,7 @@ export const PJESA_E_DYTE_C = {
         "Shkallën e parë të djegieve",
         "Shkallën e dytë të djegieve",
         "Shkallën e tretë të djegjieve",
-        "Shkallën e katërt të djegieve.",
+        "Shkallën e katërt të djegieve",
       ],
       correct: 3,
       explanation:
@@ -157,7 +157,7 @@ export const PJESA_E_DYTE_C = {
       ],
       correct: 1,
       explanation:
-        "Lëngjet në vlim shkaktojnë vdekje të ashtuquajtura përvlimet vdekjeprurëse, të shkallës së tretë, duke mjaftuar të përfshijnë 30-50% të sipërfaqes së trupit.",
+        "Lëngjet në vlim shkaktojnë vdekje të ashtuquajtura përvlimet vdekjeprurëse, të shkallës së tretë, duke mjaftuar të përfshijnë 30-50% të sipërfaqes së trupit",
     },
     {
       title:
@@ -183,7 +183,7 @@ export const PJESA_E_DYTE_C = {
       ],
       correct: 2,
       explanation:
-        "Kur flaka është rezultat i djegies së benzines, vajgurit etj., lëkura digjet në trajtë hartash gjeografike dhe gjurmët e këtyre lëndëve mund të gjenden në pjesët e padjegura të teshave.",
+        "Kur flaka është rezultat i djegies së benzines, vajgurit etj., lëkura digjet në trajtë hartash gjeografike dhe gjurmët e këtyre lëndëve mund të gjenden në pjesët e padjegura të teshave",
     },
     {
       title:
@@ -196,7 +196,7 @@ export const PJESA_E_DYTE_C = {
       ],
       correct: 3,
       explanation:
-        "Plagët djegëse nga lëndët kimike gërryesee si acidet e bazat, që zakonisht ndodhin nga hedhja e tyre në fytyrë, japin plagë të thella të lëkurës në trajtë njollash si dhe verbim nga dëmtimi i syve etj.",
+        "Plagët djegëse nga lëndët kimike gërryesee si acidet e bazat, që zakonisht ndodhin nga hedhja e tyre në fytyrë, japin plagë të thella të lëkurës në trajtë njollash si dhe verbim nga dëmtimi i syve etj",
     },
     {
       title: "Poza e boksierit në mbrotje, është karakteristike për:",
@@ -230,14 +230,14 @@ export const PJESA_E_DYTE_C = {
       ],
       correct: 3,
       explanation:
-        "Mungesa e dëmtimeve dhe mosprania e blozës në palët e kapakëve të syve të mbledhura instiktivisht nga mbyllja e syve për tu mbrojtur nga zjarri janë veçori dalluese të diegies për së gjalli.",
+        "Mungesa e dëmtimeve dhe mosprania e blozës në palët e kapakëve të syve të mbledhura instiktivisht nga mbyllja e syve për tu mbrojtur nga zjarri janë veçori dalluese të diegies për së gjalli",
     },
     {
       title: "Me vdekje nga të nxehtit nënkuptohet ngritja e temperaturës së trupit mbi:",
       alternatives: ["37.5°C", "40.5°C", "60.5°C", "100°C"],
       correct: 1,
       explanation:
-        "Me vdekje nga të nxehtit nënkuptohet ngritja e temperaturës së trupit mbi 40.5°C dhe paraqet cenimin apo dëmtimin e shëndetit nga veprimi i përgjithshëm i temperaturës së lartë në organizmin e njeriut.",
+        "Me vdekje nga të nxehtit nënkuptohet ngritja e temperaturës së trupit mbi 40.5°C dhe paraqet cenimin apo dëmtimin e shëndetit nga veprimi i përgjithshëm i temperaturës së lartë në organizmin e njeriut",
     },
     {
       title: "Tek vdekjet nga të nxehtit në autopsi diagnoza mjeko-ligjore percaktohet në bazë të: ",
@@ -249,7 +249,7 @@ export const PJESA_E_DYTE_C = {
       ],
       correct: 2,
       explanation:
-        "Pasi që shenja të rasteve të vdekjeve nga të nxehtit nuk mbartin ndonjë specifikë të vecantë diagnoza mjeko-ligjore bazohet nga dosja klinike antemortem, si dhe disa nga shenja të përgjithshme sic janë hiperemia e cipave të trurit dhe organeve tjera parenkimatoze. Morthi, ngjyra rozë e lëkurës dhe njollat e Vishnjevskit janë karakteristike për vdekjën nga të ftohtit.",
+        "Pasi që shenja të rasteve të vdekjeve nga të nxehtit nuk mbartin ndonjë specifikë të vecantë diagnoza mjeko-ligjore bazohet nga dosja klinike antemortem, si dhe disa nga shenja të përgjithshme sic janë hiperemia e cipave të trurit dhe organeve tjera parenkimatoze. Morthi, ngjyra rozë e lëkurës dhe njollat e Vishnjevskit janë karakteristike për vdekjën nga të ftohtit",
     },
     {
       title:
@@ -257,7 +257,7 @@ export const PJESA_E_DYTE_C = {
       alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
       correct: 3,
       explanation:
-        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C. Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C. Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C",
     },
     {
       title:
@@ -265,7 +265,7 @@ export const PJESA_E_DYTE_C = {
       alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
       correct: 1,
       explanation:
-        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C",
     },
     {
       title:
@@ -273,11 +273,11 @@ export const PJESA_E_DYTE_C = {
       alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
       correct: 2,
       explanation:
-        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C.",
+        "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C",
     },
     {
       title: '"Zhveshja paradoksale" haset tek:',
-      alternatives: ["Vdekja nga djegia", "Vdekja nga të nxehtit", "Vdekja nga të ftohtit."],
+      alternatives: ["Vdekja nga djegia", "Vdekja nga të nxehtit", "Vdekja nga të ftohtit"],
       correct: 2,
       explanation:
         '"Zhveshja paradoksale" ku viktima gjendeti zhveshur, ndodh tek vdekjet nga të ftohti, tek personat qe kanë konsumuar alkool. Kjo pasi që viktimës në stadin e halucinacioneve i krijohet ndjesia subjektive e të nxehtit për shkak të anestezisë nga ngirja e terminacioneve nervore të lëkurës.',
@@ -312,7 +312,7 @@ export const PJESA_E_DYTE_C = {
         "Dëmtimet nga elektriciteti teknik",
         "Dëmtimet nga të ftohtit",
         "Dëmtimet nga elektriciteti atmosferik",
-        "Dëmtimet nga te nxehtit.",
+        "Dëmtimet nga te nxehtit",
       ],
       correct: 2,
       explanation:
@@ -327,7 +327,7 @@ export const PJESA_E_DYTE_C = {
         "5 orë pas goditjes nga rrufeja",
       ],
       correct: 1,
-      explanation: "Figura e Lichtenbergut shfaqet një orë pas goditjes nga rrufeja.",
+      explanation: "Figura e Lichtenbergut shfaqet një orë pas goditjes nga rrufeja",
     },
   ],
 };

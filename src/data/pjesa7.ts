@@ -1,7 +1,7 @@
-export const PJESA_E_KATERT = {
-  id: "7",
-  title: "Pjesa e katert",
-  description: "Identifikimi mjekoligjor",
+export const PJESA_E_SHTATE = {
+  id: "10",
+  title: "Pjesa e shtatë",
+  description: "Ekspertiza mjekësore në procedurë civile",
   questions: [
     {
       title: "Cili është sporti më i njohur në Shqipëri?",

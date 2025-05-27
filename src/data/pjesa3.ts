@@ -1,7 +1,7 @@
 export const PJESA_E_TRETE = {
   id: "6",
   title: "Pjesa e tretë",
-  description: "Etika dhe deontologjia mjekësore",
+  description: "Investigimi mjekoligjor përballë krimeve kundër shëndetit",
   questions: [
     {
       title: "Cili është sporti më i njohur në Shqipëri?",

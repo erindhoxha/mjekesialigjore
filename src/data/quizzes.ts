@@ -58,4 +58,28 @@ export const QUIZZES = [
     svg: PaintBucket,
     pytjet: QUIZ.find((item) => item.id === "7")?.questions.length,
   },
+  {
+    subtitle: "V.",
+    id: "8",
+    title: QUIZ.find((item) => item.id === "8")?.title,
+    description: QUIZ.find((item) => item.id === "8")?.description,
+    svg: PaintBucket,
+    pytjet: QUIZ.find((item) => item.id === "8")?.questions.length,
+  },
+  {
+    subtitle: "VI.",
+    id: "9",
+    title: QUIZ.find((item) => item.id === "9")?.title,
+    description: QUIZ.find((item) => item.id === "9")?.description,
+    svg: PaintBucket,
+    pytjet: QUIZ.find((item) => item.id === "9")?.questions.length,
+  },
+  {
+    subtitle: "VII.",
+    id: "10",
+    title: QUIZ.find((item) => item.id === "10")?.title,
+    description: QUIZ.find((item) => item.id === "10")?.description,
+    svg: PaintBucket,
+    pytjet: QUIZ.find((item) => item.id === "10")?.questions.length,
+  },
 ];

@@ -9,7 +9,7 @@ export const PJESA_E_DYTE = {
       correct: 1,
       pageNumber: 26,
       explanation:
-        "Trauma, nënkupton cënimin e tërësise anatomike ose funksionale te indeve dhe organeve nga veprimi i dhunshëm i një agienti të jashtëm (fizik, termik. kimik etj), duke shkaktuar dëmtimin e shëndetit ose vdekjën.",
+        "Trauma, nënkupton cënimin e tërësise anatomike ose funksionale te indeve dhe organeve nga veprimi i dhunshëm i një agienti të jashtëm (fizik, termik. kimik etj), duke shkaktuar dëmtimin e shëndetit ose vdekjën",
     },
     {
       title: "Sendet të cilat rastësisht ose qëllimisht mund te perdoren per goditje ose vetembrojtje jane:",
@@ -28,7 +28,7 @@ export const PJESA_E_DYTE = {
       alternatives: [
         "Dermishje të shoqëruara me laceracionet jo më të mëdha se 2 cm",
         "Dermishje të shoqëruara me ekimoza dhe hematoma",
-        "Dermishje të shoqëruara me dermishje gjatesore.",
+        "Dermishje të shoqëruara me dermishje gjatesore",
       ],
       correct: 1,
     },
@@ -44,7 +44,7 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Cfare ngjyre ka hematoma ne diten e 2te pas shkaktimit te saj?",
-      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce."],
+      alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
       correct: 2,
     },
     {
@@ -72,7 +72,7 @@ export const PJESA_E_DYTE = {
       alternatives: ["Zorret>Melcia", "Melcia>Stomaku", "Stomaku>Shpretka"],
       correct: 1,
       explanation:
-        "Tendence per ruptura(carje) nga goditjet me mjetet e forta kane melcia, veshka, shpretka etj. dhe shume rralle stomaku apo zorret.",
+        "Tendence per ruptura(carje) nga goditjet me mjetet e forta kane melcia, veshka, shpretka etj. dhe shume rralle stomaku apo zorret",
     },
     {
       title: "Me detrakcion kuptojme:",
@@ -123,7 +123,7 @@ export const PJESA_E_DYTE = {
       alternatives: ["Vdekje natyrore", "Vdekje e paklasifikuar", "Vdekje e papërcaktuar", "Vdekje aksidentale"],
       correct: 2,
       explanation:
-        "E papërcaktuar konsiderohet ajo vdekje që, edhe pas autopsisë, analizave laboratorike dhe hetimit të çështjes, nuk është e mundur të konkludohet nëse është vdekje kriminale apo natyrore.",
+        "E papërcaktuar konsiderohet ajo vdekje që, edhe pas autopsisë, analizave laboratorike dhe hetimit të çështjes, nuk është e mundur të konkludohet nëse është vdekje kriminale apo natyrore",
     },
     {
       title: "Cili nga termat e mëposhtëm përshkruan më mirë studimin e ndryshimeve të ndodhura në trup pas vdekjes?",
@@ -137,7 +137,7 @@ export const PJESA_E_DYTE = {
       alternatives: ["Arresti kardiorespirator", "Paraliza e frymëmarrjes", "Toksemia", "Helmimi"],
       correct: 3,
       explanation:
-        "Arresti Kardiorespirator nuk paraqet shkak, mekanizem apo menyre te vdekjes. Toksemia dhe paraliza e frymemarrjes paraqesin mekanizmat e vdekjes.",
+        "Arresti Kardiorespirator nuk paraqet shkak, mekanizem apo menyre te vdekjes. Toksemia dhe paraliza e frymemarrjes paraqesin mekanizmat e vdekjes",
     },
     {
       title: "Shkak i vdekjës është:",
@@ -175,7 +175,7 @@ export const PJESA_E_DYTE = {
       title: "Ndryshimet makroskopike në zonën e infraktit bëhen të dallueshme jo me përpara se:",
       alternatives: ["8 orë", "12 orë", "24 orë", "Një ditë"],
       correct: 1,
-      explanation: "Ndryshimet makroskopike në zonën e infraktit bëhen të dallushme jo më përpara se 12 orë.",
+      explanation: "Ndryshimet makroskopike në zonën e infraktit bëhen të dallushme jo më përpara se 12 orë",
       pageNumber: 40,
     },
     {
@@ -199,7 +199,7 @@ export const PJESA_E_DYTE = {
       alternatives: ["Perdja Winslow", "Ftohja e kufomës", "Regjja Torfore"],
       correct: 0,
       explanation:
-        "Perdja Winslow e cila paraqet humbjen e shkëlqimit të kornesë dhe lageshtinë e saj si pasojë e mungesës së lotit, duke marrë pamjen e trubullt brenda 30 minutave, hyn në shenjat e menjëhershme të pas vdekjës. Ftohja e kufomës bën pjesë në shenjat e hershme. Regjia torfore bën pjesë në shenjat e vonshme.",
+        "Perdja Winslow e cila paraqet humbjen e shkëlqimit të kornesë dhe lageshtinë e saj si pasojë e mungesës së lotit, duke marrë pamjen e trubullt brenda 30 minutave, hyn në shenjat e menjëhershme të pas vdekjës. Ftohja e kufomës bën pjesë në shenjat e hershme. Regjia torfore bën pjesë në shenjat e vonshme",
     },
     {
       title: "Në shenjat e menjëhershme pas vdekjes nuk bën pjesë bën pjesë:",
@@ -207,22 +207,22 @@ export const PJESA_E_DYTE = {
         "Njollat Larëshe",
         "Zbehja dhe humbja e elasticitetit të lëkurës",
         "Ndryshimi i hapjeve midis dy pupilave",
-        "Flluskat lëngëzuese.",
+        "Flluskat lëngëzuese",
       ],
       correct: 3,
       explanation:
-        "Flluskat lëngëzuese formohen ne stadin e lëngëzimit, i cili stad hyn në shenjat e vonshme të vdekjes.",
+        "Flluskat lëngëzuese formohen ne stadin e lëngëzimit, i cili stad hyn në shenjat e vonshme të vdekjes",
     },
     {
       title: "Perdja Winslow e cila shfaqet pas 30 minutave pas vdekjës paraqet:",
       alternatives: [
         "Ndryshimin e hapjës ndërmjet pupilave",
         "Mbulimin e plotësishëm kokërdhokut nga kapakët e syve",
-        "Humbjen e shkëlqimit dhe lagështisë nga mungesa e lotit.",
+        "Humbjen e shkëlqimit dhe lagështisë nga mungesa e lotit",
       ],
       correct: 2,
       explanation:
-        "Ndryshimin e hapjës ndërmjet pupilave shfaqet si shenjë në rastet e dëmtimeve të trurit dhe të helmimit nga drogat. Mbulimin e plotësishëm kokërdhokut nga kapakët e syve paraqet njollat Larëshe. Humbjen e shkëlqimit dhe lagështisë nga mungesa e lotit paraqet perden Winslow.",
+        "Ndryshimin e hapjës ndërmjet pupilave shfaqet si shenjë në rastet e dëmtimeve të trurit dhe të helmimit nga drogat. Mbulimin e plotësishëm kokërdhokut nga kapakët e syve paraqet njollat Larëshe. Humbjen e shkëlqimit dhe lagështisë nga mungesa e lotit paraqet perden Winslow",
     },
     {
       title: "Njollat kufomore fillojnë të bëhen të dukshme:",
@@ -248,8 +248,8 @@ export const PJESA_E_DYTE = {
       title: "Rëndit kronologjinë e saktë në bazë të kohës tek shtangësia kufomore:",
       alternatives: [
         "Në 2 orët e para-relaksim i plotë; pas 2 ore fillon shtangësia kufomore; 8-16 orë kemi shtangësinë e plotë",
-        "Në 20 minutat e para kemi relaksimin e plotë; pas 2 ore fillon shtangësia kufomore; pas 2 dite kemi shtangësinë e plotë.",
-        "Në 20 minutat e para kemi relaksimin e plotë; pas 20 minutave fillon shtangësia kufomore; pas 2 ore kemi shtangësinë e plotë.",
+        "Në 20 minutat e para kemi relaksimin e plotë; pas 2 ore fillon shtangësia kufomore; pas 2 dite kemi shtangësinë e plotë",
+        "Në 20 minutat e para kemi relaksimin e plotë; pas 20 minutave fillon shtangësia kufomore; pas 2 ore kemi shtangësinë e plotë",
       ],
       correct: 0,
     },
@@ -263,7 +263,7 @@ export const PJESA_E_DYTE = {
       alternatives: [
         "Shkalla e dekompozimit të një kufome gjatë qëndrimit për një javë në ujë është e barabartë me dy javë të qëndrimit në ajër",
         "Shkalla e dekompozimit të një kufome gjatë qëndrimit për një javë në ambient të jashtëm është e barabratë sa për dy javë në ujë dhe tetë javë në dhe",
-        "Shkalla e dekompozimit të një kufome gjatë qëndrimit në ujë është e barabart me dy javë të qëndrimit në dhe.",
+        "Shkalla e dekompozimit të një kufome gjatë qëndrimit në ujë është e barabart me dy javë të qëndrimit në dhe",
       ],
       correct: 1,
     },
