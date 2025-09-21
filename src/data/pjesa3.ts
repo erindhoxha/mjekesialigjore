@@ -1,6 +1,6 @@
-export const PJESA_E_TRETE = {
+export const PJESA_E_TRETE_DHE_E_KATERT = {
   id: "6",
-  title: "Pjesa e tretë",
+  title: "Pjesa e tretë dhe katërt",
   description: "Investigimi mjekoligjor përballë krimeve kundër shëndetit",
   questions: [
     {

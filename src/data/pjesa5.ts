@@ -1,6 +1,6 @@
 export const PJESA_E_PESTE = {
   id: "8",
-  title: "Pjesa e pestë",
+  title: "Pjesa e pestë dhe e gjashtë",
   description: "Investigimi i provave materiale biologjike",
   questions: [
     {
