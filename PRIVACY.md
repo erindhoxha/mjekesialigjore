@@ -4,6 +4,8 @@ This Privacy Policy explains how _Mjekësia Ligjore_ (“we,” “our,” or �
 
 ## Information We Collect
 
+No Data Collection: This app does not collect, track, or store any personal information from users.
+
 - The App does **not collect**, store, or share any personally identifiable information.
 - Users can optionally contact us via email or phone, in which case any information shared is provided voluntarily by
   the user.
