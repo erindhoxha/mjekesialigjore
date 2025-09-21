@@ -66,5 +66,84 @@ export const PJESA_E_DYTE_D = {
       explanation:
         "Oksidi i karbonit për shkak ndërthuret shpejtë me mioglobinen e muskulaturës duke formu kompleksin Myo-Hb, ka karakteristikë dobësimin e muskulaturës në përgjithsi e sidomos të këmbëve dhe të duarve, me crast personi edhe kur merr të ngrihet e të ecë, rrëzohet",
     },
+    {
+      title: "Doza vdekjeprurëse e alkoolit është:",
+      alternatives: [
+        "1 gr për kg/peshë trupore",
+        "3 gr për kg/peshë trupore",
+        "5 gr për kg/peshë trupore",
+        "7 gr për kg/peshë trupore.",
+      ],
+      correct: 3,
+      explanation: "Doza vdekjeprurëse e alkoolit është 7 gr për kg/peshë trupore.",
+    },
+    {
+      title:
+        "Efektet fiziologjike të etamolit sipas përqëndrimit të dozës së tij në ndryshojnë, ashtu që përqëndrimi i alkoolit etilik në gjak nga 0-0.4 g/kg shkakton:",
+      alternatives: [
+        "Ngadalsim të reflekseve, vetëbesim i tepruar, çrregullim të vëmendjës, etj",
+        "Humbje të koordinimit muskular, konfuzion të plotë mendor dhe të vjellura",
+        "Gjendje euforike, longore, nximit të reflekseve",
+        "Mpirje të plotë të trupit, koordinime shumë të çrregulliara.",
+      ],
+      correct: 2,
+    },
+    {
+      title:
+        "Efektet fiziologjike të etamolit sipas përqëndrimit të dozës së tij në ndryshojnë, ashtu që përqëndrimi i alkoolit etilik në gjak nga 0.5-0.9  g/kg shkakton:",
+      alternatives: [
+        "Ngadalsim të reflekseve, vetëbesim i tepruar, çrregullim të vëmendjës, etj",
+        "Humbje të koordinimit muskular, konfuzion të plotë mendor dhe të vjellura",
+        "Gjendje euforike, longore, nximit të reflekseve",
+        "Mpirje të plotë të trupit, koordinime shumë të çrregulliara.",
+      ],
+      correct: 0,
+    },
+    {
+      title:
+        "Efektet fiziologjike të etamolit sipas përqëndrimit të dozës së tij në ndryshojnë, ashtu që përqëndrimi i alkoolit etilik në gjak nga 1.0-1.4 g/kg shkakton:",
+      alternatives: [
+        "Ngadalsim të reflekseve, vetëbesim i tepruar, çrregullim të vëmendjës, etj",
+        "Humbje të koordinimit muskular, konfuzion të plotë mendor dhe të vjellura",
+        "Gjendje euforike, longore, nximit të reflekseve",
+        "Konfuzion mendor, paqëndrusheshmëri emotive, dezorijentim.",
+      ],
+      correct: 3,
+    },
+    {
+      title:
+        "Efektet fiziologjike të etamolit sipas përqëndrimit të dozës së tij në ndryshojnë, ashtu që përqëndrimi i alkoolit etilik në gjak nga 01.5-2.9 g/kg shkakton:",
+      alternatives: [
+        "Ngadalsim të reflekseve, vetëbesim i tepruar, çrregullim të vëmendjës, etj",
+        "Humbje të koordinimit muskular, konfuzion të plotë mendor dhe të vjellura",
+        "Gjendje euforike, longore, nximit të reflekseve",
+        "Mpirje të plotë të trupit, koordinime shumë të çrregulliara",
+      ],
+      correct: 1,
+    },
+    {
+      title:
+        "Efektet fiziologjike të etamolit sipas përqëndrimit të dozës së tij në ndryshojnë, ashtu që përqëndrimi i alkoolit etilik në gjak nga 3.0-3.9  g/kg shkakton:",
+      alternatives: [
+        "Ngadalsim të reflekseve, vetëbesim i tepruar, çrregullim të vëmendjës, etj",
+        "Humbje të koordinimit muskular, konfuzion të plotë mendor dhe të vjellura",
+        "Gjendje euforike, longore, nximit të reflekseve",
+        "Mpirje të plotë të trupit, koordinime shumë të çrregulliara",
+      ],
+      correct: 3,
+    },
+    {
+      title:
+        'Në cilat doza konsiderohet "dehje alkoolike" sipas Kodit Rrugor të shumë shteteve, ku ngasja e makinës është rreptësisht e ndaluar:',
+      alternatives: ["0.5 - 0.9 g/kg", "1.0 - 1.4 g/kg", "1.5 - 2.9 g/kg", "4.0 g/kg"],
+      correct: 0,
+      explanation:
+        'Përqëndrimi në gjak nga 0.5 - 0.9 g/kg sipas Kodit Rrugor të shumë shteteve konsiderohet "dehje alkoolike" dhe ngasja e makinës është rreptësisht e ndaluar, në të kundërtën merren masa të ndëshkimit administrativ ligjor.',
+    },
+    {
+      title: "Përqëndrimi në gjak nga 4.0 g/kg shkakton:",
+      alternatives: ["Gjendje afër komës", "Dehje alkoolike", "Komë të thellë", "Konfuzion dhe të vjellura."],
+      correct: 2,
+    },
   ],
 };
