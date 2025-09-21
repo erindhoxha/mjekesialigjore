@@ -52,6 +52,13 @@ export const styles = StyleSheet.create({
     lineHeight: 18,
     marginBottom: 2,
   },
+  textTop: {
+    color: THEME.COLORS.GREY_300,
+    fontFamily: THEME.FONTS.REGULAR,
+    fontSize: 14,
+    lineHeight: 18,
+    marginBottom: 24,
+  },
   text3: {
     color: THEME.COLORS.GREY_300,
     fontFamily: THEME.FONTS.REGULAR,

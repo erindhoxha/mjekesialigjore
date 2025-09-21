@@ -25,13 +25,14 @@ export function Credits() {
       />
 
       <ScrollView contentContainerStyle={styles.textContainer} showsVerticalScrollIndicator={false}>
+        <Text style={styles.textTop}>
+          Pyetjet dhe përmbajtja në këtë aplikacion janë hartuar me fjalët tona, duke u mbështetur në literaturën
+          ekzistuese si material orientues.
+        </Text>
         <View style={styles.textWrapper}>
           <Text style={styles.text1}>Dr. Flamur Blakaj</Text>
           <Text style={styles.text1}>Dr. Sokrat Meksi</Text>
           <Text style={styles.text2}>Autor të librit Mjekësia Ligjore</Text>
-          <Text style={styles.text2}>
-            Mund ta gjeni librin ta bleni ne keto pika te shitjës: Libraria Dukagjini, Libraria Buzuku, IML.
-          </Text>
         </View>
         <View style={styles.textWrapper}>
           <Text style={styles.text}>Dr. Genta Bunjaku</Text>
