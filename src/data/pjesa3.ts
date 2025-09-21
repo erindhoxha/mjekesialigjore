@@ -1,7 +1,7 @@
 export const PJESA_E_TRETE_DHE_E_KATERT = {
   id: "6",
   title: "Pjesa e tretë dhe katërt",
-  description: "Investigimi mjekoligjor përballë krimeve kundër shëndetit",
+  description: "Investigimi mjekoligjor përballë krimeve kundër shëndetit dhe identifikimi mjekoligjor",
   questions: [
     {
       title: "Me dhunë fizike nënkuptojmë:",
@@ -10,6 +10,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Veprimet aktive nga ana e të pandehurit",
         "Akuzat e ndryshme nga i pandehuri",
       ],
+      pageNumber: 165,
       correct: 1,
       explanation:
         "Dhuna fizike shfaqet me veprime aktive nga ana e të pandehurit për të kryer marrdhënie seksuale (dhe jo vetëm) me një individ tjetër.",
@@ -22,12 +23,14 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Vetëm kanosjën apo mashtrimin",
         "Bashkimin seksual duke përdorur forcën, kanosjen apo mashtrimin, kundër vullnetit të personit tjetër.",
       ],
+      pageNumber: 164,
       correct: 3,
       explanation:
         "Koncepti mbi përkufizimin e dhunës seksuale në përgjithësi nënkupton bashkimin seksual duke përdorur forcën, kanosjen apo mashtrimin, kundër vullnetit të personit tjetër.",
     },
     {
       title: "Cila nga këto kategorizohet si vepër e turpshme:",
+      pageNumber: 169,
       alternatives: [
         "Bashkimi seksual në rrugë vaginale",
         "Prekja e organeve seksuale të të miturve",
@@ -40,6 +43,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     },
     {
       title: "Kur foshnjën e privon nga jeta babai quhet:",
+      pageNumber: 172,
       alternatives: ['"Vrasje e priviligjuar"', "Puericid", "Neonaticid"],
       correct: 1,
       explanation:
@@ -47,6 +51,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     },
     {
       title: "Shenjë e porsalindjës nuk konsiderohet:",
+      pageNumber: 172,
       alternatives: ["Vernix caseosa", "Capput succedaneum", "Laguno", "Osifikimi Beclard"],
       correct: 3,
       explanation:
@@ -54,6 +59,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     },
     {
       title: "Cila nga këto nuk është e vërtetë në vërtetimin se foshnjet kanë lindur gjallë:",
+      pageNumber: 173,
       alternatives: [
         "Perimetri i kraharorit është 2 cm më i vogël se perimetri i barkut",
         "Diafragma zakonisht zbret nën hapsirën e gjashtë interkostale",
@@ -66,6 +72,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     },
     {
       title: "Në prova të sigurta në përcaktimin e të lindurit gjallë nuk bëjnë pjesë:",
+      pageNumber: 173,
       alternatives: [
         "Prova hidrostatike e mushkërive",
         "Prova e majtës së diametrit të kraharorit dhe abdomenit",
@@ -77,6 +84,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     },
     {
       title: "Me provë pozitive të rreme kemi të bëjme në rastet e :",
+      pageNumber: 174,
       alternatives: ["Kufomat e ndodhura në flakë", "Mushkërive të ngrira", "Sufokimit"],
       correct: 1,
       explanation:
@@ -84,6 +92,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     },
     {
       title: "Me provë negative të rreme kemi të bëjmë në rastet e:",
+      pageNumber: 174,
       alternatives: ["Fillimit të kalbëzimit kufomor", "Pneumonisë", "Insuflimit të ajrit gjatë reanimimit"],
       correct: 0,
       explanation:
@@ -97,6 +106,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Sindroma e tundjes së fëmijës",
         "Sindroma Munchausen",
       ],
+      pageNumber: 178,
       correct: 2,
       explanation:
         "Triada e shenjave: gjakderdhje retinale, gjakderdhje subaraknoidale dhe hematoma subdurale; shfaqen tek Sindroma e tundjes së fëmijës.",
@@ -109,12 +119,14 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Sindroma e tundjes së fëmijës",
         "Sindroma e vdekjes së papritur të foshnjeve",
       ],
+      pageNumber: 179,
       correct: 3,
       explanation:
         "Pikëzimet hemorragjike ne zemer, mushkëri, timus si fenomene agonale i hasim tek Sindroma e vdekjes së papritur të foshnjeve.",
     },
     {
       title: "Në triadën e simboleve të identitetit nuk bënë pjesë",
+      pageNumber: 181,
       alternatives: ["Gjurmët e gishtërinjëve", "Frakturat e vjetra", "Profili gjenetik", "Veçoritë e dhëmbëve"],
       correct: 1,
       explanation:
@@ -128,6 +140,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Identifikimin e objektit në bazë të së tërës (një trup i plotë njerëzor)",
         "Identifikimi i objektit në bazë të gjurmëve dhe principit të Locardi-t.",
       ],
+      pageNumber: 182,
       correct: 1,
       explanation:
         'Sipas llojeve të objekteve identifikuese, bazuar në principet e "Mark Theory" identifikimi "in toto" paraqet: identifikimin e objektit në bazë të së tërës (një trup i plotë njerëzor).',
@@ -140,6 +153,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Identifikimin e objektit në bazë të së tërës (një trup i plotë njerëzor)",
         "Identifikimi i objektit në bazë të gjurmëve dhe principit të Locardi-t",
       ],
+      pageNumber: 183,
       correct: 0,
       explanation:
         'Sipas llojeve të objekteve identifikuese, bazuar në principet e "Mark Theory" identifikimi "in situ" paraqet: identifikimin e një objekti në bazë të së pjesshmës, e shkëputur nga e tëra si pasojë e veprimit të faktorëve të ndryshem.',
@@ -152,6 +166,7 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         "Identifikimin e objektit në bazë të së tërës (një trup i plotë njerëzor)",
         "Identifikimi i objektit në bazë të gjurmëve dhe principit të Locardi-t",
       ],
+      pageNumber: 183,
       correct: 2,
       explanation:
         'Sipas llojeve të objekteve identifikuese, bazuar në principet e "Mark Theory" identifikimi "indirectum" paraqet: identifikimi i objektit në bazë të gjurmëve dhe principit të Locardi-t.',
@@ -161,11 +176,13 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
         'Cili nga llojet e objekteve identifikuese, bazuar në principet e "mark theory" vepron në bazë të principit të Locardit?',
       alternatives: ['Identifikimi "in situ"', 'Identifikimi "indirectum"', 'Identifikimi "in toto"'],
       correct: 1,
+      pageNumber: 183,
       explanation:
         'Sipas llojeve të objekteve identifikuese, bazuar në principet e "Mark Theory" identifikimi "indirectum" paraqet: identifikimi i objektit në bazë të gjurmëve dhe principit të Locardi-t.',
     },
     {
       title: "Në metodat shkencore të identifikimit nuk përfshihet:",
+      pageNumber: 186,
       alternatives: [
         "Radiografia e eshtrave",
         "Shenjat daktiloskopike",
@@ -179,8 +196,33 @@ export const PJESA_E_TRETE_DHE_E_KATERT = {
     {
       title: "Në prova të tjera shkencore për identifikim bëjnë pjesë:",
       alternatives: ["Raca", "Gjinia", "Mjekrra", "Lëkura"],
+      pageNumber: 186,
       correct: 3,
       explanation: "Në prova të tjera shkencore për identifikim bëjë pjesë: qimet, sperma, lëkura etj.",
+    },
+    {
+      title: "Tafonomia është shkenca që studion:",
+      pageNumber: 190,
+      alternatives: [
+        "Aktivitetin e insekteve, mizave dhe larvave",
+        "Identifikimin e trupave dhe mbetjeve nga trupat njerëzorë me anë të teknikave dentare",
+        "Se çfarë ndodh me trupin e një personi të vdekur sipas mjedisit se ku ka qëndruar kufoma.",
+      ],
+      correct: 2,
+      explanation:
+        "Tafonomia është shkenca që studion: se çfarë ndodh me trupin e një personi të vdekur sipas mjedisit se ku ka qëndruar kufoma. Entmologjia është shkenca që studion: Aktivitetin e insekteve, mizave dhe larvave. Odontologjia ligjore është shkenca që studion: identifikimin e trupave dhe mbetjeve nga trupat njerëzorë me anë të teknikave dentare.",
+    },
+    {
+      title: "Entmologjia është shkenca që studion:",
+      pageNumber: 192,
+      alternatives: [
+        "Aktivitetin e insekteve, mizave dhe larvave",
+        "Identifikimin e trupave dhe mbetjeve nga trupat njerëzorë me anë të teknikave dentare",
+        "Se çfarë ndodh me trupin e një personi të vdekur sipas mjedisit se ku ka qëndruar kufoma.",
+      ],
+      correct: 0,
+      explanation:
+        "Entmologjia është shkenca që studion: Aktivitetin e insekteve, mizave dhe larvave. Tafonomia është shkenca që studion: se çfarë ndodh me trupin e një personi të vdekur sipas mjedisit se ku ka qëndruar kufoma. Odontologjia ligjore është shkenca që studion: identifikimin e trupave dhe mbetjeve nga trupat njerëzorë me anë të teknikave dentare.",
     },
   ],
 };

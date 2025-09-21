@@ -12,7 +12,6 @@ const CARD_WIDTH = (dimensions.width - HORIZONTAL_PADDING_SCREEN - MARGIN) / CAR
 export const styles = StyleSheet.create({
   container: {
     width: CARD_WIDTH,
-    height: 210,
     backgroundColor: THEME.COLORS.GREY_700,
     borderRadius: 6,
     padding: 16,
@@ -58,6 +57,7 @@ export const styles = StyleSheet.create({
     fontFamily: THEME.FONTS.REGULAR,
     color: THEME.COLORS.GREY_100,
     lineHeight: 20,
+    width: "100%",
   },
   pytjet: {
     fontSize: 14,
@@ -70,6 +70,8 @@ export const styles = StyleSheet.create({
     borderTopColor: THEME.COLORS.GREY_500,
     borderTopWidth: 1,
     flex: 1,
+    flexGrow: 1,
     marginTop: 8,
+    width: "100%",
   },
 });

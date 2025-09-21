@@ -121,6 +121,7 @@ export const PJESA_E_PARE = {
         "Për të përcaktuar mekanizmin dhe mënyrën e ardhjes së vdekjes ose të plagosjes",
         "Për të përcaktuar tempin e ardhjes së vdekjes (e atëçastshme ose me mundime)",
       ],
+      pageNumber: 11,
       correct: 0,
       explanation:
         "Investigimi i provave materiale biologjike, kryhet per te percaktuar gjurmet e lengjeve biologjike si njolla gjaku, sperme, qime, floke, eshtra, inde ose pjese organesh, peshtymen, djersen, urinen, etj",
@@ -133,6 +134,7 @@ export const PJESA_E_PARE = {
         "Eksperti kriminalistik, eksperti mjeko ligjore, eksperti i daktilografise",
       ],
       correct: 0,
+      pageNumber: 13,
       explanation:
         "Ne grup hetimor bejne pjese prokurori, eksperti kriminalistik dhe eksperti mjeko ligjor. Kufoma paraqet interes investigimi mjekoligjor. Ndersa eksperti i daktilogradise bene pjese ne ekspertet e kriminalistikes",
     },
@@ -145,6 +147,7 @@ export const PJESA_E_PARE = {
         "Sic ka vdekje kriminale pa shenja dhune, ka dhe vdekje natyrore me shenja dhune",
       ],
       correct: 1,
+      pageNumber: 21,
       explanation:
         "Kurdohere kur dy objekte ndeshen dhunshem midis tyre, do te shkembejne gjurmet perkatese te njeri tjetrit",
     },
@@ -152,6 +155,7 @@ export const PJESA_E_PARE = {
       title: "Diferencimi i provave nga me e thejshta dhe te qarta deri tek ato me komplekse dhe te paqarta paraqet:",
       alternatives: ["Teorine e probabilitetit", "Besueshmerine teknike", "Sigurine shkencore"],
       correct: 1,
+      pageNumber: 21,
       explanation:
         "Sipas teorise se problabilitetit, bazuar ne arsyetime te logjikes matematike, jepen hipoteza dhe alternativa te mundshme, ndersa siguria shkencore perfshin argumentat e pakontestueshme. Nderkaq besueshmeria teknike arriket duke kapercyer pjese pjese diferencimin e provave nga me te thjeshta dhe te qarta deri tek ato me komplekse dhe me te paqarta",
     },
@@ -159,6 +163,7 @@ export const PJESA_E_PARE = {
       title: "Teoria e probabilitetit, besueshmeria teknike dhe siguria shkencore paraqesin:",
       alternatives: ["Principin e Leocardit", "Principin e individualitetit", "Kategorine e njohjes shkencore"],
       correct: 2,
+      pageNumber: 21,
       explanation:
         "Kategoria e njohjes shkencore kalon ne menyre te peshkalluarr nga te njohurat ne te panjohura nepermjet: probabilitetit matematikor, besueshmerise teknike dhe sigurise shkencore",
     },
@@ -166,11 +171,13 @@ export const PJESA_E_PARE = {
       title: "Limiti i perfundimit te nje akt espertimi mjekoligjor mbi provat materiale bilogjike eshte:",
       alternatives: ["1 jave", "2 jave", "3 jave"],
       correct: 1,
+      pageNumber: 24,
       explanation:
         "Afati i limitit te perfundimit te akteve mjeko ligjore jane te ndryshme, ashtu qe: Akt deshmite mjekoligjore ambullantore deri ne 24 h. Akt ekspertimi mjekoligjor te ekzaminimit te kufomave te fresketa pa analiza laboratorike shtese eshte deri ne pese dite dhe me analiza deri ne dy jave. Akt ekspertimi mjekoligjor i ekzaminimit te kufomava te dekompozuara dhe te zhvarrosura eshte deri ne tri jave. Akt ekspertimi mjekoligjor mbi provat materiale biologjike deri ne dy jave. Akt ekspertimi mjekoligjore mbi provat toksikologjike, dhe akt ekspertimi mbi dokumetat e ceshtjes deri ne kater jave etj",
     },
     {
       title: "Limiti i perfundimit te nje ekspertimi mjekoligjor prej 4 javesh eshte tek:",
+      pageNumber: 24,
       alternatives: [
         "Akt ekspertimi mbi provat materiale",
         "Akt ekspertimi mjekoligjor mbi dokumentat e ceshtjes",
@@ -183,6 +190,7 @@ export const PJESA_E_PARE = {
     {
       title: "Shpjegimi me i mire i objektit te investigimit tek akti i ekspertimit behet ne pjesen e:",
       alternatives: ["Hyrjes", "Peshkrimit", "Perfundimtare"],
+      pageNumber: 24,
       correct: 0,
       explanation:
         "Pjesa e hyrjes permban te dhenat identifikuese te personit qe i nenshtrohet investigimit si dhe rrethanat e qeshtjes",

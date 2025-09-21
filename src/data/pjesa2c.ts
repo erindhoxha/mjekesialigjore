@@ -19,11 +19,13 @@ export const PJESA_E_DYTE_C = {
         "Asfiksi si pasojë e shtypjës nga një objekt i fortë",
       ],
       correct: 2,
+      pageNumber: 103,
       explanation:
         "Asfiksia pozicionale apo posturale paraqet asfiksinë kur një person mbahet me kokë pooshtë, ose kur dikush e shtrëngon fort me krahë pas vetës, apo edhe kur transportohet i mbajtur në shpinë",
     },
     {
       title: "Në rastet e varjeve, shenja tipike kryesore është:",
+      pageNumber: 105,
       alternatives: [
         "Zona ekimotike në mukozën e buzës së sipërme",
         "Brazda e strangulimit",
@@ -36,11 +38,13 @@ export const PJESA_E_DYTE_C = {
       title: "Cila nga këto mbytje nuk mund të jetë vetërasje:",
       alternatives: ["Mbytja me lak", "Mbytja nga shtrëngimi (strangulimi)", "Mbytja me duar"],
       correct: 2,
+      pageNumber: 108,
       explanation:
         "Vetëvrasja nuk është e mundur të realizohet, mbasi humbja e ndërgjegjës bënë clirimin e shtypjes së qafës",
     },
     {
       title: "Njollat Tardiie jane:",
+      pageNumber: 108,
       alternatives: [
         "Dërmishjet rreth qafës",
         "Pikëzimet hemorragjikek në cipat e organeve",
@@ -52,6 +56,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: "Mekanizmi i vdekjës ne mbytjet në lëngje është:",
+      pageNumber: 110,
       alternatives: [
         "Anoksia cerebrale e parikthyeshme",
         "Gjakderdhja e brendshme",
@@ -63,6 +68,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: "Këpurdha shkumore haset tek:",
+      pageNumber: 110,
       alternatives: [
         "Mbytjet me lak",
         "Mbytjet nga traumat fizike",
@@ -75,18 +81,21 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: '"Duart e robalarësës" krijohet kur kufoma ka ndenjur në ujë:',
+      pageNumber: 110,
       alternatives: ["Jo më shumë se 30 minuta", "4-6 orë", "Jo më pak se 7 orë", "1-2 orë"],
       correct: 3,
       explanation: '"Duart e robalarësës" krijohen kur kufoma ka ndejtur të paktën 1-2 orë në ujë.',
     },
     {
       title: '"Dorëzat dhe çorapet e vdekjes" krijohet kur kufoma ka ndenjur në ujë brenda:',
+      pageNumber: 111,
       alternatives: ["2 orëve", "24 orëve", "2 ditëve", "2 javëve"],
       correct: 3,
       explanation: `"Duart e robalarësës" krijohen kur kufoma ka ndejtur të paktën 1-2 orë në ujë. Kur koha e qëndrimit në ujë zgjatet mbi 4-6 orë, rrudhat bëhen më të theksuara, të forta, të zbardhimta duke qëndruar kështu për një javë (fenomeni i macerimit), që më pas zbuten dhe fillojnëtë shqiten brenda dy javëve në trajtën e "dorëzave dhe çorapave të vdekjes".`,
     },
     {
       title: "Shenjën e Svechnikov e hasim tek:",
+      pageNumber: 111,
       alternatives: [
         "Mbytja me lak",
         "Mbytja nga shtrëngimi (strangulimi)",
@@ -106,6 +115,7 @@ export const PJESA_E_DYTE_C = {
         "Shkallën e katërt të djegieve",
       ],
       correct: 0,
+      pageNumber: 114,
       explanation:
         "Përfshirja e epidermes nga djegia, e shoqëruar me skuqje dhe enjtje të lehtë, rrjepje e lëkurës pa flluska, duke marrë një pamje të ngjajshme me djegiet nga dielli paraqet shkallën e parë të djegjeve (stadi eritematoz)",
     },
@@ -118,6 +128,7 @@ export const PJESA_E_DYTE_C = {
         "Shkallën e tretë të djegjieve",
         "Shkallën e katërt të djegieve",
       ],
+      pageNumber: 114,
       correct: 1,
       explanation:
         "Përfshirja e epidermës dhe dermës, e shoqëruar me praninë e flluskave me madhësi të ndryshme, të mbushura me lëng të tejdukshëm paraqet shkallën e dytë të djegies (stadi vezikulo-buloz)",
@@ -131,6 +142,7 @@ export const PJESA_E_DYTE_C = {
         "Shkallën e tretë të djegjieve",
         "Shkallën e katërt të djegieve",
       ],
+      pageNumber: 115,
       correct: 2,
       explanation:
         "Përfshirja e tërë shtresave të lëkurës duke i dhënë asaj pamjen e zonave nekrotike me ngjyrë të verdhë në të errët paraqet shkallën e tretë të diegies (stadi nekrotik)",
@@ -144,6 +156,7 @@ export const PJESA_E_DYTE_C = {
         "Shkallën e tretë të djegjieve",
         "Shkallën e katërt të djegieve",
       ],
+      pageNumber: 115,
       correct: 3,
       explanation:
         "Karbonizimi i pjesshëm ose i plotë jo vetëm i lëkurës por edhe i indeve më të thella, muskujve dhe eshtrave paraqet shkallën e katërt të djegies (karbonizimit)",
@@ -155,6 +168,7 @@ export const PJESA_E_DYTE_C = {
         "10-30% të sipërfaqes së lëkurës",
         "30-50% të sipërfaqes së lëkurës",
       ],
+      pageNumber: 115,
       correct: 1,
       explanation:
         "Lëngjet në vlim shkaktojnë vdekje të ashtuquajtura përvlimet vdekjeprurëse, të shkallës së tretë, duke mjaftuar të përfshijnë 30-50% të sipërfaqes së trupit",
@@ -168,6 +182,7 @@ export const PJESA_E_DYTE_C = {
         "Flaka si rezultat i djegies së benzinës",
         "Lëndët kimike si acide, baza",
       ],
+      pageNumber: 115,
       correct: 1,
       explanation:
         'Flaka shkakton të gjitha shkallët e diegies dhe meqenëse vepron jo me të njejtin intenzitet në të gjithë sipërfaqen e trupit, lëkura shpesh merr pamjen e "gëzofit të leopardit"',
@@ -181,6 +196,7 @@ export const PJESA_E_DYTE_C = {
         "Flaka si rezultat i djegies së benzinës",
         "Lëndët kimike si acide, baza",
       ],
+      pageNumber: 115,
       correct: 2,
       explanation:
         "Kur flaka është rezultat i djegies së benzines, vajgurit etj., lëkura digjet në trajtë hartash gjeografike dhe gjurmët e këtyre lëndëve mund të gjenden në pjesët e padjegura të teshave",
@@ -194,6 +210,7 @@ export const PJESA_E_DYTE_C = {
         "Flaka si rezultat i djegies së benzinës",
         "Lëndët kimike si acide, baza",
       ],
+      pageNumber: 115,
       correct: 3,
       explanation:
         "Plagët djegëse nga lëndët kimike gërryesee si acidet e bazat, që zakonisht ndodhin nga hedhja e tyre në fytyrë, japin plagë të thella të lëkurës në trajtë njollash si dhe verbim nga dëmtimi i syve etj",
@@ -206,12 +223,14 @@ export const PJESA_E_DYTE_C = {
         "Vdekjet nga traumat elektrike",
         "Vdekjet nga traumat fizike",
       ],
+      pageNumber: 115,
       correct: 0,
       explanation:
         'Vdekja nga traumat termike. Në djegiet e shkallës së katërt, si pasojë e tkurrjes së muskujve pas vdekjes, të cilat shkurtohen për shkak të dehidraatimit dhe denatyrimit të proteinave, muskujt fleksorë kontraktohen më shpejtë dhe më fuqishëm, duke i dhënë trupit të kufomës të ashtuquajturën "poza e boksierit në mbrojte" me krahë të mbledhur përpara kraharorit, këmbët të përkulura në gjunjë, koka dhe shpatullat të tërhequra.',
     },
     {
       title: '"Hematoma e nxehtë" vërehet tek:',
+      pageNumber: 115,
       alternatives: [
         "Vdekjet nga traumat asfiktike",
         "Vdekjet nga traumat elektrike",
@@ -222,6 +241,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: "Në veçorit dalluese të djegieve për së gjalli nuk bën pjesë:",
+      pageNumber: 115,
       alternatives: [
         "Prania e leukociteve dhe fibrinës në lëngun e fshikëzave",
         "Prania e oksidit të karbonit në gjak",
@@ -234,6 +254,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: "Me vdekje nga të nxehtit nënkuptohet ngritja e temperaturës së trupit mbi:",
+      pageNumber: 118,
       alternatives: ["37.5°C", "40.5°C", "60.5°C", "100°C"],
       correct: 1,
       explanation:
@@ -241,6 +262,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: "Tek vdekjet nga të nxehtit në autopsi diagnoza mjeko-ligjore percaktohet në bazë të: ",
+      pageNumber: 118,
       alternatives: [
         "Shenjave të morthit",
         "Ngjyrës rozë të lëkurës",
@@ -256,6 +278,7 @@ export const PJESA_E_DYTE_C = {
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë:",
       alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
       correct: 3,
+      pageNumber: 119,
       explanation:
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C. Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C",
     },
@@ -264,6 +287,7 @@ export const PJESA_E_DYTE_C = {
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e mesme shfaqet në temperaturë: ",
       alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
       correct: 1,
+      pageNumber: 119,
       explanation:
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C",
     },
@@ -272,11 +296,13 @@ export const PJESA_E_DYTE_C = {
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e rëndë shfaqet në temperaturë:",
       alternatives: ["Më të madhe se 35°C", "30-34°C", "Më të vogël se 30°C", "34-35°C"],
       correct: 2,
+      pageNumber: 119,
       explanation:
         "Vdekja nga të ftohtit ndahet në tri shkallë, në bazë të temperaturës që merr trupi hipotermia e butë shfaqet në temperaturë  30-34°C.  Hiperemia e mesme në temperaturë 34-35°C. Dhe hiperemia e rëndë në temperaturë më të vogël se 30°C",
     },
     {
       title: '"Zhveshja paradoksale" haset tek:',
+      pageNumber: 119,
       alternatives: ["Vdekja nga djegia", "Vdekja nga të nxehtit", "Vdekja nga të ftohtit"],
       correct: 2,
       explanation:
@@ -284,6 +310,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: '"Njollat e Vishnjevskit" i hasim tek vdekjet:',
+      pageNumber: 120,
       alternatives: [
         "Vdekja nga djegia",
         "Vdekja nga të nxehtit",
@@ -296,6 +323,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: '"Lëkura e krokodillit" haset tek:',
+      pageNumber: 123,
       alternatives: [
         "Dëmtimet nga elektriciteti teknik",
         "Dëmtimet nga të ftohtit",
@@ -308,6 +336,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: '"Figura e Litchtenberg-ut" haset tek:',
+      pageNumber: 124,
       alternatives: [
         "Dëmtimet nga elektriciteti teknik",
         "Dëmtimet nga të ftohtit",
@@ -320,6 +349,7 @@ export const PJESA_E_DYTE_C = {
     },
     {
       title: '"Figura e Litchtenberg-ut" shfaqet:',
+      pageNumber: 125,
       alternatives: [
         "Menjëherë pas goditjes nga rrufeja",
         "1 orë pas goditjes nga rrufeja",

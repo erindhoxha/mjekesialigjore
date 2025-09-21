@@ -15,6 +15,7 @@ export const PJESA_E_DYTE = {
       title: "Sendet të cilat rastësisht ose qëllimisht mund te perdoren per goditje ose vetembrojtje jane:",
       alternatives: ["Mjetët", "Veglat", "Armët"],
       correct: 0,
+      pageNumber: 26,
       explanation: "",
     },
     {
@@ -22,9 +23,11 @@ export const PJESA_E_DYTE = {
         "Dëmtimet e siperfaqëshme te lëkurës, nga veprimi në menyrë tangjenciale të buzëve te një mjeti te fortë ose rrallë nga shtypja me këtë mjet janë:",
       alternatives: ["Hematoma", "Laceracione", "Dermishje dhe gervishje", "Ruptura"],
       correct: 2,
+      pageNumber: 26,
     },
     {
       title: "Për t'u cilësuar si rrëmishje duhet të kemi:",
+      pageNumber: 26,
       alternatives: [
         "Dermishje të shoqëruara me laceracionet jo më të mëdha se 2 cm",
         "Dermishje të shoqëruara me ekimoza dhe hematoma",
@@ -34,6 +37,7 @@ export const PJESA_E_DYTE = {
     },
     {
       title: 'Simptoma e syzeve te errëta" ose "rakun eyes" na tregon për:',
+      pageNumber: 27,
       alternatives: [
         "Permasën e kontuzionit",
         "Forcën e goditjës",
@@ -44,26 +48,31 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Cfare ngjyre ka hematoma ne diten e 2te pas shkaktimit te saj?",
+      pageNumber: 28,
       alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
       correct: 2,
     },
     {
       title: "Cfare ngjyre ka hematoma ne diten e 4te pas shkaktimit te saj?",
+      pageNumber: 28,
       alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
       correct: 1,
     },
     {
       title: "Cfare ngjyre ka hematoma ne diten e 8te pas shkaktimit te saj?",
+      pageNumber: 28,
       alternatives: ["Ngjyre e verdhe e hapur", "Ngjyre e gjelbert", "Ngjyre e kuqe-vjollce"],
       correct: 0,
     },
     {
       title: 'Prania e "urezave indore" eshte karakteristike e:',
+      pageNumber: 28,
       alternatives: ["Laceracioneve", "Kontuzioneve", "Crush Syndrome", "Frakturave"],
       correct: 0,
     },
     {
       title: "Per goditje me intensitet te larte, nga pikepamja mjeko ligjore tregon:",
+      pageNumber: 29,
       alternatives: ["Laceracioni", "Kontuzioni", "Fraktura"],
       correct: 2,
     },
@@ -71,11 +80,13 @@ export const PJESA_E_DYTE = {
       title: "Bazuar ne tendencen e organeve per te pesuar carje me mjetet e forta, cila nga keto ekuacione vlen:",
       alternatives: ["Zorret>Melcia", "Melcia>Stomaku", "Stomaku>Shpretka"],
       correct: 1,
+      pageNumber: 30,
       explanation:
         "Tendence per ruptura(carje) nga goditjet me mjetet e forta kane melcia, veshka, shpretka etj. dhe shume rralle stomaku apo zorret",
     },
     {
       title: "Me detrakcion kuptojme:",
+      pageNumber: 30,
       alternatives: [
         "Shkaterrimin e plote te arkitektures anatomike te organit",
         "Shtypjen apo ngjeshjen e nje pjese te trupit",
@@ -86,16 +97,19 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Komucioni paraqet:",
+      pageNumber: 31,
       alternatives: ["Shembjen e trurit", "Gjakderdhjen e trurit", "Tronditjen e trurit", "Te gjitha"],
       correct: 2,
     },
     {
       title: "Arresti kardiorespirator paraqet:",
+      pageNumber: 36,
       alternatives: ["Shkakun e vdekjes", "Menyren e vdekjes", "Mekanizmin e vdekjes", "Asnjera"],
       correct: 3,
     },
     {
       title: "Në cilën nga situatat e mëposhtme nuk përfshihet hetimi mjekoligjor i kufomës?",
+      pageNumber: 10,
       alternatives: [
         "Vdekje nga shkaqe të dhunshme",
         "Vdekje e sëmurësh në institucionet shëndetësore pas 72 orësh",
@@ -114,6 +128,7 @@ export const PJESA_E_DYTE = {
         "Përcaktimi i autorit të krimit",
         "Dokumentimi i gjurmëve dhe shenjave të dëmtimeve",
       ],
+      pageNumber: 11,
       correct: 2,
       explanation:
         '"Përcaktimi i autorit të krimit" nuk është roli i investigimit mjekoligjor. Kjo bie në fushën e punës policore dhe hetimeve kriminale.',
@@ -122,6 +137,7 @@ export const PJESA_E_DYTE = {
       title: "Nëse pas autopsisë dhe hetimeve të tjera nuk mund të përcaktohet shkaku i vdekjes, ajo konsiderohet:",
       alternatives: ["Vdekje natyrore", "Vdekje e paklasifikuar", "Vdekje e papërcaktuar", "Vdekje aksidentale"],
       correct: 2,
+      pageNumber: 35,
       explanation:
         "E papërcaktuar konsiderohet ajo vdekje që, edhe pas autopsisë, analizave laboratorike dhe hetimit të çështjes, nuk është e mundur të konkludohet nëse është vdekje kriminale apo natyrore",
     },
@@ -129,6 +145,7 @@ export const PJESA_E_DYTE = {
       title: "Cili nga termat e mëposhtëm përshkruan më mirë studimin e ndryshimeve të ndodhura në trup pas vdekjes?",
       alternatives: ["Biologjia ligjore", "Kriminalistika", "Patologjia ligjore", "Tanantologjia mjekoligjore"],
       correct: 3,
+      pageNumber: 25,
       explanaton:
         'Vdekja pas vdekjes (tanatologjia mjekoligjore)"  e përcakton tanatologjinë mjekoligjore si studimin e ndryshimeve që ndodhin në trup pas vdekjes.',
     },
@@ -136,6 +153,7 @@ export const PJESA_E_DYTE = {
       title: "Shkak i vdekjës është:",
       alternatives: ["Arresti kardiorespirator", "Paraliza e frymëmarrjes", "Toksemia", "Helmimi"],
       correct: 3,
+      pageNumber: 35,
       explanation:
         "Arresti Kardiorespirator nuk paraqet shkak, mekanizem apo menyre te vdekjes. Toksemia dhe paraliza e frymemarrjes paraqesin mekanizmat e vdekjes",
     },
@@ -143,33 +161,39 @@ export const PJESA_E_DYTE = {
       title: "Shkak i vdekjës është:",
       alternatives: ["Aneurizma trunore", "Asistolia", "Pleqeria", "Shoku hemoragjik"],
       correct: 0,
+      pageNumber: 35,
     },
     {
       title: "Cila nga keto nuk paraqet shkakun e vdekjes:",
       alternatives: ["Infarkti i muskulit te zemres", "Gripi toksik. Anoksia e trurit", "Goditja nga rryma elektrike"],
       correct: 2,
+      pageNumber: 35,
     },
     {
       title: "Cila nga keto nuk paraqet mekanizmin e vdekjes:",
       alternatives: ["Bronkopneumonia", "Shoku traumatik", "Shtrengimi i qafes me lak", "Semundja kancerogjene"],
       correct: 1,
+      pageNumber: 35,
     },
     {
       title: "Lloji i ardhjes se shkakut te vdekjes qe nenkupton formen ligjore te vdekjes paraqet:",
       alternatives: ["Shkakun e vdekjes", "Menyren e vdekjes", "Mekanizmin e vdekjes", "Asnjera"],
       correct: 1,
+      pageNumber: 35,
     },
     {
       title:
         "Vdekja nga helmimi, i fothti, traumat elektrike etj. funksionet dhe proceset metabolike reduktohen ne parametra minimal qe me apo pa dhenien e ndihmes mjekesore personi mund te kththet serish ne jete paraqet:",
       alternatives: ["Vdekje e papritur", "Vdekje biologjike", "Vdekje fiktive apo letragjia", "Vdekje e papritur"],
       correct: 2,
+      pageNumber: 37,
     },
     {
       title:
         "Tek pacienti i cili vuan nga nje semundje e pasherueshme dhe eshte ne gjendje terminale, deshiron te lehtesoj dhimbjet dhe i pershpejtohet vdekja me rruge mjekesore kemi te bejme me vdekje:",
       alternatives: ["Ligjore", "Eutanazike", "Denim kapital", "Vdekje shpirterore"],
       correct: 1,
+      pageNumber: 37,
     },
     {
       title: "Ndryshimet makroskopike në zonën e infraktit bëhen të dallueshme jo me përpara se:",
@@ -193,6 +217,7 @@ export const PJESA_E_DYTE = {
       correct: 1,
       explanation:
         "Tek infarkti i miokaridit ndryshimet mikroskopike vërehen shumë më herët: pas 4-7 orë zona nekrotike bëhet e dukshme, e shoqëruar me reaksion leukocitar përreth",
+      pageNumber: 40,
     },
     {
       title: "Në shenjat e menjëhershme pas vdekjes bën pjesë:",
@@ -200,6 +225,7 @@ export const PJESA_E_DYTE = {
       correct: 0,
       explanation:
         "Perdja Winslow e cila paraqet humbjen e shkëlqimit të kornesë dhe lageshtinë e saj si pasojë e mungesës së lotit, duke marrë pamjen e trubullt brenda 30 minutave, hyn në shenjat e menjëhershme të pas vdekjës. Ftohja e kufomës bën pjesë në shenjat e hershme. Regjia torfore bën pjesë në shenjat e vonshme",
+      pageNumber: 44,
     },
     {
       title: "Në shenjat e menjëhershme pas vdekjes nuk bën pjesë bën pjesë:",
@@ -209,12 +235,14 @@ export const PJESA_E_DYTE = {
         "Ndryshimi i hapjeve midis dy pupilave",
         "Flluskat lëngëzuese",
       ],
+      pageNumber: 44,
       correct: 3,
       explanation:
         "Flluskat lëngëzuese formohen ne stadin e lëngëzimit, i cili stad hyn në shenjat e vonshme të vdekjes",
     },
     {
       title: "Perdja Winslow e cila shfaqet pas 30 minutave pas vdekjës paraqet:",
+      pageNumber: 44,
       alternatives: [
         "Ndryshimin e hapjës ndërmjet pupilave",
         "Mbulimin e plotësishëm kokërdhokut nga kapakët e syve",
@@ -226,16 +254,19 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Njollat kufomore fillojnë të bëhen të dukshme:",
+      pageNumber: 45,
       alternatives: ["10-15 minuta pas vdekjes", "30 minuta deri ne 2 orë pas vdekjes", "15- 24 orë pas vdekjes"],
       correct: 1,
     },
     {
       title: "Njollat kufomore bëhen fikse:",
+      pageNumber: 45,
       alternatives: ["10-15 minuta pas vdekjes", "30 minuta deri ne 2 orë pas vdekjes", "15- 24 orë pas vdekjes"],
       correct: 2,
     },
     {
       title: "Për të diferencuar njollat kufomore nga ekimozat kryhet:",
+      pageNumber: 46,
       alternatives: [
         "Prerje e thjeshtë e njollës",
         "Prova Galenit",
@@ -246,6 +277,7 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Rëndit kronologjinë e saktë në bazë të kohës tek shtangësia kufomore:",
+      pageNumber: 47,
       alternatives: [
         "Në 2 orët e para-relaksim i plotë; pas 2 ore fillon shtangësia kufomore; 8-16 orë kemi shtangësinë e plotë",
         "Në 20 minutat e para kemi relaksimin e plotë; pas 2 ore fillon shtangësia kufomore; pas 2 dite kemi shtangësinë e plotë",
@@ -255,11 +287,13 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Në parim, në temperaturë ambienti rreth 0 gradë celcius, temperatura e kufomës ulet:",
+      pageNumber: 48,
       alternatives: ["0 gradë/orë", "1 gradë/orë", "2 gradë/orë", "3 gradë/orë"],
       correct: 2,
     },
     {
       title: "Cka tregon Formula e Casperit:",
+      pageNumber: 49,
       alternatives: [
         "Shkalla e dekompozimit të një kufome gjatë qëndrimit për një javë në ujë është e barabartë me dy javë të qëndrimit në ajër",
         "Shkalla e dekompozimit të një kufome gjatë qëndrimit për një javë në ambient të jashtëm është e barabratë sa për dy javë në ujë dhe tetë javë në dhe",
@@ -269,16 +303,19 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Stadi i ngjyrimit, fryerjës dhe lëngëzimit janë stadet:",
+      pageNumber: 49,
       alternatives: ["Konservimit", "Njollave kufomore", "Kalbëzimit", "Mumifikimit"],
       correct: 2,
     },
     {
       title: "Stadi i skeletizimit në kushte nëntokësore bëhet i plotë pas:",
+      pageNumber: 50,
       alternatives: ["6 muajve", "1 vjete", "2 vjete", "3 muajve"],
       correct: 2,
     },
     {
       title: "Regjja torfore bën pjesë në:",
+      pageNumber: 52,
       alternatives: [
         "Stadin e kalbëzimit",
         "Shenjat e hershme kufomore",
@@ -289,6 +326,7 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Autopsia duhet të kryhet jo më pare se:",
+      pageNumber: 59,
       alternatives: [
         "3 orë nga momenti i vdekjes",
         "6 orë nga momenti i vdekjes",
@@ -299,6 +337,7 @@ export const PJESA_E_DYTE = {
     },
     {
       title: "Në përshkrimin e këqyrjes së jashtme, eksperti ndër të tjerash përshkruan dhe:",
+      pageNumber: 64,
       alternatives: [
         "Praninë ose mungesën e dhëmbëve",
         "Sistemet e organeve sipas rënditjes",
