@@ -23,7 +23,6 @@ This Privacy Policy explains how _Mjekësia Ligjore_ (“we,” “our,” or �
 
 - Since we do not collect personal data through the App itself, no user data is stored on our servers.
 - Any voluntary communication via email or phone is subject to the security practices of those services.
-
 - The App is suitable for educational purposes.
 
 ## Contact Us
