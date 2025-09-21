@@ -1,7 +1,5 @@
 # Privacy Policy
 
-**Effective Date:** [Insert Date]
-
 This Privacy Policy explains how _Mjekësia Ligjore_ (“we,” “our,” or “the App”) handles user information.
 
 ## Information We Collect
